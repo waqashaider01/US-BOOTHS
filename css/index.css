@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
+.select_box_div {
+  box-shadow: 3px 10px 30px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+.accordion {
+  --bs-accordion-bg: none !important;
+}
+.custom_accordian .accordion-item .accordion-button {
+  border-radius: 50px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  padding-right: 0px !important;
+  justify-content: space-between !important;
+}
+.custom_accordian .accordion-item .accordion-button {
+  box-shadow: none;
+  color: black;
+  background: #dfdfdf;
+}
+
+.custom_accordian .accordion-item .accordion-button:active {
+  color: black;
+}
+
+.accordion-button::after {
+  display: none;
+}
+
+.custom_form_select {
+  background: #ffffff !important;
+  border-radius: 50px !important;
+  color: #484950 !important;
+  font-family: "Poppins" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 24px !important;
+  width: 100% !important;
+  height: 50px !important;
+  transition: transform 2s !important;
+}
+
+.form-select {
+  background-image: url("../images/selecet-icon.png") !important;
+  background-position-x: right !important;
+  background-repeat: no-repeat !important;
+  background-size: 50px !important;
+  transition: transform 2s !important;
+}
+.form-select:active {
+  background-repeat: no-repeat;
+}
+.form-select:focus {
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-size: 50px;
+}
+
+.accordion_item_c:active {
+  background: #eeeeee !important;
+  border-top-left-radius: 30px !important;
+  border-top-right-radius: 30px !important;
+}
+.accordion_item_b:hover {
+  background: #f1f4fb !important;
+}
+.accordion_item_b:active {
+  background: #f1f4fb !important;
+}
+.accordion_item_b {
+  background: #f1f4fb !important;
+}
+
+.accordion-body {
+  background: #eeeeee;
+}
+
+.accordian_heading {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.custom_form_select option {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.custom_accordian .accordion_item_c .accordion-button:not(.collapsed) {
+  color: black;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-size: 50px;
+}
+
+.accordion_custom {
+  --bs-accordion-border-color: none !important;
+}
+
+.accordion-header img:focus:not(.collapsed) {
+  rotate: 90deg;
+}
+.accordion-header img:active:not(.collapsed) {
+  rotate: 90deg;
+}
+.accordion-header img:hover:not(.collapsed) {
+  rotate: 90deg;
+}
+.accordion-header img {
+  transition: all 0.5s;
+}
+
+.wrapper_cu {
+  background-color: #eeeeee;
+  padding: 20px;
+  box-shadow: 3px 10px 20px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+}
+
+.my_row i {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.show_more_btn {
+  width: 200px;
+  height: 50px;
+  background: #191919;
+  box-shadow: 1px 17px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+}
+
+.show_more_btn:focus {
+  width: 200px;
+  height: 50px;
+  background: #191919;
+  box-shadow: 1px 17px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+}

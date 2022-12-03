@@ -1,0 +1,1103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- <link rel="stylesheet" href="css/owl.carousel.min.css" /> -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Option 1: Include in HTML -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="css/style2.css">
+  <!-- Bootstrap CSS -->
+
+
+  <!-- Style -->
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+  <link rel="icon" type="image/x-icon" href="images/image 1.png">
+  <title>Blog</title>
+  <style>
+   
+
+    /* header code for Css */
+    @import url("https://fonts.googleapis.com/css?family=Poppins");
+
+    * {
+      font-family: "Poppins";
+    }
+
+    body {
+      margin: 0;
+    }
+
+    .myTogglerIcon {
+      color: #ffffff;
+    }
+
+    .navbar-toggler {
+      border: 1px solid white !important;
+    }
+
+    .myCallUsBtn {
+      background-color: white !important;
+      border-radius: 50px;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      border: none;
+      color: black;
+    }
+
+    .myCallUsBtn:hover {
+      background-color: black !important;
+      color: white;
+    }
+
+    .myItem {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      color: #ffffff;
+    }
+
+    .myItem:hover {
+      color: #ffffff;
+    }
+
+    .active {
+      font-weight: 500;
+      color: #ffffff !important;
+    }
+
+    .myItemDiv {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .myNavbar {
+        padding-bottom: 20px;
+      }
+
+      .myCallUsBtnDiv {
+        padding: 15px;
+      }
+
+      .myItem {
+        padding: 15px;
+      }
+
+      .myfooterLogo {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .mySubscribeInput {
+        padding-right: 150px;
+      }
+    }
+
+    .myfooterBottom {
+      padding: 20px;
+    }
+
+    .myfooterBottomText {
+      text-align: center;
+      color: #ffffff;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 36px;
+    }
+
+    .myFooterBg {
+      background-color: #333333;
+    }
+
+    .myFootContainer {
+      padding-top: 4rem;
+      padding-bottom: 3rem;
+    }
+
+    .myHr {
+      color: #808080;
+    }
+
+    .myHeaderBg {
+      background-color: transparent;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .myHeaderBg {
+        background-color: #000000;
+      }
+    }
+
+    .buttonIn {
+      width: 100%;
+      position: relative;
+    }
+
+    .mySubscribeInput {
+      margin: 0px;
+      padding: 30px;
+      width: 100%;
+      outline: none;
+      height: 50px;
+      border-radius: 50px;
+    }
+
+    .mySubscribeButton {
+      position: absolute;
+      border-radius: 50px;
+      right: 10px;
+      top: 8px;
+      bottom: 10px;
+      z-index: 2;
+      border: none;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      height: 50px;
+      cursor: pointer;
+      color: white;
+      background-color: black;
+      transform: translateX(2px);
+    }
+
+    .mySubColumn {
+      display: flex;
+      align-items: center;
+    }
+
+    .myFooterRow1 {
+      margin-bottom: 4rem;
+    }
+
+    .myFooterIcon {
+      margin-right: 35px;
+    }
+
+    .myList {
+      margin-bottom: 1.5rem;
+    }
+
+    .myFooterIconText {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    .myContactText {
+      padding-left: 5px;
+      color: white;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 54px;
+    }
+
+    .myFooterIconStyle {
+      width: 37px;
+    }
+
+    .myFooterIcon2 {
+      margin-right: 20px;
+    }
+
+    .social-content>ul {
+      list-style-type: none;
+      padding-left: 0px;
+      display: flex;
+    }
+
+    .myQuickLinksText {
+      padding-left: 5px;
+      color: white;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 54px;
+    }
+
+    .myQuickLinks {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 33px;
+      color: #ffffff;
+    }
+
+    .FooterLeft {
+      padding: 20px;
+    }
+
+    .FooterRight {
+      padding: 20px;
+    }
+
+
+
+
+
+    .page-link {
+      position: relative;
+      justify-content: center;
+      display: grid;
+      padding: 0.5rem 0.75rem;
+      margin-left: 30px;
+      line-height: 1.25;
+      align-items: center;
+      background-color: #fff;
+      border-radius: 1px solid black;
+      border-radius: 59px !important;
+      border: 2px;
+      color: black;
+      border: 1px solid;
+      margin-bottom: 100px;
+    }
+
+    .ago {
+      color: gray;
+      font-weight: normal;
+      font-size: 13px;
+    }
+
+    .bi-facebook {
+      margin-left: 20px;
+      font-size: 40px;
+      color: blue;
+    }
+
+
+    .date {
+      padding-left: 20px;
+      font-size: 15px;
+      padding-top: 20px;
+      color: white;
+    }
+
+
+    /* .li-icon {
+  margin-top: 10px;
+} */
+
+    .only-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .only-logo img {
+      border-radius: 50%;
+      margin-top: 5px;
+    }
+
+    /* pagination Media Query */
+    /* @media only screen and (max-width: 600px) {
+  .pagination_4 {
+    display: none;
+  }
+} */
+    @media only screen and (max-width: 400px) {
+      .pagination_3 {
+        display: none;
+      }
+    }
+
+    @media only screen and (max-width: 640px) {
+      .pagination_6 {
+        display: none;
+      }
+    }
+
+    @media only screen and (max-width: 550px) {
+      .pagination_5 {
+        display: none;
+      }
+    }
+
+    @media only screen and (max-width: 470px) {
+      .pagination_4 {
+        display: none;
+      }
+    }
+
+    @media only screen and (max-width: 400px) {
+      .pagination_3 {
+        display: none;
+      }
+    }
+
+
+    .HERO_SECTION {
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+
+    .responsive_design {
+      margin-left: 0% !important;
+      margin-right: 0% !important;
+    }
+
+
+    @media only screen and (max-width: 1310px) {
+      .product_detials_table {
+        width: auto !important;
+      }
+    }
+
+    @media only screen and (min-width: 768px) {
+      .Gallery_text {
+        font-weight: 600;
+        font-size: 60px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 30px;
+        margin-top: 10px;
+      }
+    }
+
+
+    @media only screen and (min-width: 100px) {
+      .Gallery_text {
+        font-weight: 600;
+        font-size: 40px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 10px;
+        margin-top: 5px;
+      }
+    }
+
+
+
+    .CLICK-11 {
+      background: url(images/p1.png);
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 40vh;
+      /* padding: 0% !important; */
+    }
+
+    .CLICK-22 {
+      background: url(images/p33.png);
+      background-position: center;
+      background-size: cover;
+
+      width: 100%;
+      height: 40vh;
+
+    }
+
+    .CLICK-33 {
+      background: url(images/p77.png);
+      background-position: center;
+      background-size: cover;
+      width: 98%;
+      height: 40vh;
+      margin-left: 4px;
+    }
+
+    .CLICK-44 {
+      background: linear-gradient(rgba(8, 8, 8, 0.6), rgba(8, 8, 8, 0.6)),
+        url(images/imgae/p44.png);
+      background-position: center;
+      background-size: cover;
+      width: 98%;
+      /* margin-left: 14px !important; */
+      height: 40vh;
+      font-size: 25px;
+      font-weight: bold;
+      display: flex;
+      color: white;
+      justify-content: center;
+      align-items: center;
+      margin-left: 4px;
+
+    }
+
+
+
+
+    .img-1 {
+      background: linear-gradient(rgba(8, 8, 8, 0.6), rgba(8, 8, 8, 0.6)),
+        url(images/imgae/Mask\ group-1.png);
+      background-position: center;
+      background-size: cover;
+      border-radius: 10px;
+      width: 100%;
+      height: auto;
+    }
+
+    .img-2 {
+      background: linear-gradient(rgba(8, 8, 8, 0.6), rgba(8, 8, 8, 0.6)),
+        url(images/windows-dOmKEVCg94s-unsplash\ 1.png);
+      background-position: center;
+      background-size: cover;
+      border-radius: 10px;
+      width: 100%;
+      height: auto;
+    }
+
+    .img-3 {
+      background: linear-gradient(rgba(8, 8, 8, 0.6), rgba(8, 8, 8, 0.6)),
+        url(images/imgae/Mask\ group.png);
+      background-position: center;
+      background-size: cover;
+      border-radius: 10px;
+      width: 100%;
+      height: auto;
+    }
+
+
+
+
+
+    .build {
+      padding-left: 20px;
+      font-size: 22px;
+      font-weight: bold;
+      line-height: 25px;
+      color: white;
+    }
+
+
+
+
+    .Rmore {
+      padding-top: 40px;
+      padding-left: 20px;
+      padding-bottom: 20px;
+    }
+
+    .Rmore a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .Rmore a:hover {
+      color: aqua;
+    }
+
+    .amet {
+      color: white;
+      padding-left: 20px;
+    }
+
+
+    .booth {
+      padding-top: 21px;
+      font-weight: bold;
+      line-height: 20px;
+    }
+
+    #overlay {
+      position: absolute;
+      /* Sit on top of the page content */
+      /* Hidden by default */
+      width: 100%;
+      /* Full width (cover the whole page) */
+      height: 100vh;
+      /* Full height (cover the whole page) */
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      /* Black background with opacity */
+      z-index: 900 !important;
+      /* Specify a stack order in case you're using a different order for other elements */
+      cursor: pointer;
+      /* Add a pointer on hover */
+    }
+
+
+    /* Header Icon Style  */
+    .main-div {
+
+      width: 45px;
+      height: 45px;
+
+      border-radius: 50%;
+
+      background-color: white;
+    }
+
+    .icon-1 {
+      margin: 5px;
+      height: 35px;
+      padding: 5px;
+    }
+
+    .icon1span span {
+      position: relative;
+      top: -60px;
+      left: 30px;
+    }
+
+    .main-div2 {
+      margin-left: 15px;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background-color: white;
+    }
+
+    .icon-2 {
+      margin: 5px;
+      height: 35px;
+      padding: 7px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+
+    </header> 
+  <section class="myHeaderBg w-100" style="position:absolute ;z-index: 1000;">
+    <div class="container-fluid px-md-5 px-d-none">
+      <nav class="navbar navbar-expand-lg myNavbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img class="image_width" src="images/image 1.png" alt="" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class=""><i class="fa-solid fa-bars myTogglerIcon"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item myItemDiv">
+                <a class="nav-link myItem active grow" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item myItemDiv">
+                <a class="nav-link myItem grow" href="./Gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item myItemDiv">
+                <a class="nav-link myItem grow" href="./blog.html">Blogs</a>
+              </li>
+              <li class="nav-item myItemDiv">
+                <a class="nav-link myItem grow" href="./shop.html">Shop</a>
+              </li>
+              <li class="nav-item myItemDiv">
+                <a class="nav-link myItem grow" href="./quote.html">Quote</a>
+              </li>
+              <li class="nav-item myItemDiv">
+                <a class="nav-link myItem grow" href="./aboutus.html">About Us</a>
+              </li>
+            </ul>
+         
+            <div class="d-flex">
+              <div class="main-div">
+                <div class="icon1span">
+                  <a href="cart.html"> <img class="icon-1 grow" src="./images/Vector.png" alt="" /></a>
+                  <span class="badge rounded-pill badge-notification bg-danger">2</span>
+                </div>
+
+
+
+              </div>
+
+              <div class=" main-div2">
+                <a href="./login.html"><img class="icon-2 grow" src="./images/Vector2.png" alt="" /></a>
+              </div>
+            </div>
+            <!-- Icon End  -->
+            <!-- <div class="d-flex myCallUsBtnDiv">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-lg myCallUsBtn"
+                >
+                  Call Us
+                </button>
+              </div> -->
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+  <div id="overlay"></div>
+
+
+  <div></div>
+
+  <div class="HERO_SECTION" style="background-image: url(images/blog.png); text-align: center;">
+
+  </div>
+  <section>
+    <div class="container ">
+      <div class="Gallery_text py-2 py-md-5">Latest Blogs </div>
+
+      <div class="row">
+        <div class="col-md-4 col-sm-12">
+          <div class="img-1 grow">
+            <p class="date">14 June - <b>Blog</b></p>
+            <p class="build">How to build your UX portfolio in 5 steps</p>
+            <p class="amet">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
+              adipisci eveniet eum, voluptatibus magni optio voluptas ex
+              veritatis sint cum, itaque perferendis dolores architecto hic.
+            </p>
+            <p class="Rmore"><a href="#">Read More</a></p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="img-2 grow">
+            <p class="date">14 June - <b>Blog</b></p>
+            <p class="build">How to build your UX portfolio in 5 steps</p>
+            <p class="amet">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
+              adipisci eveniet eum, voluptatibus magni optio voluptas ex
+              veritatis sint cum, itaque perferendis dolores architecto hic.
+            </p>
+            <p class="Rmore"><a href="#">Read More</a></p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="img-3 grow">
+            <p class="date">14 June - <b>Blog</b></p>
+            <p class="build">How to build your UX portfolio in 5 steps</p>
+            <p class="amet">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
+              adipisci eveniet eum, voluptatibus magni optio voluptas ex
+              veritatis sint cum, itaque perferendis dolores architecto hic.
+            </p>
+            <p class="Rmore"><a href="#">Read More</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col-md-4 col-sm-12">
+          <div class="img-1 grow">
+            <p class="date">14 June - <b>Blog</b></p>
+            <p class="build">How to build your UX portfolio in 5 steps</p>
+            <p class="amet">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
+              adipisci eveniet eum, voluptatibus magni optio voluptas ex
+              veritatis sint cum, itaque perferendis dolores architecto hic.
+            </p>
+            <p class="Rmore"><a href="#">Read More</a></p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="img-2 grow">
+            <p class="date">14 June - <b>Blog</b></p>
+            <p class="build">How to build your UX portfolio in 5 steps</p>
+            <p class="amet">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
+              adipisci eveniet eum, voluptatibus magni optio voluptas ex
+              veritatis sint cum, itaque perferendis dolores architecto hic.
+            </p>
+            <p class="Rmore"><a href="#">Read More</a></p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="img-3 grow">
+            <p class="date">14 June - <b>Blog</b></p>
+            <p class="build">How to build your UX portfolio in 5 steps</p>
+            <p class="amet">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
+              adipisci eveniet eum, voluptatibus magni optio voluptas ex
+              veritatis sint cum, itaque perferendis dolores architecto hic.
+            </p>
+            <p class="Rmore"><a href="#">Read More</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col-md-4 col-sm-12">
+          <div class="img-1 grow">
+            <p class="date">14 June - <b>Blog</b></p>
+            <p class="build">How to build your UX portfolio in 5 steps</p>
+            <p class="amet">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
+              adipisci eveniet eum, voluptatibus magni optio voluptas ex
+              veritatis sint cum, itaque perferendis dolores architecto hic.
+            </p>
+            <p class="Rmore"><a href="#">Read More</a></p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="img-2 grow">
+            <p class="date">14 June - <b>Blog</b></p>
+            <p class="build">How to build your UX portfolio in 5 steps</p>
+            <p class="amet">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
+              adipisci eveniet eum, voluptatibus magni optio voluptas ex
+              veritatis sint cum, itaque perferendis dolores architecto hic.
+            </p>
+            <p class="Rmore"><a href="#">Read More</a></p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="img-3 grow">
+            <p class="date">14 June - <b>Blog</b></p>
+            <p class="build">How to build your UX portfolio in 5 steps</p>
+            <p class="amet">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
+              adipisci eveniet eum, voluptatibus magni optio voluptas ex
+              veritatis sint cum, itaque perferendis dolores architecto hic.
+            </p>
+            <p class="Rmore"><a href="#">Read More</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Pagination Section Code Start -->
+    <div class="container     mt-5  ">
+      <div class="row  justify-content-center d-flex text-center">
+        <div class="col-md-7 ps-2 ps-md-0   justify-content-center text-center">
+          <nav aria-label="Page navigation  example ">
+            <ul class="pagination justify-content-center my-3">
+              <li class="page-item">
+                <a class="page-link bi bi-arrow-left mx-2"
+                  style="border-radius:25px !important; width: 45px;height:45px ;"></a>
+              </li>
+              <li class="page-item "><a class="page-link bg-dark text-light mx-2"
+                  style="border-radius:25px !important;width: 45px;height:45px ;" href="#">1</a></li>
+              <li class="page-item"><a class="page-link  mx-2"
+                  style="border-radius:25px !important; width: 45px;height:45px ;" href="#">2</a></li>
+              <li class="page-item "><a class="page-link mx-2  pagination_3" href="#"
+                  style="border-radius:25px !important; width: 45px;height:45px ;">3</a></li>
+              <li class="page-item"><a class="page-link mx-2 pagination_4 " href="#"
+                  style="border-radius:25px !important;width: 45px;height:45px ;">4</a></li>
+              <li class="page-item"><a class="page-link mx-2 pagination_5 " href="#"
+                  style="border-radius:25px !important; width: 45px;height:45px ;">5</a></li>
+              <li class="page-item"><a class="page-link mx-2 pagination_6 " href="#"
+                  style="border-radius:25px !important; width: 45px;height:45px ;">6</a></li>
+              <li class="page-item"><a class="page-link mx-2 pagination_6 " href="#"
+                  style="border-radius:25px !important; width: 45px;height:45px ;">7</a></li>
+              <li class="page-item"><a class="page-link mx-2 pagination_6 " href="#"
+                  style="border-radius:25px !important; width: 45px;height:45px ;">8</a></li>
+              <li class="page-item">
+                <a class="page-link bi bi-arrow-right mx-2"
+                  style="height:45px ;border-radius:25px !important; width: 45px;" href="#"></a>
+              </li>
+            </ul>
+          </nav>
+
+        </div>
+      </div>
+
+
+      <div class="col-md-4"></div>
+    </div>
+
+
+
+
+    <div class="container mb-5">
+      <div class="row mt-2">
+
+        <div class="col-md-6  ">
+          <div class="border   mt-md-0 mt-2 mt-md-0   "
+            style="border: 2px solid #C0C0C0 !important; border-radius: 10px !important;">
+            <div class="row pt-3">
+              <div class="col-md-3 text-center justify-content-center">
+                <p class="only-logo">
+                  <img class="img-fluid" src="images/image 6.png" width="68px" height="68px" alt="" />
+                </p>
+              </div>
+              
+              <div class="col-md-6  text-center justify-content-center">
+                <a href="https://www.facebook.com/waqashayder01" style="text-decoration:none ;">
+                <p class="booth">
+                  US Booth LLC<br /><span class="ago">About 5 months ago</span>
+                </p>
+              </a>
+              </div>
+
+              
+
+              <div class="col-md-3 text-center justify-content-center">
+                <a href="https://www.facebook.com/waqashayder01" style="text-decoration:none ;">
+                <p class="li-icon"><i class="bi bi-facebook pe-5"></i></p>
+              </a>
+              </div>
+            
+            </div>
+          </div>
+          <div class="row ms-0 ms-md-1  pe-3 pe-md-0  mt-3 g-0">
+            <div style="width: 100%;">
+              <div class="row mt-2 g-0">
+                <script src="https://s.electricblaze.com/widget.js" defer></script>
+                <div class="electricblaze-id-2Uhx770"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 ">
+          <div class="border   mt-md-0 mt-2 mt-md-0   "
+            style="border: 2px solid #C0C0C0 !important; border-radius: 10px !important;">
+            <div class="row pt-3">
+              <div class="col-md-3 text-center justify-content-center">
+                <p class="only-logo">
+                  <img class="img-fluid" src="images/image 6.png" width="68px" height="68px" alt="" />
+                </p>
+              </div>
+              
+              <div class="col-md-6  text-center justify-content-center">
+                <a href="https://www.facebook.com/waqashayder01" style="text-decoration:none ;">
+                <p class="booth">
+                  US Booth LLC<br /><span class="ago">About 5 months ago</span>
+                </p>
+              </a>
+              </div>
+
+              
+
+              <div class="col-md-3 text-center justify-content-center">
+                <a href="https://www.facebook.com/waqashayder01" style="text-decoration:none ;">
+                <p class="li-icon"><i class="bi bi-facebook pe-5"></i></p>
+              </a>
+              </div>
+            
+            </div>
+          </div>
+          <div class="row ms-0 ms-md-1  pe-3 pe-md-0  mt-3 g-0">
+            <div style="width: 100%;">
+              <div class="row mt-2 g-0">
+                <script src="https://s.electricblaze.com/widget.js" defer></script>
+                <div class="electricblaze-id-2Uhx770"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="myFooterBg  myAboutSection">
+      <div class="container myFootContainer">
+        <div class="row myFooterRow1">
+          <div class="col-md-6">
+            <div class="myfooterLogo">
+              <a href="index.html"><img class="image_width" src="./images/image 1.png" alt="" /></a>
+
+            </div>
+          </div>
+          <div class="col-md-6 mySubColumn">
+            <div class="buttonIn">
+              <form>
+                <input type="text" placeholder="Enter your E-mail" class="mySubscribeInput" />
+                <button class="mySubscribeButton">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8 FooterLeft">
+            <p class="myContactText">CONTACT US</p>
+            <br>
+            <div class="d-flex myList">
+              <div class="myFooterIcon"><img class="myFooterIconStyle" src="./images/icons/loc.png" alt="" />
+              </div><span class="text-white myFooterIconText"> <a style="color:white; text-decoration: none;"
+                  href="#">3432
+                  W
+                  Wilshire Dr Ste 6,
+                  Phoenix, AZ 85009</a> </span>
+            </div>
+            <div class="d-flex myList">
+              <div class="myFooterIcon"><img class="myFooterIconStyle" src="./images/icons/call.png" alt="" />
+              </div>
+              <span class="text-white myFooterIconText"> <a href="tel:6232620699"
+                  style="color:white; text-decoration: none;">(623) 262-0699</a> </span>
+            </div>
+            <div class="d-flex myList">
+              <div class="myFooterIcon"><img class="myFooterIconStyle" src="./images/icons/message.png" alt="" /></div>
+              <span class="text-white myFooterIconText"> <a href="mailto:info@usbooths.com"
+                  style="color:white; text-decoration: none;">info@usbooths.com</a> </span>
+            </div>
+            <br>
+
+            <div class="social-content">
+              <ul>
+                <li>
+                  <a href="https://www.instagram.com/">
+                    <div class="myFooterIcon2"><img class="myFooterIconStyle" src="./images/icons/insta.png" alt="">
+                    </div>
+                  </a>
+
+                </li>
+                <li>
+                  <a href="https://www.facebook.com">
+                    <div class="myFooterIcon2"><img class="myFooterIconStyle" src="./images/icons/fb.png" alt=""></div>
+                  </a>
+
+
+                </li>
+
+                <li>
+                  <a href="https://www.linkedin.com">
+                    <div class="myFooterIcon2"><img class="myFooterIconStyle" src="./images/icons/lin.png" alt=""></div>
+                  </a>
+
+
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 FooterRight">
+            <p class="myQuickLinksText">Quick Links</p>
+            <br>
+            <h6 class="myQuickLinks"><a href="shop.html" style="color:white; text-decoration: none;">Shop</a>
+            </h6>
+            <hr class="myHr">
+            <h6 class="myQuickLinks"><a href="Gallery.html" style="color:white; text-decoration: none;">Gallery</a></h6>
+            <hr class="myHr">
+            <h6 class="myQuickLinks"><a href="quote.html" style="color:white; text-decoration: none;">Quote</a>
+            </h6>
+            <hr class="myHr">
+            <h6 class="myQuickLinks"><a href="aboutus.html" style="color:white; text-decoration: none;">About
+                Us</a></h6>
+          </div>
+        </div>
+      </div>
+      <hr class="myHr" />
+      <div class="myfooterBottom">
+        <h6 class="myfooterBottomText">
+          © 2022 US BOOTHS LLC. ALL RIGHTS RESERVED
+        </h6>
+        <h6 class="myfooterBottomText">
+          Terms and conditions - Cookies policy - Privacy policy
+        </h6>
+      </div>
+    </section>
+    <script src="jquery.js"></script>
+    <script>
+      $(function () {
+
+        $("#icons").load("headericon.html")
+      });
+    </script>
+
+    <section id="icons">
+
+    </section>
+    <!-- <div class="container     mt-5 pt-5  ">
+      <div class="row  justify-content-center d-flex text-center">
+        <div class="col-md-7 ps-2 ps-md-0   justify-content-center text-center">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+              <li class="page-item">
+                <a class="page-link bi bi-arrow-left" style="border-radius:25px !important; width: 36px; height: 36px;"></a>
+              </li>
+              <li class="page-item "><a class="page-link bg-dark text-light" style="border-radius:25px !important; width: 40px;" href="#" >1</a></li>
+              <li class="page-item"><a class="page-link " style="border-radius:25px !important; width: 40px;" href="#" >2</a></li>
+              <li class="page-item "><a class="page-link pagination_3" href="#"style="border-radius:25px !important; width: 40px;">3</a></li>
+              <li class="page-item"><a class="page-link pagination_4 " href="#"style="border-radius:25px !important; width: 40px;" >4</a></li>
+              <li class="page-item"><a class="page-link pagination_5 " href="#"style="border-radius:25px !important; width: 40px;" >5</a></li>
+              <li class="page-item"><a class="page-link pagination_6 " href="#"style="border-radius:25px !important; width: 40px;" >6</a></li>
+              <li class="page-item">
+                <a class="page-link bi bi-arrow-right " style="border-radius:25px !important; width: 36px; height: 36px;" href="#" ></a>
+              </li>
+            </ul>
+          </nav>
+
+        </div>
+      </div>
+
+      
+      <div class="col-md-4"></div>
+    </div> -->
+
+  </section>
+
+  <section>
+
+
+  </section>
+
+
+
+  </div>
+  <!-- <section>
+  <div class="container-fluid" style="background-color: #333 ;">
+  <div class="foot-color"></div>
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-3 pt-5 ml-5"><img src="images/foot.png" width="80%"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-7 pt-5"> <input type="email" class="form-control" id="foot" placeholder="Enter Your E-Mail">
+          <button type="button" class="btn btn-warning btn-lg">About Us</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <p class="control">CONTACT US</p>
+          <p><i class="fa-solid fa-location-dot ml-3"></i><span class="text-white pl-3">3432 W Wilshire Dr Ste 6, Phoenix, AZ 85009</span>
+          </p>
+          <p><i class="fa-solid fa-phone ml-3"></i><span class="text-white pl-3">(623) 262-0699</span></p>
+          <p><i class="fa-solid fa-envelope ml-3"></i><span class="text-white pl-3">info@usbooths.com</span></p>
+          <div class="social-content">
+            <ul>
+              <li><i class="bi bi-instagram"></i></li>
+              <li><i class="bi bi-whatsapp"></i></li>
+              <li><i class="bi bi-pinterest"></i></li>
+              <li><i class="bi bi-linkedin"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <p class="quick">Quick Links</p>
+          <p class="s-store">Shop</p>
+  
+          <p class="s-store">Gallery</p>
+  
+          <p class="s-store">Quote</p>
+  
+          <p class="a-store">About Us</p>
+        </div>
+      </div>
+      
+     
+      
+  </div>
+  </div>
+
+
+  <div class="text-center p-0" style="background-color: #333; color: #fff;">
+    © 2022 US BOOTHSLLC.ALL RIGHT RESERVED<br>
+    <a class="text-white" href="#">Teams and Conditions-</a>
+    <a class="text-white" href="#">Cookies Policy-</a>
+    <a class="text-white" href="#">Privacy Policy</a>
+  </div>
+
+  </footer> 
+</section> -->
+
+  </div>
+  <!-- End of .container -->
+
+  
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+  <!-- Bootstrap 5 JS -->
+  <!-- <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js'></script> -->
+
+</body>
+
+</html>

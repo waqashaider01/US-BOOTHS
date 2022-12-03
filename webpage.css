@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
+.mainheadingtext {
+  font-family: "Permanent Marker";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 80px;
+  text-align: center;
+
+  color: #000000;
+}
+.section1 {
+  text-align: center;
+
+  background: #ffffff;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.25);
+}
+
+.mainhead {
+  /* padding-left: 50px; */
+  font-family: "Permanent Marker";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40.1652px;
+  line-height: 59px;
+  text-align: center;
+
+  color: #000000;
+}
+.detailhead {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26.5499px;
+  /* line-height: 31px; */
+  padding-right: 50px;
+
+  color: #000000;
+}
+.paragraphtext {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23.0099px;
+  /* line-height: 28px; */
+  /* padding-right: 50px; */
+
+  color: #000000;
+}
+.detailtext {
+  text-align: left;
+  position: relative;
+  right: 50px;
+}
+.linedottedt {
+  display: none;
+}
+
+.getquotebtn {
+  border-radius: 50px;
+  background-color: #333333;
+  color: white;
+  position: relative;
+  top: -10px;
+
+  width: 200px;
+  right: 120px;
+}
+.getquotebtn:hover {
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 1250px) {
+  .getquotebtn {
+    position: relative;
+    /* left: 20px !important; */
+
+    width: 150px;
+    right: 70px;
+
+    /* right: 70px; */
+  }
+}
+
+@media (max-width: 1050px) {
+  .circleimg {
+    width: 90px;
+  }
+  .getquotebtn {
+    position: relative;
+    /* left: 20px !important; */
+
+    width: 150px;
+    right: 20px;
+
+    /* right: 70px; */
+  }
+}
+
+@media (max-width: 800px) {
+  .getquotebtn {
+    position: relative;
+    /* left: 20px !important; */
+    left: -30px;
+    width: 150px;
+    /* right: 70px; */
+  }
+  .detailtext {
+    max-width: 63%;
+    position: relative;
+    right: 10px;
+  }
+
+  .circleimg {
+    width: 80px;
+  }
+  .paragraphtext {
+    font-size: 15px;
+  }
+}
+.mainmargin {
+  margin-top: 3rem;
+}
+@media (max-width: 580px) {
+  .getquotebtn {
+    font-size: 10px;
+    height: 30px;
+
+    width: 100px;
+    /* right: 70px; */
+  }
+  .mainmargin {
+    margin-top: 0px !important;
+  }
+  .mainheadingtext {
+    font-size: 31px;
+    line-height: 66px;
+  }
+  .detailtext {
+    max-width: 63%;
+
+    position: relative;
+    right: 0px;
+  }
+  .circleimg {
+    width: 44px;
+    position: relative;
+    left: 10px;
+  }
+  .mainhead {
+    font-size: 15px;
+    position: relative;
+    /* right: 53px; */
+
+    top: -10px;
+  }
+  .mainhead span {
+    position: relative;
+    top: -40px;
+  }
+
+  .detailhead {
+    font-size: 12px;
+  }
+  .paragraphtext {
+    font-size: 10px;
+    padding-right: 0px;
+  }
+
+  .linedottedt {
+    display: block;
+  }
+}

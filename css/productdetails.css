@@ -1,0 +1,1136 @@
+/* Man Card Design Start  */
+.quantity span {
+  width: 30%;
+}
+
+.quentityright i {
+  padding: 3px;
+  font-size: 23px;
+}
+
+.paragraph p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+
+  color: #37383e;
+}
+
+/* .colorblack{
+    outline:1px solid black;
+    border-radius: 50px;
+    padding: 2px;
+
+} */
+
+.ufted-Sofa-U-Corner {
+  font-size: 26px;
+}
+
+.ninereviwe {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+
+  color: #999999;
+}
+
+.In-Stock {
+  font-size: 18px;
+  color: #35b164;
+}
+
+.doublebanner {
+  /* padding: 5rem; */
+}
+
+.addminus {
+  width: 70%;
+}
+
+/* .addminus{
+width: 70%;
+} */
+
+.dollar {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.quentityright {
+  width: 70%;
+}
+
+.product-main-card-info {
+  display: flex;
+  justify-content: space-between;
+  /* padding-left: 15px; */
+  /* padding-right: 15px; */
+}
+
+.product-main-card-info1 {
+  display: flex;
+  justify-content: space-between;
+
+  /* padding-top: 10px; */
+
+  margin-top: 20px;
+  margin-bottom: 30px;
+  /* padding-bottom: 30px; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.center-div {
+  align-items: center;
+  background-size: cover;
+  height: 100vh;
+  background-image: linear-gradient(180deg,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0) 100%),
+    url(../images/image_21.png);
+}
+
+.center-div img {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.center-div h1 {
+  position: absolute;
+  left: 20%;
+  top: 35%;
+  display: flex;
+  color: white;
+
+  font-size: 5rem;
+}
+
+.center-div h6 {
+  position: absolute;
+  left: 65%;
+  font-size: 20px;
+  top: 50%;
+  color: white;
+  margin: auto;
+}
+
+.grid {
+  margin-top: 5rem;
+}
+
+.left h4 {
+  /* margin-top: 4rem; */
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding-left: 10px;
+}
+
+.Tufted_Heading{
+  font-size: 1.2rem !important;
+  font-weight: 800;
+}
+
+.Tufted_Heading2{
+  font-size: 1.4rem !important;
+  font-weight: 800;
+}
+
+.lg-pic {
+  display: flex;
+  justify-content: center;
+  /* position: relative; */
+  /* left: 3rem; */
+  /* margin-top: 3rem; */
+  /* height: 70%; */
+  width: 100%;
+}
+
+.sm-pic1 {
+  height: 5rem;
+  width: 5rem;
+}
+
+.sm-pic1:hover {
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.sm-pic2 {
+  height: 5rem;
+  width: 5rem;
+}
+
+.sm-pic2:hover {
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.sm-images {
+  /* style="display:flex; justify-content:center;" */
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: auto;
+}
+
+.btncustom-order {
+  float: right;
+  background-color: #333333;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  color: white;
+  font-size: 20px;
+  border-radius: 50px;
+  border: none;
+}
+.btncustom-order:hover {
+  float: right;
+  background-color: black;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  color: white;
+  font-size: 20px;
+  border-radius: 50px;
+}
+
+.btnproduct-shop1 button {
+  background-color: #333333;
+
+  box-shadow: 1px 17px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  color: white;
+  border: none;
+  border-radius: 20px;
+}
+.btnproduct-shop1 button:hover {
+  background-color: black;
+  color: white;
+}
+
+.btnproduct-addtocard1 button {
+  border: none;
+  background: #ffffff;
+  /* box-shadow: 3px 10px 30px 1px rgba(0, 0, 0, 0.25); */
+  border-radius: 15px;
+  color: black;
+  border-radius: 20px;
+}
+
+@media (max-width: 1227px) {
+  .product-main-card-info1 {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 990px) {
+  .product-main-card-info {
+    display: block;
+    /* justify-content: space-between; */
+    /* padding-left: 15px; */
+    /* padding-right: 15px; */
+  }
+
+  .doublebanner {
+    padding: 1rem;
+  }
+
+  .btnproduct-shop button {
+    position: relative;
+    right: 10px;
+    width: 150px;
+    height: 40px;
+  }
+
+  .btnproduct-addtocard button {
+    position: relative;
+    left: 10px;
+    width: 150px;
+    height: 40px;
+  }
+
+  .sm-images {
+    /* style="display:flex; justify-content:center;" */
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 50px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 820px) {
+  .sm-images {
+    /* style="display:flex; justify-content:center;" */
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 0px;
+    margin: auto;
+  }
+
+  .doublebanner {
+    padding: 1rem;
+  }
+
+  .product-main-card-info1 {
+    margin-top: 15px;
+  }
+
+  .btnproduct-shop button {
+    position: relative;
+    right: 30px;
+
+    width: 150px;
+    height: 40px;
+  }
+
+  .btnproduct-addtocard button {
+    position: relative;
+    left: 10px;
+    width: 150px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* .doublebanner {
+    padding: 1rem;
+  } */
+
+  .customglass-product {
+    position: relative;
+    top: 40px;
+  }
+
+  .sm-images {
+    margin-bottom: 50px;
+  }
+
+  .lg-pic {
+    width: 100%;
+  }
+
+  /* .lg-pic
+{
+    position: relative;
+    left: 4rem;
+} */
+  .btncustom-order {
+    position: relative;
+    right: 30%;
+    /* border-radius: 5
+        0%; */
+    margin-top: 10px;
+  }
+
+  .center-div h1 {
+    position: absolute;
+    left: 15%;
+
+    display: flex;
+    color: white;
+
+    font-size: 3.5rem;
+  }
+
+  .center-div h6 {
+    position: absolute;
+
+    color: white;
+    margin: auto;
+  }
+
+  .grid {
+    padding: 1.5rem;
+  }
+
+  .btnproduct-shop button {
+    position: relative;
+    right: 20px;
+    width: 150px;
+    height: 40px;
+  }
+
+  .btnproduct-addtocard button {
+    position: relative;
+    left: 30px;
+  }
+}
+
+@media (max-width: 515px) {
+  /* .doublebanner {
+    padding: 1rem;
+  } */
+
+  .btncustom-order {
+    position: relative;
+    right: 20%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 416px) {
+  /* .doublebanner {
+    padding: 1rem;
+  } */
+
+  .customglass-product {
+    position: relative;
+    top: 0px;
+  }
+
+  /* .lg-pic{
+       position: relative;
+        left: 2.1rem;
+        
+    } */
+  .btncustom-order {
+    position: relative;
+    right: 17%;
+    /* top: 10px; */
+  }
+
+  .center-div h1 {
+    position: absolute;
+    text-align: center;
+    left: 0%;
+    top: 30%;
+
+    font-size: 5rem;
+  }
+
+  .center-div h6 {
+    position: absolute;
+    left: 65%;
+
+    top: 70%;
+    color: white;
+    margin: auto;
+  }
+
+  .customglass-product {
+    padding-top: 100px;
+  }
+
+  .product-main-card-info1 {
+    margin-top: 5px;
+  }
+
+  .btnproduct-shop button {
+    width: 150px;
+    height: 50px;
+    position: relative;
+    right: 30px;
+  }
+
+  .btnproduct-addtocard button {
+    width: 150px;
+    position: relative;
+    left: 30px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 350px) {
+  /* .doublebanner {
+    padding: 1rem;
+  } */
+
+  .btncustom-order {
+    position: relative;
+    /* right: 17%;  */
+    /* width: 100%; */
+    right: 15%;
+  }
+}
+
+@media (max-width: 300px) {
+  .btnproduct-shop1 button {
+    /* width: 100px; */
+    font-size: 10px;
+  }
+
+  .btnproduct-addtocard1 button {
+    font-size: 10px;
+  }
+
+  .btncustom-order {
+    position: relative;
+    left: -20px;
+    font-size: 15px;
+  }
+
+  /* .doublebanner {
+    padding: 1rem;
+  } */
+
+  /* .lg-pic{
+       
+        left: 1.1rem;
+        
+    } */
+  .btncustom-order {
+    /* /* position: relative; */
+    /* right: 17%;  */
+    /* width: 100%; */
+    right: 0%;
+  }
+
+  .center-div h6 {
+    position: absolute;
+    left: 50%;
+
+    top: 70%;
+    color: white;
+    margin: auto;
+  }
+
+  .quantity span {
+    width: 50%;
+  }
+
+  .addminus {
+    width: 50%;
+  }
+
+  .addminus {
+    width: 50%;
+  }
+
+  .quentityright {
+    width: 50%;
+  }
+
+  .product-main-card-info1 {
+    margin-top: 5px;
+  }
+
+  .btnproduct-shop button {
+    width: 80px;
+    height: 50px;
+    position: relative;
+    right: 30px;
+  }
+
+  .btnproduct-addtocard button {
+    width: 80px;
+    position: relative;
+    left: 40px;
+    height: 50px;
+  }
+}
+
+.div-content {
+  margin-top: 5rem;
+  height: auto;
+  border-radius: 15px;
+  /* box-shadow: 3px 10px 30px 1px rgba(0, 0, 0, 0.25); */
+  padding: 3rem 2rem 2rem 2rem;
+}
+
+.div-content h6 {
+  color: #35b164;
+}
+
+.instock {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.div-content p {
+  padding-top: 20px;
+}
+
+.instock img {
+  margin-left: 0.5rem;
+  width: 1rem;
+  height: 1.1rem;
+}
+
+.lg-blue {
+  color: rgb(115, 191, 241);
+}
+
+.pink {
+  color: rgb(238, 54, 192);
+}
+
+.red {
+  color: red;
+  outline: rgb(228, 149, 149);
+  border: 2px solid rgb(243, 106, 106);
+  border-radius: 50%;
+}
+
+.blue2 {
+  color: #263238;
+}
+
+.black {
+  color: black;
+}
+
+.dkblue {
+  color: #0095f6;
+}
+
+.green {
+  color: #009688;
+}
+
+.skyblue {
+  color: #11c6ff;
+}
+
+.lg-green {
+  color: #82d100;
+}
+
+.orng {
+  color: #ff8a00;
+}
+
+.add {
+  width: 2rem;
+  height: 2rem;
+}
+
+.quantity {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.quantity span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+
+  line-height: 30px;
+
+  color: #000000;
+}
+
+.addminus {
+  margin-top: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.addminus h5 {
+  margin-left: 1rem;
+  font-size: 1rem;
+  margin-top: 0.4rem;
+}
+
+.minus {
+  margin-left: 1rem;
+}
+
+.grid2 {
+  margin-top: 4rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding-left: 10px;
+}
+
+.star {
+  position: relative;
+  padding-bottom: 30px;
+
+  position: relative;
+  padding-top: 20px;
+
+  align-items: flex-start;
+}
+
+.sofa {
+  width: 100%;
+  height: 70%;
+  margin-top: 0;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgb(204, 200, 200);
+  padding-bottom: 30px;
+}
+
+.reviews {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+
+  color: #999999;
+}
+
+.sufaproducts {
+  display: flex;
+  justify-content: center;
+  padding-top: 4px;
+
+  margin-bottom: 20px;
+  background: #ffffff;
+  /* box-shadow: 2.6363px 8.78768px 26.363px 0.878768px rgba(0, 0, 0, 0.25); */
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+  border-radius: 13.1815px;
+   border: none !important ;
+}
+
+.shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop button {
+  float: right;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  color: white;
+  border-radius: 20px;
+  width: 195.97px;
+  height: 53.6px;
+
+  font-size: 13px;
+  background-color: rgb(54, 51, 51);
+  box-shadow: 0.878768px 14.9391px 17.5754px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  margin-top: 1.5rem;
+
+  margin-bottom: 1.5rem;
+  border: none;
+  outline: none;
+}
+
+.cart {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cart img {
+  background: #191919;
+
+  box-shadow: 0.878768px 14.9391px 17.5754px rgba(0, 0, 0, 0.25);
+  background-color: rgb(54, 51, 51);
+  background-size: cover;
+  border-radius: 50%;
+  width: 56.24px;
+  height: 53.6px;
+  margin-top: 1.3rem;
+  margin-bottom: 1.3rem;
+
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.carddetails {
+  position: relative;
+  top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.btnshopcart {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1100px) {
+  .cart img {
+    width: auto;
+    height: 33.6px;
+  }
+
+  .shop button {
+    font-size: 10px;
+    width: 120px;
+    height: 30.6px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cart img {
+    width: auto;
+
+    height: 53.6px;
+  }
+
+  .shop button {
+    width: 250px;
+
+    height: 53.45px;
+  }
+
+  .btnshopcart {
+    position: relative;
+    right: 10px;
+  }
+}
+
+@media (max-width: 340px) {
+  .cart img {
+    width: auto;
+
+    height: 53.6px;
+  }
+
+  .shop button {
+    width: 150px;
+
+    height: 40.45px;
+  }
+
+  .btnshopcart {
+    position: relative;
+    right: 10px;
+  }
+}
+
+@media (max-width: 340px) {
+  .cart img {
+    width: auto;
+
+    height: 53.6px;
+  }
+
+  .shop button {
+    width: 130px;
+    height: 40.45px;
+  }
+
+  .btnshopcart {
+    position: relative;
+    right: 10px;
+  }
+}
+
+.custom_btn {
+  height: 53.60485076904297px;
+  width: 195.96527099609375px;
+  left: 66.575439453125px;
+  top: 2301.747802734375px;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  color: white;
+}
+
+.hello .custom_btn {
+  background-color: #333333;
+  box-shadow: 0.878768px 14.9391px 17.5754px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  outline: none;
+  color: white;
+  border: none;
+}
+
+
+.hello .custom_btn:hover {
+background-color: black !important;
+color: white;
+}
+
+.hello img {
+  background-color: #333333;
+  /* background: #191919; */
+  cursor: pointer;
+  box-shadow: 0.878768px 14.9391px 17.5754px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  padding: 10px;
+  height: 50px;
+}
+
+.hello img:hover{
+background-color: black;
+} 
+
+/* Header Footer  start  */
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Playfair Display");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Inter");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+* {
+  font-family: "Poppins";
+}
+
+body {
+  margin: 0;
+}
+
+.myTogglerIcon {
+  color: #ffffff;
+}
+
+.navbar-toggler {
+  border: 1px solid white !important;
+}
+
+.myCallUsBtn {
+  background-color: white !important;
+  border-radius: 50px;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: 1px solid white;
+  color: black;
+}
+
+.myCallUsBtn:hover {
+  background-color: black !important;
+  color: white;
+}
+
+.myItem {
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 24px !important;
+  color: #ffffff !important;
+}
+
+.myItem:hover {
+  color: #ffffff;
+}
+
+.active {
+  font-weight: 500;
+  color: #ffffff !important;
+}
+
+.myItemDiv {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .myNavbar {
+    padding-bottom: 20px;
+  }
+
+  .myHeaderBg {
+    background-color: black !important;
+  }
+
+  .myCallUsBtnDiv {
+    padding: 15px;
+  }
+
+  .myItem {
+    padding: 15px !important;
+  }
+
+  .myfooterLogo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .mySubscribeInput {
+    padding-right: 150px;
+  }
+}
+
+.myfooterBottom {
+  padding: 20px;
+}
+
+.myfooterBottomText {
+  text-align: center;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.myFooterBg {
+  background-color: #333333;
+}
+
+.myFootContainer {
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+
+.myHr {
+  color: #808080;
+}
+
+.myHeaderBg {
+  background-color: transparent;
+  width: 100%;
+  position: absolute;
+  z-index: 1000;
+}
+
+.buttonIn {
+  width: 100%;
+  position: relative;
+}
+
+.mySubscribeInput {
+  margin: 0px;
+  padding: 30px;
+  width: 100%;
+  outline: none;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.mySubscribeButton {
+  position: absolute;
+  border-radius: 50px;
+  right: 10px;
+  top: 8px;
+  bottom: 10px;
+  z-index: 2;
+  border: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 50px;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  transform: translateX(2px);
+}
+
+.mySubColumn {
+  display: flex;
+  align-items: center;
+}
+
+.myFooterRow1 {
+  margin-bottom: 4rem;
+}
+
+.myFooterIcon {
+  background-color: white;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin-right: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myList {
+  margin-bottom: 1.5rem;
+}
+
+.myFooterIconText {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.myContactText {
+  padding-left: 5px;
+  color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 54px;
+}
+
+.myFooterIconStyle {
+  width: 23px;
+  height: 23px;
+}
+
+.myFooterIcon2 {
+  background-color: white;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-content>ul {
+  list-style-type: none;
+  padding-left: 0px;
+  display: flex;
+}
+
+.myQuickLinksText {
+  padding-left: 5px;
+  color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 54px;
+}
+
+.myQuickLinks {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  color: #ffffff;
+}
+
+.FooterLeft {
+  padding: 20px;
+}
+
+.FooterRight {
+  padding: 20px;
+}
+
+/* Header Footer end  */
+
+/* Header Icon Style  */
+.main-div {
+  width: 45px;
+  height: 45px;
+
+  border-radius: 50%;
+
+  background-color: white;
+}
+
+.icon-1 {
+  margin: 5px;
+  height: 35px;
+  padding: 5px;
+}
+
+.icon1span span {
+  position: relative;
+  top: -60px;
+  left: 30px;
+}
+
+.main-div2 {
+  margin-left: 15px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.icon-2 {
+  margin: 5px;
+  height: 35px;
+  padding: 7px;
+}

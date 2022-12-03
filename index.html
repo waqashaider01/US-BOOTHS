@@ -1,0 +1,2829 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="icon" type="image/x-icon" href="images/image 1.png">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- <script src="https://data.jsdelivr.com/v1/package/npm/swiper/badge"></script>
+    <script src="https://www.jsdelivr.com/package/npm/swiper"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8.4.4/swiper.esm.min.js"></script> -->
+
+
+
+
+    <style>
+        .grow {
+            transition: all .2s ease-in-out;
+        }
+
+        .grow:hover {
+            transform: scale(1.1);
+        }
+
+
+        .card-gray:hover {
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            background-color: rgb(255, 255, 255);
+            background-color: rgba(226, 226, 226, 0.441);
+            right: 5px !important;
+            padding: 28px !important;
+            color: rgb(190, 190, 190) !important;
+            fill: rgb(255, 255, 255) !important;
+            stroke: rgb(255, 255, 255) !important;
+            border-radius: 50%;
+            transition: all;
+
+        }
+
+        .swiper-button-next:hover,
+        .swiper-button-prev:hover {
+            background-color: rgb(255, 255, 255);
+            background-color: rgba(122, 122, 122, 0.548);
+            /* right: 5px; */
+            /* padding: 28px; */
+            color: rgb(255, 255, 255) !important;
+            fill: rgb(255, 255, 255) !important;
+            stroke: rgb(255, 255, 255) !important;
+            border-radius: 50%;
+            transition: 0.3s;
+        }
+
+
+        /* .swiper-button-next::after {
+            display: none;
+        } */
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            top: 46% !important;
+        }
+
+        /* swiper */
+
+        .swiper-button-prev {
+            left: 2px;
+        }
+
+        .swiper-button-next {
+            right: 2px;
+        }
+
+        .swiper {
+            /* width: 350px; */
+            /* height: 350px; */
+            cursor: pointer;
+        }
+
+        .ButtonStyled-ebrPnW .jzAUPt {
+            background-color: red !important;
+        }
+
+
+        .homeimage1 {
+            background-image: url(../images/img21.png);
+            height: 600px;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 20px;
+        }
+
+        .homeimage2 {
+            background-image: url(../images/2nd.png);
+            height: 600px;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 20px;
+        }
+
+        .homeimage3 {
+            background-image: url(../images/3\ .png);
+            height: 600px;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 20px;
+        }
+
+        .booth {
+            padding-top: 21px;
+            font-weight: bold;
+            line-height: 20px;
+        }
+
+        .check {
+            rotate: 90deg;
+        }
+
+        .card-img-top {
+            margin-top: -5px;
+        }
+
+        .only-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .b-gray {
+            border: 1px solid gray;
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .only-logo img {
+            border-radius: 50%;
+            margin-top: 5px;
+        }
+
+        .click-1 {
+            background: url(images/p1.png);
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 40vh;
+        }
+
+        .s-gray {
+            background-color: #f3f3f3;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .click-2 {
+            background: url(images/p33.png);
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 40vh;
+        }
+
+        .click-3 {
+            background: url(images/imgae/p77.png);
+            background-position: center;
+            background-size: cover;
+            width: 98%;
+            height: 40vh;
+            margin-left: 4px;
+        }
+
+        .myArticleCard {
+            border-radius: 10px;
+        }
+
+        .click-4 {
+            background: linear-gradient(rgba(8, 8, 8, 0.6), rgba(8, 8, 8, 0.6)), url(images/imgae/p44.png);
+            background-position: center;
+            background-size: cover;
+            width: 98%;
+            margin-left: 4px;
+            height: 40vh;
+            font-size: 25px;
+            font-weight: bold;
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p.g-rating {
+            padding-left: 15px;
+            font-size: 25px;
+            font-weight: bold;
+            color: green;
+            padding-top: 30px;
+            line-height: 0px;
+        }
+
+        p.so-review {
+            padding-left: 15px;
+            line-height: 0px;
+        }
+
+        span.sm-text {
+            color: gray;
+            font-size: 12px;
+        }
+
+        span.da-re {
+            padding-left: 10px;
+            font-size: 10px;
+            color: gray;
+        }
+
+        .bi-star-fill {
+            color: rgb(235, 180, 30);
+            font-size: 15px;
+            letter-spacing: -5px;
+        }
+
+        p.icon-bg-1 {
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+            font-size: 18px;
+            margin-left: 22px;
+        }
+
+        p.icon-bg-2 span.pic-short img {
+            background-image: url("image/rock.jpg");
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            padding-top: 10px;
+            color: white;
+            font-size: 18px;
+            margin-left: 22px;
+        }
+
+        p.icon-bg-3 {
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+            font-size: 18px;
+            margin-left: 22px;
+        }
+
+        p.icon-bg-4 {
+            background-color: brown;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+            font-size: 18px;
+            margin-left: 22px;
+        }
+
+        p.name {
+            margin-top: -58px;
+            padding-left: 90px;
+            font-size: 17px;
+            font-weight: bold;
+            line-height: 20px;
+        }
+
+        .amet {
+            padding: 0px 30px;
+            line-height: 20px;
+        }
+
+        .R-more {
+            text-decoration: none;
+            color: gray;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        .so-space {
+            margin-left: 25px;
+            margin-top: 10px;
+            line-height: 0px;
+        }
+
+        span.posted {
+            font-size: 14px;
+            color: gray;
+            padding-left: 10px;
+        }
+
+        span.po-goo {
+            color: blue;
+            padding-left: 55px;
+        }
+
+        .buttohome {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+            border-radius: 30PX;
+        }
+
+        .homerad img {
+            border-radius: 10px;
+            width: 100%;
+            height: 720px;
+        }
+
+        .bg-index-glass {
+            width: 50%;
+            height: 600px;
+            /* margin-top: -50px; */
+            background-color: rgba(199, 193, 193, 0.01);
+            padding-top: 15rem;
+            padding-left: 8rem;
+            height: 100vh;
+            backdrop-filter: blur(20px);
+            border: 2px solid transparent;
+            background-clip: padding-box;
+            z-index: 100;
+        }
+
+        .largetext-main {
+            /* position: absolute; */
+            /* top: 500px; */
+            left: 50px;
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 65px;
+            line-height: 1.3;
+            color: #FFFFFF;
+        }
+
+
+
+        html {
+            height: 100%;
+            background: #000;
+            display: flex;
+        }
+
+        body {
+            margin: auto;
+        }
+
+        .largetext {
+            /* position: absolute; */
+            top: 714px;
+            left: 50px;
+            font-weight: 400;
+            font-size: 59px;
+            color: #FFFFFF;
+        }
+
+        .buttohome button {
+            padding: 20px 100px;
+            border-radius: 50px;
+        }
+
+        .homeh2 {
+            font-weight: 700;
+            font-size: 30px;
+            padding-bottom: 15px;
+        }
+
+        .hometext {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 35px;
+            color: #333333;
+        }
+
+        .hometext-h2 {
+            height: 40px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 42px;
+            color: #37383E;
+        }
+
+        .hometitle {
+            height: 90px;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 45px;
+            color: #37383E;
+        }
+
+        .homesub-text {
+            margin-top: 30px;
+            font-weight: 400;
+            font-size: 22px;
+            text-align: justify;
+        }
+
+        .bg-line {
+            width: 100%;
+            height: 3px;
+            background-color: #000;
+        }
+
+        .fas.fa-star {
+            color: #FBB102;
+            font-size: 18px;
+        }
+
+        .fas.fa-shopping-check {
+            font-size: 25px;
+        }
+
+        .btn {
+            background-color: #333333;
+            border-radius: 50px !important;
+            margin-left: 0px;
+            color: white;
+        }
+
+        .btn:hover {
+            background-color: black !important;
+        }
+
+        .background-img {
+            background-image: url("./imgqqq.png");
+            height: 700px;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .none {
+            margin-left: -3px;
+        }
+
+        /* --------------Home Start Page---------------*/
+        /* --------------new index Page---------------*/
+
+        .homeimage1 {
+            /* background-image: url(../images/Mask\ group\(7\).png); */
+            /* height: 913px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px; */
+        }
+
+        /* .glass3 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  max-width: 470px;
+  height: 300px;
+  top: 300px;
+  left: 300px;
+  padding: 10px;
+  border-radius: 20px;
+
+  background: linear-gradient(129.65deg, rgba(255, 255, 255, 0.3) 64.65%, rgba(217, 217, 217, 0) 164.65%);
+  box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 0.1), inset 5px 5px 10px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(22.5px);
+} */
+
+        .btn.btn-outline-dark {
+            padding-right: 60px;
+            padding-left: 60px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-radius: 30px;
+            margin-bottom: 70px;
+            display: flex;
+            align-items: center;
+        }
+
+        .googlebg {
+            background-color: #EEF1F3;
+            height: 120px;
+            width: 100;
+        }
+
+        .accordion-button:not(.collapsed) {
+            color: black;
+        }
+
+        .says {
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            padding: 20px 0px;
+        }
+
+        .btn-primary {
+            float: right;
+            padding: 4px 25px;
+            margin-right: 15px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        p.g-rating {
+            padding-left: 15px;
+            font-size: 25px;
+            font-weight: bold;
+            color: green;
+            padding-top: 30px;
+            line-height: 0px;
+        }
+
+        p.so-review {
+            padding-left: 15px;
+            line-height: 0px;
+        }
+
+        span.sm-text {
+            color: gray;
+            font-size: 12px;
+        }
+
+        span.da-re {
+            padding-left: 10px;
+            font-size: 10px;
+            color: gray;
+        }
+
+        .bi-star-fill {
+            color: rgb(235, 180, 30);
+            font-size: 15px;
+            letter-spacing: -5px;
+        }
+
+        @media screen and (max-width: 767px) {
+            .myaboutsection-card {
+                height: 600px !important;
+            }
+
+            .umi {
+                height: auto !important;
+            }
+        }
+
+
+
+
+
+
+
+
+
+        @media screen and (min-width: 1900px) {
+
+            .text-light {
+                line-height: 40px;
+
+            }
+
+            .bg-index-glass {
+                height: 100vh;
+            }
+
+            .myFeatureSection {
+                height: 100vh !important;
+            }
+
+            .myFeatureText {
+                line-height: 150px !important;
+                margin-top: 50px;
+            }
+
+            .myFeatureTextP2 {
+                font-size: 4rem;
+            }
+
+            .myShopNowBtn {
+                background-color: black !important;
+                border-radius: 84px;
+                padding-left: 5.5rem;
+                padding-right: 5.5rem;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+                border: none;
+                margin-top: 1rem;
+                font-size: 30px;
+                color: white;
+                border: 1px solid white;
+                /* transition: all; */
+            }
+
+            .ImageText {
+                top: 23% !important;
+                left: 80px !important;
+                /* margin-left: 10px; */
+            }
+
+        }
+
+
+        @media(min-width: 600px) and (max-width: 900px) {
+            .myFeatureText {
+                line-height: 70px !important;
+                margin-top: 50px;
+            }
+        }
+
+        @media(min-width: 2000px) and (max-width: 3000px) {
+            .myTransparentWhiteCardTitle {
+                font-size: 37px !important;
+                line-height: 54px !important;
+            }
+
+            .myTransparentWhiteText {
+                font-size: 25px !important;
+                line-height: 39px !important;
+            }
+
+            .myTransparentWhiteButton {
+                font-size: 27px !important;
+                line-height: 39px !important;
+                ;
+            }
+        }
+
+        @media(min-width: 1400px) and (max-width: 3000px) {
+            .homeh2 {
+                font-size: 50px !important;
+            }
+
+            .hometext {
+                font-size: 25px !important;
+            }
+
+            .readMore {}
+        }
+
+
+        @media(max-width: 991px) {
+
+            .about1>.homeh2 {
+                margin-top: 30px;
+            }
+        }
+
+        @media(max-width: 600px) {
+
+            .myFeatureSection {
+                height: 400px !important;
+            }
+
+
+
+            /* .myTransparentWhiteCard {
+                padding-top: 10px !important;
+            } */
+
+
+
+            .bg-index-glass {
+                height: 400px !important;
+            }
+
+
+
+            .myShopNowBtn {
+                padding-left: 1.0rem !important;
+                padding-right: 1.0rem !important;
+                padding-top: 0.5rem !important;
+                padding-bottom: 0.5rem !important;
+            }
+
+            .homerad img {
+                height: 300px;
+            }
+
+            .homeh2 {
+                margin-top: 40px;
+            }
+
+            .ImageText {
+                top: 23% !important;
+                left: 33px !important;
+                /* margin-left: 10px; */
+            }
+
+            .booth {
+                text-align: center;
+            }
+
+            .myfooterLogo {
+                text-align: center !important;
+                margin-bottom: 20px !important;
+            }
+
+            .mycard1 {
+                margin-top: 15px;
+            }
+
+            .profilebtn {
+                text-align: center;
+            }
+
+            .read {
+                margin-left: 11px !important;
+            }
+
+            .myAboutSection {
+                margin-top: 15px;
+            }
+
+            .hometext {
+                font-size: 20px;
+            }
+
+            .myFeatureText {
+                font-size: 5vw !important;
+                line-height: 1.6em !important;
+            }
+
+            .myFeatureTextP2 {
+                font-size: 4vw !important;
+                line-height: 1.6em !important;
+            }
+
+            /* .homerad>img {
+                height: 500px;
+            } */
+            .myCustomMargin11 {
+                margin-left: 0rem;
+                margin-right: 0rem;
+            }
+
+            .myCustomMargin {
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+            }
+
+            .about1 {
+                font-size: 30px;
+                /* padding-top: 3rem; */
+            }
+
+            .myCustomMargin2 {
+                margin-top: 3rem;
+            }
+
+            .myTransparentWhiteCard {
+                padding-left: 12px;
+            }
+
+            .g-rating {
+                margin-top: 22px;
+            }
+
+            .review {
+                margin-right: 140px;
+            }
+
+            .googlecard {
+                margin-top: 10px;
+            }
+        }
+
+        .card-gray {
+            background-color: #f3f3f3;
+            width: 100%;
+            /* height: 270px; */
+            border-radius: 10px;
+            margin-bottom: 5px;
+        }
+
+        p.icon-bg-1 {
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+            font-size: 18px;
+            margin-left: 22px;
+        }
+
+        p.icon-bg-2 span.pic-short img {
+            background-image: url("image/rock.jpg");
+            width: 50;
+            height: 50px;
+            border-radius: 50%;
+            padding-top: 10px;
+            color: white;
+            font-size: 18px;
+            margin-left: 22px;
+        }
+
+        p.icon-bg-3 {
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+            font-size: 18px;
+            margin-left: 22px;
+        }
+
+        p.icon-bg-4 {
+            background-color: brown;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+            font-size: 18px;
+            margin-left: 22px;
+        }
+
+        p.name {
+            margin-top: -58px;
+            padding-left: 90px;
+            font-size: 17px;
+            font-weight: bold;
+            line-height: 20px;
+        }
+
+        .amet {
+            padding: 0px 30px;
+            line-height: 20px;
+        }
+
+        .R-more {
+            text-decoration: none;
+            color: gray;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        .so-space {
+            margin-left: 25px;
+            margin-top: 10px;
+            line-height: 0px;
+        }
+
+        span.posted {
+            font-size: 14px;
+            color: gray;
+            padding-left: 10px;
+        }
+
+        span.po-goo {
+            color: blue;
+            padding-left: 55px;
+        }
+
+        .myFeatureSection {
+            height: 600px;
+        }
+
+        .myFeatureText {
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 5vw;
+            line-height: 100px;
+            color: #FFFFFF;
+        }
+
+        /* .myFeatureTextP2 {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 3vw;
+            line-height: 69px;
+            color: #FFFFFF;
+        } */
+
+        .ImageText {
+            position: absolute;
+            z-index: 1000;
+            top: 30%;
+            left: 5%;
+        }
+
+        .myShopNowBtn {
+            background-color: black !important;
+            border-radius: 50px;
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+            padding-top: 0.8rem;
+            padding-bottom: 0.8rem;
+            border: none;
+            margin-top: 1rem;
+            color: white;
+            border: 1px solid white;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .myShopNowBtn:hover {
+            background-color: white !important;
+            color: black;
+
+        }
+
+        .myShopNowBtn:hover a {
+            color: black !important;
+        }
+
+        .myAboutSection {
+            margin-top: 70px;
+        }
+
+        .direction {
+            padding-left: 3rem;
+            padding-right: 3rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            background: black;
+            color: white;
+            font-size: 19px;
+            font-weight: 600;
+            border-radius: 50px;
+        }
+
+        .myTransparentWhiteCard {
+            background: linear-gradient(129.65deg, rgba(255, 255, 255, 0.3) 0%, rgba(217, 217, 217, 0) 100%);
+            box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.4), inset 5px 5px 10px rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(50.5px);
+            -webkit-backdrop-filter: blur(70.5px);
+            /* Note: backdrop-filter has minimal browser support */
+            border-radius: 30px;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        .myTransparentWhiteCardTitle {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 45px;
+            color: #FFFFFF;
+        }
+
+        .myTransparentWhiteText {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 33px;
+            color: #FFFFFF;
+        }
+
+        .myTransparentWhiteButton {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 35px;
+            /* identical to box height */
+            color: #FFFFFF;
+        }
+
+        .read {
+            margin-left: 40px;
+        }
+
+        .readMore:hover a {
+            color: white !important;
+        }
+
+        .seeMoreWorkBtn {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            padding-left: 3.5rem;
+            padding-right: 3.5rem;
+            margin-bottom: 50px;
+            border-radius: 50px;
+        }
+
+        .seeMoreWorkBtn:hover a {
+            color: white !important;
+        }
+
+        .myrating {
+            color: #f3c042;
+            font-size: 12px;
+        }
+
+        .ratingText {
+            color: #000;
+            font-weight: 400;
+            font-size: 1.3rem;
+        }
+
+        .myCustomMargin {
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+
+        .myCustomMargin2 {
+            margin-top: 3rem;
+        }
+
+
+
+
+        /* Header Icon Style  */
+        .main-div {
+
+            width: 45px;
+            height: 45px;
+
+            border-radius: 50%;
+
+            background-color: white;
+        }
+
+        .icon-1 {
+            margin: 5px;
+            height: 35px;
+            padding: 5px;
+        }
+
+        .icon1span span {
+            position: relative;
+            top: -60px;
+            left: 30px;
+        }
+
+        .main-div2 {
+            margin-left: 15px;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: white;
+        }
+
+        .icon-2 {
+            margin: 5px;
+            height: 35px;
+            padding: 7px;
+        }
+
+
+
+
+        .social>a>p {
+            color: white;
+            margin: 0px;
+            z-index: 55;
+        }
+
+
+        .sidebar {
+            z-index: 5500;
+            height: auto;
+            width: 0px;
+            position: fixed;
+            text-align: center;
+            top: 60vh;
+            padding: 10px;
+
+        }
+
+        /* proccess page start  */
+        @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
+        .mainheadingtext {
+            font-family: 'Permanent Marker';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 55px;
+            line-height: 80px;
+            text-align: center;
+
+            color: #000000;
+
+        }
+
+        .section1 {
+            text-align: center;
+
+            background: #FFFFFF;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 20px;
+            box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.25);
+        }
+
+
+        .mainhead {
+
+
+
+            /* padding-left: 50px; */
+            font-family: 'Permanent Marker';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 40.1652px;
+            line-height: 59px;
+            text-align: center;
+
+            color: #000000;
+
+        }
+
+        .detailhead {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 26.5499px;
+            /* line-height: 31px; */
+            padding-right: 50px;
+
+            color: #000000;
+
+        }
+
+        .paragraphtext {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 23.0099px;
+            /* line-height: 28px; */
+            /* padding-right: 50px; */
+
+            color: #000000;
+        }
+
+        .detailtext {
+            text-align: left;
+            position: relative;
+            right: 50px
+        }
+
+        .linedottedt {
+            display: none;
+        }
+
+        .getquotebtn {
+            border-radius: 50px;
+            background-color: #333333;
+            color: white;
+            position: relative;
+            top: -10px;
+
+            width: 150px;
+            right: 10px;
+
+        }
+
+        .getquotebtn:hover {
+            background-color: black;
+            color: white;
+
+        }
+
+        @media (max-width:1250px) {
+
+            .getquotebtn {
+                position: relative;
+                /* left: 20px !important; */
+
+                width: 150px;
+                right: 70px;
+
+                /* right: 70px; */
+
+            }
+        }
+
+
+        @media (max-width:1050px) {
+            .circleimg {
+                width: 90px;
+
+            }
+
+            .getquotebtn {
+                position: relative;
+                /* left: 20px !important; */
+
+                width: 150px;
+                right: 20px;
+
+                /* right: 70px; */
+
+            }
+        }
+
+
+        @media(max-width:800px) {
+            .getquotebtn {
+                position: relative;
+                /* left: 20px !important; */
+                left: -30px;
+                width: 150px;
+                /* right: 70px; */
+
+            }
+
+            .detailtext {
+                max-width: 63%;
+                position: relative;
+                right: 10px
+            }
+
+            .circleimg {
+                width: 80px;
+            }
+
+            .paragraphtext {
+                font-size: 15px;
+            }
+        }
+
+        .mainmargin {
+            margin-top: 3rem;
+        }
+
+        @media(max-width:580px) {
+            .getquotebtn {
+                font-size: 10px;
+                height: 30px;
+                margin-top: 14px;
+                width: 100px;
+                /* right: 70px; */
+
+            }
+
+            .mainmargin {
+                margin-top: 0px !important;
+            }
+
+            .mainheadingtext {
+                font-size: 31px;
+                line-height: 66px
+            }
+
+            .detailtext {
+                max-width: 63%;
+
+                position: relative;
+                right: 0px
+            }
+
+            .circleimg {
+                width: 44px;
+                position: relative;
+                left: 10px;
+            }
+
+            .mainhead {
+                font-size: 15px;
+                position: relative;
+
+                /* right: 53px; */
+
+                top: -10px;
+            }
+
+            .mainhead span {
+                position: relative;
+                font-family: 'Permanent Marker';
+                top: -40px;
+            }
+
+            .detailhead {
+                font-size: 12px;
+
+            }
+
+            .paragraphtext {
+                font-size: 10px;
+                padding-right: 0px;
+
+            }
+
+
+            .linedottedt {
+                display: block;
+
+            }
+        }
+
+
+
+        /* blackcirle  */
+
+
+
+
+
+
+
+
+
+
+
+
+        .btn2arroe {
+            /* border: 2px solid red; */
+            border-left: 2px dashed black;
+            height: 190px;
+
+            margin-top: 190px;
+            /* z-index: -1; */
+        }
+
+
+
+        /*--Button Styles--*/
+        .btnAroow {
+            position: relative;
+            color: white;
+            text-decoration: none;
+            height: 60px;
+            width: 60px;
+            border: dashed 2px black;
+            border-radius: 175px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .btnAroow1 {
+            margin-top: 100px;
+        }
+
+        .btnAroow:before {
+            content: '';
+            position: absolute;
+            background-color: black;
+            width: 80%;
+            height: 80%;
+            z-index: 200;
+            border-radius: 50%;
+            box-shadow: 0px 0px 24px 1px rgba(224, 199, 224, 0.2);
+
+        }
+
+        /* @media(max-width:1700px) {
+            .btn2arroe {
+                height: 122px;
+                margin-top: 160px;
+            } */
+
+        @media(max-width:1100px) {
+            .btn2arroe {
+                height: 300px;
+                margin-top: 250px;
+            }
+        }
+
+        @media(max-width:900px) {
+            .btn2arroe {
+                height: 250px;
+                margin-top: 250px;
+            }
+        }
+
+
+        @media(max-width:880px) {
+            .btnfirstarrow {
+                height: 290px;
+                margin-top: 280px;
+            }
+
+
+
+            .btn2arroe {
+                height: 290px;
+                margin-top: 280px;
+            }
+        }
+
+
+        @media(max-width:570px) {
+            .btn2arroe {
+                height: 122px;
+                margin-top: 160px;
+            }
+
+            .swiper {
+                width: 350px;
+            }
+
+            .btnAroow {
+
+
+                height: 30px;
+                width: 30px;
+                border: dotted 2px black;
+                border-radius: 50px;
+
+
+
+            }
+
+        }
+
+        @media(max-width:300px) {
+            .btn2arroe {
+                height: 200px;
+                padding-right: 10px;
+                margin-top: 180px;
+            }
+
+            .btnAroow {
+
+
+                height: 25px;
+                /* margin-left: 20px; */
+                padding-left: 10px;
+                width: 25px;
+                border: dotted 2px black;
+                border-radius: 50px;
+
+
+
+
+            }
+
+            .btnlastarrow {
+                height: 150px !important;
+                padding-right: 10px;
+                margin-top: 180px;
+            }
+
+            .btnAroow:before {
+                content: '';
+
+                margin-right: 10px;
+                width: 50%;
+                height: 50%;
+
+
+            }
+        }
+
+
+        
+
+        .card22 {
+            border-radius: 4px;
+            background: #fff;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
+            transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+            padding: 14px 80px 18px 36px;
+            cursor: pointer;
+        }
+
+        .card22:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <!-- Slider main container -->
+
+
+    <!-- Header Start  -->
+
+    <section class="myHeaderBg">
+        <div class="container-fluid px-md-5 px-d-none">
+            <nav class="navbar navbar-expand-lg myNavbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><img class="image_width" src="images/image 1.png"
+                            alt="" /></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class=""><i class="fa-solid fa-bars myTogglerIcon"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                            <li class="nav-item myItemDiv">
+                                <a class="nav-link myItem grow" aria-current="page" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item myItemDiv">
+                                <a class="nav-link myItem grow" href="./Gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item myItemDiv">
+                                <a class="nav-link myItem grow" href="./blog.html">Blogs</a>
+                            </li>
+                            <li class="nav-item myItemDiv">
+                                <a class="nav-link myItem grow" href="./shop.html">Shop</a>
+                            </li>
+                            <li class="nav-item myItemDiv">
+                                <a class="nav-link myItem grow" href="./quote.html">Quote</a>
+                            </li>
+                            <li class="nav-item myItemDiv">
+                                <a class="nav-link myItem grow" href="./aboutus.html">About Us</a>
+                            </li>
+                        </ul>
+                        <!-- Icon Start  -->
+                        <div class="d-flex">
+                            <div class="main-div">
+                                <div class="icon1span">
+                                    <a href="cart.html"> <img class="icon-1 grow" src="./images/Vector.png"
+                                            alt="" /></a>
+                                    <span class="badge rounded-pill badge-notification bg-danger">2</span>
+                                </div>
+
+
+
+                            </div>
+
+                            <div class=" main-div2">
+                                <a href="./login.html"><img class="icon-2 grow" src="./images/Vector2.png" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <script src="jquery.js"></script>
+    <script>
+        $(function () {
+
+            $("#icons").load("headericon.html")
+        });
+    </script>
+
+    <section id="icons">
+
+    </section>
+    <!-- Header End  -->
+    <div class="ImageText">
+        <h1 class="text-light myFeatureText">
+            CUSTOM RESTAURANT <br> BOOTHS
+        </h1>
+        <h2 class="text-light myFeatureTextP2">In the heart Arizona</h2>
+        <a href="shop.html" style="color:white; text-decoration:none;"> <button class="btn-lg myShopNowBtn shadow">Shop
+                Now</button></a>
+
+    </div>
+
+
+    <div class="container-fluid myFeatureSection"
+        style="background-image:url('images/front-index.png'); background-size: cover;height: 100vh; background-position: center;">
+        <div class="row">
+            <div class="col-md-6 bg-index-glass">
+
+            </div>
+            <div class="col-md-6">
+
+            </div>
+        </div>
+    </div>
+    <main class="myCustomMargin">
+        <section class="myAboutSection about-booths">
+
+            <div class="container-fluid ">
+                <div class="row">
+                    <div class="col-12 col-lg-6 homerad "><img src="./images/oo2.png " class="img-fluid firstimg ">
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                        <div class="about1">
+                            <h2 class="myCustomMargin11 homeh2">ABOUT US BOOTHS</h2>
+                        </div>
+                        <p class="hometext myCustomMargin11">Enmanuel Mayo, the founder of US Booths and an upholstery
+                            expert is swaying the US furniture industry. With more than 16 years of experience
+                            decorating commercial and residential spaces, he is a crackerjack at designing world-class
+                            furniture that boosts a room’s functionality and value.
+                        </p>
+                        <p> <a href="aboutus.html" style="color:white; text-decoration:none;"><button type="button"
+                                    class=" btn btn-dark px-5 p-3 mt-4 mb-3 shadow readMore"
+                                    style="border-radius:50px;">Read More</button></a>
+                        </p>
+
+                        <h2 class="homeh2 myCustomMargin11 mt-5">EXPERIENCE</h2>
+                        <p class="hometext myCustomMargin11 ">As a dedicated, committed and skilled furniture designer,
+                            Mayo aspires to create a distinct identity in the market by offering supreme services
+                            through his US Booths venture. He uses his vision and expert insights to create designs
+                            that you love and your space demands to amplify your impact in the world.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="container-fluid myAboutSection">
+                <div class=" myaboutsection-card"
+                    style="height:100vh ; background-image: url(images/1st.png); background-size: cover; background-repeat:no-repeat; border-radius:10px;">
+                    <div class="row p-3 align-content-center align-items-center umi" style="height:100vh ;">
+                        <div class="col-md-5 col-lg-8 col-sm-1 "></div>
+                        <div class="col-md-7 col-lg-4 col-sm-11 mt-5">
+                            <div class=" p-md-4 myTransparentWhiteCard" data-aos="zoom-in" data-aos-duration="1100">
+                                <h1 class="text-light myTransparentWhiteCardTitle">THE URBAN LOUNGE LAS <br> VEGAS
+                                </h1>
+                                <p class="text-light myTransparentWhiteText">
+                                    A blue upholstered wall-lined booth for one of our favorite places, The Urban
+                                    Lounge. Paired with a black tabletop and fawn upholstered
+                                </p>
+                                <h2 class="text-light myTransparentWhiteButton">Read More</h2>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+            <div class="container-fluid myAboutSection">
+                <div class=" myaboutsection-card"
+                    style="height:100vh ; background-image: url(images/2nd.png); background-size: cover; background-repeat:no-repeat; border-radius:10px;">
+                    <div class="row p-3 align-content-center align-items-center umi" style="height:100vh ;">
+
+                        <div class="col-md-7 col-lg-4 col-sm-11 mt-5">
+                            <div class=" p-md-4 myTransparentWhiteCard" data-aos="zoom-in" data-aos-duration="1100">
+                                <h1 class="text-light myTransparentWhiteCardTitle">THE URBAN LOUNGE LAS <br> VEGAS
+                                </h1>
+                                <p class="text-light myTransparentWhiteText">
+                                    A blue upholstered wall-lined booth for one of our favorite places, The Urban
+                                    Lounge. Paired with a black tabletop and fawn upholstered
+                                </p>
+                                <h2 class="text-light myTransparentWhiteButton">Read More</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-lg-8 col-sm-1"></div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="container-fluid myAboutSection ">
+                <div class=" myaboutsection-card"
+                    style="height:100vh ; background-image: url(images/3\ .png); background-size: cover; background-repeat:no-repeat; border-radius:10px;">
+                    <div class="row p-3 align-content-center align-items-center umi" style="height:100vh ;">
+                        <div class="col-md-5 col-lg-8 col-sm-1"></div>
+
+                        <div class="col-md-7 col-lg-4 col-sm-11 mt-5">
+                            <div class=" p-md-4 myTransparentWhiteCard" data-aos="zoom-in" data-aos-duration="1100">
+                                <h1 class="text-light myTransparentWhiteCardTitle">THE URBAN LOUNGE LAS <br> VEGAS
+                                </h1>
+                                <p class="text-light myTransparentWhiteText">
+                                    A blue upholstered wall-lined booth for one of our favorite places, The Urban
+                                    Lounge. Paired with a black tabletop and fawn upholstered
+                                </p>
+                                <h2 class="text-light myTransparentWhiteButton">Read More</h2>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </section>
+
+        <div class="myAboutSection" style="text-align:center;">
+            <a href="Gallery.html" style="color:white; text-decoration:none"> <button type="button"
+                    class="btn btn-dark seeMoreWorkBtn shadow">See More Work</button></a>
+        </div>
+
+
+        <p class="says mt-3">What our customers say</p>
+
+
+        <div class="container-fluid">
+            <div class="s-gray">
+                <div class="row">
+                    <div class="col-12 col-lg-6" style="display:flex; align-items:center;">
+
+                        <div class="px-4">
+                            <div class="g-rating"><img src="./images/googlelogo.png" alt="img-fluid" height="35px"
+                                    width="100px"> <span class="ratingText">Rating</span></div>
+                            <b>5.0</b>
+                            <span>
+                                <i class="fa-solid fa-star myrating"></i>
+                                <i class="fa-solid fa-star myrating"></i>
+                                <i class="fa-solid fa-star myrating"></i>
+                                <i class="fa-solid fa-star myrating"></i>
+                                <i class="fa-solid fa-star myrating"></i>
+                            </span>
+                            <span class="da-re">14 review</span>
+
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <a href="quote.html">
+                            <div class="btn btn-primary py-2 px-3 review"
+                                style="background-color: rgb(0, 81, 255); border-radius: 0 !important;">Write a
+                                rewiew</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container  myAboutSection">
+            <div class="row">
+                <div class="swiper ">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper ">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="card-gray pulse ">
+                                <div class="fill-bo pt-4">
+                                    <p class="icon-bg-1">
+                                        <span>M</span>
+                                    <p class="name">Murad Ali<br>
+                                        <span>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <span class="da-re">16 days ago</span>
+                                        </span>
+                                    </p>
+                                    </p>
+                                </div>
+                                <p class="amet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit odio quae
+                                    asperiores, temporibus iste rem.<br>
+                                    <a href="#" class="R-more">Read more</a>
+                                </p>
+                                <p class="so-space pb-4"><img src="./images/google.png" width="40" height="40" alt="">
+                                    <span class="posted">Posted on</span><br>
+                                    <span class="po-goo">Google</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-gray googlecard">
+                                <div class="fill-bo pt-4">
+                                    <p class="icon-bg-2">
+                                        <span class="pic-short"><img style="background-color:gray;"
+                                                src="./images/rock.png" alt=""></span>
+                                    <p class="name">Roly yazir Saldivar<br>
+                                        <span>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <span class="da-re">23 days ago</span>
+                                        </span>
+                                    </p>
+                                    </p>
+                                </div>
+                                <p class="amet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit odio quae
+                                    asperiores, temporibus iste rem.<br>
+                                    <a href="#" class="R-more">Read more</a>
+                                </p>
+                                <p class="so-space pb-4"><img src="./images/google.png" width="40" height="40" alt="">
+                                    <span class="posted">Posted on</span><br>
+                                    <span class="po-goo">Google</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-gray googlecard">
+                                <div class="fill-bo pt-4">
+                                    <p class="icon-bg-3">
+                                        <span>Q</span>
+                                    <p class="name">Qween B<br>
+                                        <span>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <span class="da-re">6 months ago</span>
+                                        </span>
+                                    </p>
+                                    </p>
+                                </div>
+                                <p class="amet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit odio quae
+                                    asperiores, temporibus iste rem.<br>
+                                    <a href="#" class="R-more">Read more</a>
+                                </p>
+                                <p class="so-space pb-4"><img src="./images/google.png" width="40" height="40" alt="">
+                                    <span class="posted">Posted on</span><br>
+                                    <span class="po-goo">Google</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-gray googlecard">
+                                <div class="fill-bo pt-4">
+                                    <p class="icon-bg-4">
+                                        <span>F</span>
+                                    <p class="name">Fresh Cuttz<br>
+                                        <span>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <span class="da-re">16 days ago</span>
+                                        </span>
+                                    </p>
+                                    </p>
+                                </div>
+                                <p class="amet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit odio quae
+                                    asperiores, temporibus iste rem.<br>
+                                    <a href="#" class="R-more">Read more</a>
+                                </p>
+                                <p class="so-space pb-4"><img src="./images/google.png" width="40" height="40" alt="">
+                                    <span class="posted">Posted on</span><br>
+                                    <span class="po-goo">Google</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-gray">
+                                <div class="fill-bo pt-4">
+                                    <p class="icon-bg-1">
+                                        <span>M</span>
+                                    <p class="name">Murad Ali<br>
+                                        <span>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <span class="da-re">16 days ago</span>
+                                        </span>
+                                    </p>
+                                    </p>
+                                </div>
+                                <p class="amet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit odio quae
+                                    asperiores, temporibus iste rem.<br>
+                                    <a href="#" class="R-more">Read more</a>
+                                </p>
+                                <p class="so-space pb-4"><img src="./images/google.png" width="40" height="40" alt="">
+                                    <span class="posted">Posted on</span><br>
+                                    <span class="po-goo">Google</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-gray googlecard">
+                                <div class="fill-bo pt-4">
+                                    <p class="icon-bg-2">
+                                        <span class="pic-short"><img style="background-color:gray;"
+                                                src="./images/rock.png" alt=""></span>
+                                    <p class="name">Roly yazir Saldivar<br>
+                                        <span>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <span class="da-re">23 days ago</span>
+                                        </span>
+                                    </p>
+                                    </p>
+                                </div>
+                                <p class="amet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit odio quae
+                                    asperiores, temporibus iste rem.<br>
+                                    <a href="#" class="R-more">Read more</a>
+                                </p>
+                                <p class="so-space pb-4"><img src="./images/google.png" width="40" height="40" alt="">
+                                    <span class="posted">Posted on</span><br>
+                                    <span class="po-goo">Google</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-gray">
+                                <div class="fill-bo pt-4">
+                                    <p class="icon-bg-1">
+                                        <span>M</span>
+                                    <p class="name">Murad Ali<br>
+                                        <span>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <span class="da-re">16 days ago</span>
+                                        </span>
+                                    </p>
+                                    </p>
+                                </div>
+                                <p class="amet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit odio quae
+                                    asperiores, temporibus iste rem.<br>
+                                    <a href="#" class="R-more">Read more</a>
+                                </p>
+                                <p class="so-space pb-4"><img src="./images/google.png" width="40" height="40" alt="">
+                                    <span class="posted">Posted on</span><br>
+                                    <span class="po-goo">Google</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-gray googlecard">
+                                <div class="fill-bo pt-4">
+                                    <p class="icon-bg-2">
+                                        <span class="pic-short"><img style="background-color:gray;"
+                                                src="./images/rock.png" alt=""></span>
+                                    <p class="name">Roly yazir Saldivar<br>
+                                        <span>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <span class="da-re">23 days ago</span>
+                                        </span>
+                                    </p>
+                                    </p>
+                                </div>
+                                <p class="amet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit odio quae
+                                    asperiores, temporibus iste rem.<br>
+                                    <a href="#" class="R-more">Read more</a>
+                                </p>
+                                <p class="so-space pb-4"><img src="./images/google.png" width="40" height="40" alt="">
+                                    <span class="posted">Posted on</span><br>
+                                    <span class="po-goo">Google</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-gray googlecard">
+                                <div class="fill-bo pt-4">
+                                    <p class="icon-bg-3">
+                                        <span>Q</span>
+                                    <p class="name">Qween B<br>
+                                        <span>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <span class="da-re">6 months ago</span>
+                                        </span>
+                                    </p>
+                                    </p>
+                                </div>
+                                <p class="amet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit odio quae
+                                    asperiores, temporibus iste rem.<br>
+                                    <a href="#" class="R-more">Read more</a>
+                                </p>
+                                <p class="so-space pb-4"><img src="./images/google.png" width="40" height="40" alt="">
+                                    <span class="posted">Posted on</span><br>
+                                    <span class="po-goo">Google</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-gray googlecard">
+                                <div class="fill-bo pt-4">
+                                    <p class="icon-bg-4">
+                                        <span>F</span>
+                                    <p class="name">Fresh Cuttz<br>
+                                        <span>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <i class="fa-solid fa-star myrating"></i>
+                                            <span class="da-re">16 days ago</span>
+                                        </span>
+                                    </p>
+                                    </p>
+                                </div>
+
+                                <p class="amet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit odio quae
+                                    asperiores, temporibus iste rem.<br>
+                                    <a href="#" class="R-more">Read more</a>
+                                </p>
+                                <p class="so-space pb-4"><img src="./images/google.png" width="40" height="40" alt="">
+                                    <span class="posted">Posted on</span><br>
+                                    <span class="po-goo">Google</span>
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- If we need pagination -->
+                    <!-- <div class="swiper-pagination"></div> -->
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev" width:10px;></div>
+                    <div class="swiper-button-next" width:10px;></div>
+
+                    <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+
+                <script>
+                    const swiper = new Swiper('.swiper', {
+                        // Optional parameters
+                        direction: 'horizontal',
+                        loop: true,
+
+                        // If we need pagination
+                        pagination: {
+                            el: '.swiper-pagination',
+                            type: 'bullets',
+                        },
+
+
+                        // Navigation arrows
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+
+                        // And if we need scrollbar
+                        // scrollbar: {
+                        //     el: '.swiper-scrollbar',
+                        // },
+
+
+                        // Default parameters
+                        // slidesPerView: 4,
+                        // spaceBetween: 10,
+                        // Responsive breakpoints
+                        // breakpoints: {
+                        // when window width is >= 320px
+                        // 320: {
+                        //     slidesPerView: 1,
+                        //     spaceBetween: 100,
+                        // },
+                        // when window width is >= 480px
+                        // 480: {
+                        //     slidesPerView: 2,
+                        //     spaceBetween: 50
+                        // },
+                        // when window width is >= 640px
+                        //         640: {
+                        //             slidesPerView: 3,
+                        //             spaceBetween: 33
+                        //         },
+                        //         992: {
+                        //             slidesPerView: 4,
+                        //             spaceBetween: 0
+                        //         },
+                        //         1200: {
+                        //             slidesPerView: 4,
+                        //             spaceBetween: 0
+                        //         }
+                        //     }
+
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                        // init: false,
+
+                        breakpoints: {
+                            440: {
+                                slidesPerView: 1,
+                                spaceBetween: 10,
+                            },
+                            640: {
+                                slidesPerView: 1,
+                                spaceBetween: 20,
+                            },
+                            768: {
+                                slidesPerView: 2,
+                                spaceBetween: 20,
+                            },
+                            1024: {
+                                slidesPerView: 3,
+                                spaceBetween: 30,
+                            },
+                            1300: {
+                                slidesPerView: 4,
+                                spaceBetween: 10,
+                            },
+                        }
+                    });
+
+
+
+
+                </script>
+
+
+
+
+
+
+            </div>
+        </div>
+
+        <div class="container-fuid myAboutSection">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- proocces section start  -->
+                    <div class="section1">
+                        <div class="container-fluid">
+                            <h1 class="mainheadingtext">7 STEP PROCESS</h1>
+                            <div class="row mainmargin">
+
+                                <div class="col-lg-2 col-md-2 col-sm-3 col-1">
+                                    <h1 class="mainhead">Step <br>
+                                        <span>01</span>
+                                    </h1>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-3 col-3  ">
+                                    <ul class="btnblackarrowhead">
+                                        <li class="btnAroow"> <span class="btn2arroe btnfirstarrow"></span></li>
+
+
+                                    </ul>
+                                    <!-- <img src="./images/Group.png" alt=""  class="circleimg"> -->
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-8 detailtext">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <h4 class="detailhead">Request a Quote online </h4>
+                                        </div>
+                                        <div>
+                                            <a href="quote.html">
+                                                <p class=" profilebtn"><button type="button"
+                                                        class="bg-dark rounded-pill getquotebtn px-3 py-2 text-light shadow"
+                                                        style="border:none ;">Get a
+                                                        Quote</button></p>
+                                            </a>
+                                            <!-- <a href="quote.html">
+                                                <button type="button" class="btn btn-lg getquotebtn shadow">Get a
+                                                    Quote</button>
+                                            </a> -->
+                                        </div>
+                                    </div>
+                                    <p class="paragraphtext">Once you have an idea of what you
+                                        would like for your space, the first thing
+                                        you need to do is request a quote on our website.
+                                        www.usbooths.com/quotes</p>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <div class="col-lg-2 col-md-2 col-sm-3 col-1">
+                                    <h1 class="mainhead">Step <br>
+                                        <span>02</span>
+                                    </h1>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-3 col-3">
+                                    <ul class="btnblackarrowhead">
+
+                                        <li class="btnAroow "> <span class="btn2arroe"></span></li>
+
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-8 detailtext">
+                                    <h4 class="detailhead">Approve The Quote</h4>
+                                    <p class="paragraphtext">After the information has been reviewed, our team
+                                        will either ask for additional information or send
+                                        you a final quote through email for you to revise
+                                        and approve.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <div class="col-lg-2 col-md-2 col-sm-3 col-1">
+                                    <h1 class="mainhead">Step <br>
+                                        <span>03</span>
+                                    </h1>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-3 col-3 circledata">
+                                    <ul class="btnblackarrowhead">
+
+                                        <li class="btnAroow "> <span class="btn2arroe"></span></li>
+
+                                    </ul>
+                                    <!-- <img src="./images/Group.png" alt=""  class="circleimg"> -->
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-8 detailtext">
+                                    <h4 class="detailhead">Invoice</h4>
+                                    <p class="paragraphtext">Upon quote approval, the system will
+                                        automatically send an invoice with a
+                                        50% fee for you to pay as a security deposit.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <div class="col-lg-2 col-md-2 col-sm-3 col-1">
+                                    <h1 class="mainhead">Step <br>
+                                        <span>04</span>
+                                    </h1>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-3 col-3 circledata">
+                                    <ul class="btnblackarrowhead">
+
+                                        <li class="btnAroow "> <span class="btn2arroe"></span></li>
+
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-8 detailtext">
+                                    <h4 class="detailhead">Swatch</h4>
+                                    <p class="paragraphtext">When payment has been received we start the
+                                        process by demonstrating a variety of swatches
+                                        that you can choose from.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <div class="col-lg-2 col-md-2 col-sm-3 col-1">
+                                    <h1 class="mainhead">Step <br>
+                                        <span>05</span>
+                                    </h1>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-3 col-3 circledata">
+                                    <ul class="btnblackarrowhead">
+
+                                        <li class="btnAroow "> <span class="btn2arroe"></span></li>
+
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-8 detailtext">
+                                    <h4 class="detailhead">3D Design/Virtual Reality</h4>
+                                    <p class="paragraphtext">We use on point technology to create hyper-realistic
+                                        renders in which you are able to pre-visualize
+                                        your setting with the design giving you
+                                        the opportunity to envision it and modify.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <div class="col-lg-2 col-md-2 col-sm-3 col-1">
+                                    <h1 class="mainhead">Step <br>
+                                        <span>06</span>
+                                    </h1>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-3 col-3 circledata">
+                                    <ul class="btnblackarrowhead">
+
+                                        <li class="btnAroow"> <span class="btn2arroe btnlastarrow"></span></li>
+
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-8 detailtext">
+                                    <h4 class="detailhead">Manufacturing Process</h4>
+                                    <p class="paragraphtext">We use CNC wood machine to carve the design and
+                                        produce the furniture just the way you want it. Once the wood is ready, our
+                                        upholstery...</p>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <div class="col-lg-2 col-md-2 col-sm-3 col-1">
+                                    <h1 class="mainhead">Step <br>
+                                        <span>07</span>
+                                    </h1>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-3 col-3 circledata">
+                                    <ul class="btnblackarrowhead">
+
+                                        <li class="btnAroow"></span></li>
+
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-8 detailtext">
+                                    <h4 class="detailhead">Order Completion</h4>
+                                    <p class="paragraphtext">Finally, when the order is complete we send another
+                                        email with photos and videos. Once you approve and pay the
+                                        remaining 50%, we ship the order to you.</p>
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+                    <!-- proccess section end  -->
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid  myAboutSection">
+            <h4>Latest Articles <span style="float: right; margin-right:15px;"> <a href="blog.html"
+                        style="color:black; text-decoration: none;">View All</a> <i
+                        class="fa-solid fa-arrow-right-long"></i></h4>
+            <div class="row mt-5">
+                <div class="col-md-6 col-lg-4 col-sm-12 mt-2">
+                    <div class="card myArticleCard shadow" style="border:none;">
+                        <img src="./images/col04.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <span class="d-flex"><a href="blog.html" style="text-decoration:none;">Spend Management</a>
+                                <ul>
+                                    <li>3 min red</li>
+                                </ul>
+                            </span>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the typesetting industry. Lor .<a
+                                    href="blog.html" style="text-decoration:none;"> Read
+                                    More</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-sm-12 mt-2">
+                    <div class="card myArticleCard mycard1 shadow" style="border:none;">
+                        <img src="./images/col04.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <span class="d-flex"><a href="blog.html" style="text-decoration:none;">Spend Management</a>
+                                <ul>
+                                    <li>3 min red</li>
+                                </ul>
+                            </span>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the typesetting industry. Lor .<a
+                                    href="blog.html" style="text-decoration:none;"> Read
+                                    More</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 mt-2 col-lg-4 col-sm-12 mt-2">
+                    <div class="card myArticleCard mycard1 shadow" style="border:none;">
+                        <img src="./images/col04.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <span class="d-flex"><a href="blog.html" style="text-decoration:none;">Spend Management</a>
+                                <ul>
+                                    <li>3 min red</li>
+                                </ul>
+                            </span>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the typesetting industry. Lor .<a
+                                    href="blog.html" style="text-decoration:none;"> Read
+                                    More</a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row mt-3">
+
+                <div class="col-md-6 col-lg-4 mt-2 col-sm-12">
+                    <div class="card myArticleCard mycard1 shadow" style="border:none;">
+                        <img src="./images/col04.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <span class="d-flex"><a href="blog.html" style="text-decoration:none;">Spend Management</a>
+                                <ul>
+                                    <li>3 min red</li>
+                                </ul>
+                            </span>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the typesetting industry. Lor .<a
+                                    href="blog.html" style="text-decoration:none;"> Read
+                                    More</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mt-2 col-sm-12">
+                    <div class="card myArticleCard mycard1 shadow" style="border:none;">
+                        <img src="./images/col04.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <span class="d-flex"><a href="blog.html" style="text-decoration:none;">Spend Management</a>
+                                <ul>
+                                    <li>3 min red</li>
+                                </ul>
+                            </span>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the typesetting industry. Lor .<a
+                                    href="blog.html" style="text-decoration:none;"> Read
+                                    More</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 mt-2 col-lg-4 col-sm-12">
+                    <div class="card myArticleCard mycard1 shadow" style="border:none;">
+                        <img src="./images/col04.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p><span><a href="blog.html" style="text-decoration:none;">Spend Management </a> </span> 3
+                                min red
+                            </p>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the typesetting industry. Lor .<a
+                                    href="blog.html" style="text-decoration:none;"> Read
+                                    More</a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="container ">
+            <div class="mt-5" style="text-align: center;">
+                <h1>Let’s answer those FAQs</h1>
+
+            </div>
+
+            <div class="accordion accordion_custom accordion-flush custom_accordian mt-5" id="accordionFlushExample">
+
+                <div class="accordion-item accordion_item_b mb-4 shadow" onclick="show()" style=" border-radius:45px ;">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+
+                        <button class="accordion-button collapsed" style="background-color: #F1F4FB;" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                            aria-controls="flush-collapseTwo">
+
+                            <span class="accordian_heading"><img src="images/Group 16.png" class="me-2 mt-1"
+                                    style="width:30px ;" alt="">
+                                <p style="display:inline">What happens if my products are damaged?</p>
+                            </span>
+                            <img class="myAccordion" src="images/Group 13 (1).png" alt="" width="57px">
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"
+                            style="background-color: #F1F4FB; border-bottom-left-radius: 50px; border-bottom-right-radius: 50px;">
+                            Placeholder content
+                            for
+                            this
+                            accordion, which is intended to
+                            demonstrate
+                            the
+                            <code>.accordion-flush</code> class. This is the second item's accordion body. Let's
+                            imagine this
+                            being
+                            filled
+                            with some actual content.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item accordion_item_b mb-4 shadow" onclick="show1()" style="border-radius:45px ;">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+
+                        <button class="accordion-button collapsed" style="background-color: #F1F4FB;" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false"
+                            aria-controls="flush-collapse3">
+
+                            <span class="accordian_heading"><img src="images/Group 16.png" class="me-2 mt-1"
+                                    style="width:30px ;" alt="">
+                                <p style="display:inline">What happens if my products are damaged?</p>
+                            </span>
+                            <img class="ai2" src="images/Group 13 (1).png" alt="" width="57px">
+                        </button>
+                    </h2>
+                    <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"
+                            style="background-color: #F1F4FB; border-bottom-left-radius: 50px; border-bottom-right-radius: 50px;">
+                            Placeholder content
+                            for
+                            this
+                            accordion, which is intended to
+                            demonstrate
+                            the
+                            <code>.accordion-flush</code> class. This is the second item's accordion body. Let's
+                            imagine this
+                            being
+                            filled
+                            with some actual content.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item accordion_item_b mb-4 shadow" onclick="show2()" style="border-radius:45px ;">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+
+                        <button class="accordion-button collapsed" style="background-color: #F1F4FB;" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false"
+                            aria-controls="flush-collapse4">
+
+                            <span class="accordian_heading"><img src="images/Group 16.png" class="me-2 mt-1"
+                                    style="width:30px ;" alt="">
+                                <p style="display:inline">What happens if my products are damaged?</p>
+                            </span>
+                            <img class="ai3" src="images/Group 13 (1).png" alt="" width="57px">
+                        </button>
+                    </h2>
+                    <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"
+                            style="background-color: #F1F4FB; border-bottom-left-radius: 50px; border-bottom-right-radius: 50px;">
+                            Placeholder content
+                            for
+                            this
+                            accordion, which is intended to
+                            demonstrate
+                            the
+                            <code>.accordion-flush</code> class. This is the second item's accordion body. Let's
+                            imagine this
+                            being
+                            filled
+                            with some actual content.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item accordion_item_b mb-4 shadow" onclick="show3()" style="border-radius:45px ;">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+
+                        <button class="accordion-button collapsed" style="background-color: #F1F4FB;" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false"
+                            aria-controls="flush-collapse5">
+
+                            <span class="accordian_heading"><img src="images/Group 16.png" class="me-2 mt-1"
+                                    style="width:30px ;" alt="">
+                                <p style="display:inline">What happens if my products are damaged?</p>
+                            </span>
+                            <img class="ai4" src="images/Group 13 (1).png" alt="" width="57px">
+                        </button>
+                    </h2>
+                    <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"
+                            style="background-color: #F1F4FB; border-bottom-left-radius: 50px; border-bottom-right-radius: 50px;">
+                            Placeholder content
+                            for
+                            this
+                            accordion, which is intended to
+                            demonstrate
+                            the
+                            <code>.accordion-flush</code> class. This is the second item's accordion body. Let's
+                            imagine this
+                            being
+                            filled
+                            with some actual content.
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="container-fluid myAboutSection">
+            <div class="row">
+                <div class="col-md-6 g-4">
+                    <div class="b-gray px-3 pt-2">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-3 col-lg-2">
+                                <p class="only-logo">
+                                    <img src="./images/image 6.png" width="68px" height="68px" alt="" />
+                                </p>
+                            </div>
+                            <div class="col-md-6  col-lg-6  col-sm-5">
+                                <p class="booth">
+                                    Us booths<br /><span class="ago" style="font-weight:400; margin-top:15px;">462
+                                        followers</span>
+                                </p>
+                            </div>
+
+                            <div class="col-md-12 col-lg-4 col-sm-4 mt-4">
+                                <a href="https://www.instagram.com/">
+                                    <p class=" profilebtn"><button type="button"
+                                            class="bg-dark rounded-pill px-3 py-2 text-light shadow "
+                                            style="border:none ;">View
+                                            profile</button></p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2 g-0">
+                        <script src="https://s.electricblaze.com/widget.js" defer></script>
+                        <div class="electricblaze-id-2Uhx77m"></div>
+                    </div>
+                </div>
+                <div class="col-md-6 g-4">
+                    <div class="b-gray px-3 pt-2">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-3 col-lg-2">
+                                <p class="only-logo">
+                                    <img src="./images/Mask group(6).png" width="68px" height="68px" alt="" />
+                                </p>
+                            </div>
+                            <div class="col-md-6  col-lg-6  col-sm-5">
+                                <p class="booth">
+                                    Us booths<br /><span class="ago" style="font-weight:400; margin-top:15px;">462
+                                        followers</span>
+                                </p>
+                            </div>
+                            <div class="col-md-12 col-lg-4 col-sm-4  mt-4">
+                                <a href="https://www.instagram.com/">
+                                    <p class=" profilebtn"><button type="button"
+                                            class="bg-dark rounded-pill px-3 py-2 text-light shadow"
+                                            style="border:none ;">View
+                                            profile</button></p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2 g-0">
+                        <script src="https://s.electricblaze.com/widget.js" defer></script>
+                        <div class="electricblaze-id-2Uhx77m"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </section>
+
+
+        <div class="container-fluid myAboutSection">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13284.860694211584!2d73.0811415!3d33.6515861!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5a416c48fd9dbf95!2sMARIAM%20MARRIAGE%20HALL!5e0!3m2!1sen!2s!4v1666182108778!5m2!1sen!2s"
+                width="100%" height="450" style="border-radius: 20px; border: 0px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <div class="row ">
+                <div class="myAboutSection" style="text-align:center;">
+                    <a href="https://maps.google.com/maps?ll=33.651586,73.081142&z=14&t=m&hl=en&gl=US&mapclient=embed&cid=6503598397648125845"
+                        style="color:white; text-decoration:none"> <button type="button"
+                            class="btn btn-dark seeMoreWorkBtn shadow">Get
+                            Our Direction</button></a>
+                </div>
+
+
+            </div>
+
+        </div>
+    </main>
+
+
+
+
+
+    <section class="myFooterBg  myAboutSection">
+        <div class="container myFootContainer">
+            <div class="row myFooterRow1">
+                <div class="col-md-6">
+                    <div class="myfooterLogo">
+                        <a href="index.html"><img class="image_width" src="./images/image 1.png" alt="" /></a>
+
+                    </div>
+                </div>
+                <div class="col-md-6 mySubColumn">
+                    <div class="buttonIn">
+                        <form>
+                            <input type="text" placeholder="Enter your E-mail" style="border: none;"
+                                class="mySubscribeInput" />
+                            <button class="mySubscribeButton">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 FooterLeft">
+                    <p class="myContactText">CONTACT US</p>
+                    <br>
+                    <div class="d-flex myList">
+                        <div class="myFooterIcon"><img class="myFooterIconStyle" src="./images/icons/loc.png" alt="" />
+                        </div><span class="text-white myFooterIconText"> <a style="color:white; text-decoration: none;"
+                                href="#">3432 W
+                                Wilshire Dr Ste 6,
+                                Phoenix, AZ 85009</a> </span>
+                    </div>
+                    <div class="d-flex myList">
+                        <div class="myFooterIcon"><img class="myFooterIconStyle" src="./images/icons/call.png" alt="" />
+                        </div>
+                        <span class="text-white myFooterIconText"> <a href="tel:6232620699"
+                                style="color:white; text-decoration: none;">(623) 262-0699</a> </span>
+                    </div>
+                    <div class="d-flex myList">
+                        <div class="myFooterIcon"><img class="myFooterIconStyle" src="./images/icons/message.png"
+                                alt="" /></div>
+                        <span class="text-white myFooterIconText"> <a href="mailto:info@usbooths.com"
+                                style="color:white; text-decoration: none;">info@usbooths.com</a> </span>
+                    </div>
+                    <br>
+
+                    <div class="social-content">
+                        <ul>
+                            <li>
+                                <a href="https://www.instagram.com/">
+                                    <div class="myFooterIcon2"><img class="myFooterIconStyle"
+                                            src="./images/icons/insta.png" alt=""></div>
+                                </a>
+
+                            </li>
+                            <li>
+
+
+                                <a href="https://www.facebook.com">
+                                    <div class="myFooterIcon2">
+                                        <img class="myFooterIconStyle" src="./images/icons/fb.png" alt="">
+                                    </div>
+                                </a>
+
+
+                            </li>
+
+                            <li>
+                                <a href="https://www.linkedin.com">
+                                    <div class="myFooterIcon2"><img class="myFooterIconStyle"
+                                            src="./images/icons/lin.png" alt=""></div>
+                                </a>
+
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 FooterRight">
+                    <p class="myQuickLinksText">Quick Links</p>
+                    <br>
+                    <h6 class="myQuickLinks"><a href="shop.html" style="color:white; text-decoration: none;">Shop</a>
+                    </h6>
+                    <hr class="myHr">
+                    <h6 class="myQuickLinks"><a href="Gallery.html"
+                            style="color:white; text-decoration: none;">Gallery</a></h6>
+                    <hr class="myHr">
+                    <h6 class="myQuickLinks"><a href="quote.html" style="color:white; text-decoration: none;">Quote</a>
+                    </h6>
+                    <hr class="myHr">
+                    <h6 class="myQuickLinks"><a href="aboutus.html" style="color:white; text-decoration: none;">About
+                            Us</a></h6>
+                </div>
+            </div>
+        </div>
+        <hr class="myHr" />
+        <div class="myfooterBottom">
+            <h6 class="myfooterBottomText">
+                © 2022 US BOOTHS LLC. ALL RIGHTS RESERVED
+            </h6>
+            <h6 class="myfooterBottomText">
+                Terms and conditions - Cookies policy - Privacy policy
+            </h6>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function show() {
+            var div = document.querySelector('.myAccordion');
+
+            if (div.classList.contains('check')) {
+                div.classList.remove('check');
+            } else {
+                div.classList.add('check');
+            } // Get element from DOM
+        }
+
+        function show1() {
+
+            var div = document.querySelector('.ai2');
+
+
+            if (div.classList.contains('check')) {
+                div.classList.remove('check');
+            } else {
+                div.classList.add('check');
+            } // Get element from DOM
+        }
+
+        function show2() {
+
+            var div = document.querySelector('.ai3');
+
+
+            if (div.classList.contains('check')) {
+                div.classList.remove('check');
+            } else {
+                div.classList.add('check');
+            } // Get element from DOM
+        }
+
+        function show3() {
+            var div = document.querySelector('.ai4');
+
+            if (div.classList.contains('check')) {
+                div.classList.remove('check');
+            } else {
+                div.classList.add('check');
+            } // Get element from DOM
+        }
+
+
+
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

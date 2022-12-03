@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Playfair Display");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Inter");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+* {
+  font-family: "Poppins";
+}
+body {
+  margin: 0;
+}
+
+.myTogglerIcon {
+  color: #ffffff;
+}
+
+.navbar-toggler {
+  border: 1px solid white !important;
+}
+
+.myCallUsBtn {
+  background-color: white !important;
+  border-radius: 50px;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: 1px solid white;
+  color: black;
+}
+
+.myCallUsBtn:hover {
+  background-color: black !important;
+  color: white;
+}
+
+.myItem {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.myItem:hover {
+  color: #ffffff;
+}
+
+ 
+
+.myItemDiv {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .myNavbar {
+    padding-bottom: 20px;
+  }
+
+  .myHeaderBg {
+    background-color: black !important;
+  }
+
+  .myCallUsBtnDiv {
+    padding: 15px;
+  }
+
+  .myItem {
+    padding: 15px;
+  }
+
+  .myfooterLogo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .mySubscribeInput {
+    padding-right: 150px;
+  }
+}
+
+.myfooterBottom {
+  padding: 20px;
+}
+
+.myfooterBottomText {
+  text-align: center;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.myFooterBg {
+  background-color: #333333;
+}
+
+.myFootContainer {
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+
+.myHr {
+  color: #808080;
+}
+
+.myHeaderBg {
+  background-color: transparent;
+  width: 100%;
+  position: absolute;
+  z-index: 3000;
+}
+
+.buttonIn {
+  width: 100%;
+  position: relative;
+}
+
+.mySubscribeInput {
+  margin: 0px;
+  padding: 30px;
+  width: 100%;
+  outline: none;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.mySubscribeButton {
+  position: absolute;
+  border-radius: 50px;
+  right: 10px;
+  top: 5px;
+  bottom: 10px;
+  z-index: 2;
+  border: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 50px;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  transform: translateX(2px);
+}
+.mySubColumn {
+  display: flex;
+  align-items: center;
+}
+
+.myFooterRow1 {
+  margin-bottom: 4rem;
+}
+
+.myFooterIcon {
+  margin-right: 35px;
+}
+
+.myList {
+  margin-bottom: 1.5rem;
+}
+
+.myFooterIconText {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.myContactText {
+  padding-left: 5px;
+  color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 54px;
+}
+
+.myFooterIconStyle {
+  width: 37px;
+}
+
+.nav-link:focus {
+  color: white !important;
+}
+
+.myFooterIcon2 {
+  margin-right: 20px;
+}
+
+.social-content > ul {
+  list-style-type: none;
+  padding-left: 0px;
+  display: flex;
+}
+
+.myQuickLinksText {
+  padding-left: 5px;
+  color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 54px;
+}
+
+.myQuickLinks {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  color: #ffffff;
+}
+
+.FooterLeft {
+  padding: 20px;
+}
+
+.FooterRight {
+  padding: 20px;
+}

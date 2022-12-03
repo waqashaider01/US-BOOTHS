@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="css/style2.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"> -->
+
+  <!-- Bootstrap CSS -->
+
+  <!-- Style -->
+  <link rel="stylesheet" href="./css/about.css" />
+
+  <link rel="icon" type="image/x-icon" class="image_width" href="images/image 1.png">
+  <title>About Us</title>
+
+  <style>
+    .btn-u {
+      width: fit-content;
+    }
+
+    .myVector {
+      height: 32rem;
+    }
+
+    .logo-side-btn {
+      float: right !important;
+      margin-top: auto;
+
+      margin-bottom: auto;
+    }
+
+    .icon-img {
+      float: right;
+    }
+
+    .logo-side-btn-1 {
+      width: 30%;
+
+      padding-top: 15px;
+    }
+
+
+    .click-1 {
+      background: url(images/p1.png);
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 40vh;
+    }
+
+    .click-2 {
+      background: url(images/p33.png);
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 40vh;
+    }
+
+    .click-3 {
+      background: url(images/imgae/p77.png);
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 40vh;
+    }
+
+    .click-4 {
+      background: linear-gradient(rgba(8, 8, 8, 0.6), rgba(8, 8, 8, 0.6)),
+        url(images/imgae/p44.png);
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 40vh;
+      font-size: 25px;
+      font-weight: bold;
+      display: flex;
+      color: white;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    @media only screen and (max-width: 800px) {
+      .logo-side-btn {
+        padding-top: 0px;
+        height: auto;
+        font-size: medium;
+      }
+
+      .myfooterLogo {
+        text-align: center !important;
+        margin-bottom: 20px !important;
+      }
+
+      .hero {
+        height: 500px;
+      }
+
+
+
+      .myVector {
+        height: 20rem;
+      }
+
+      .myVectorCol {
+        text-align: center;
+      }
+
+    }
+
+    .content-u {
+      width: 67%;
+    }
+
+    .booth {
+      margin-left: 16px;
+    }
+
+    @media (max-width: 767) {
+      .second-coloumn {
+        padding-left: 0px !important;
+      }
+
+
+    }
+
+
+
+    /* footer CSS */
+    @media (max-width: 560px) {
+      .btn.btn-warning.btn-lg {
+        width: 120px;
+      }
+    }
+
+    .btn.btn-warning.btn-lg {
+      float: right;
+      margin-top: -58px;
+      margin-right: 9px;
+      border-radius: 30px;
+      /* padding-left: 35px;
+padding-right: 35px; */
+      padding-top: 12px;
+      padding-bottom: 12px;
+      width: 156px;
+    }
+
+    /* .social-content ul li {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 10px;
+      color: white;
+    } */
+
+    .responsive_design {
+      margin-left: 0% !important;
+      margin-right: 0% !important;
+    }
+
+    /* .social-content li {
+      padding: 10px;
+    } */
+
+    #foot {
+      height: 60px;
+      border-radius: 30px;
+    }
+
+    .responsive-design {
+      margin-left: 0% !important;
+      margin-right: 0% !important;
+    }
+
+
+    .btn.btn-warning.btn-lg {
+      float: right;
+      margin-top: -58px;
+      margin-right: 9px;
+      border-radius: 30px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      width: 156px;
+    }
+
+    control {
+      color: white;
+      font-size: 25px;
+    }
+
+    .control {
+      color: white;
+      font-size: 25px;
+      font-weight: 232px;
+    }
+
+    .s-store {
+      color: white;
+      font-size: 20px;
+      font-weight: 400;
+      border-bottom: 1px solid lightgray;
+      width: 80%;
+      line-height: 40px;
+    }
+
+    /* Header Icon Style  */
+    .main-div {
+
+      width: 45px;
+      height: 45px;
+
+      border-radius: 50%;
+
+      background-color: white;
+    }
+
+    .icon-1 {
+      margin: 5px;
+      height: 35px;
+      padding: 5px;
+    }
+
+    .icon1span span {
+      position: relative;
+      top: -60px;
+      left: 30px;
+    }
+
+    .main-div2 {
+      margin-left: 15px;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background-color: white;
+    }
+
+    .icon-2 {
+      margin: 5px;
+      height: 35px;
+      padding: 7px;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="myHeaderBg">
+    <div class="container-fluid px-md-5 px-d-none">
+      <nav class="navbar navbar-expand-lg myNavbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img class="image_width" src="images/image 1.png" alt="" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class=""><i class="fa-solid fa-bars myTogglerIcon"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item myItemDiv">
+                <a class="nav-link myItem  grow" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item myItemDiv">
+                <a class="nav-link myItem grow" href="./Gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item myItemDiv">
+                <a class="nav-link myItem grow" href="./blog.html">Blogs</a>
+              </li>
+              <li class="nav-item myItemDiv">
+                <a class="nav-link myItem grow" href="./shop.html">Shop</a>
+              </li>
+              <li class="nav-item myItemDiv">
+                <a class="nav-link myItem grow" href="./quote.html">Quote</a>
+              </li>
+              <li class="nav-item myItemDiv">
+                <a class="nav-link myItem grow" href="./aboutus.html">About Us</a>
+              </li>
+            </ul>
+            <!-- Icon Start  -->
+            <div class="d-flex">
+              <div class="main-div">
+                <div class="icon1span">
+                  <a href="cart.html"> <img class="icon-1 grow" src="./images/Vector.png" alt="" /></a>
+                  <span class="badge rounded-pill badge-notification bg-danger">2</span>
+                </div>
+
+
+
+              </div>
+
+              <div class=" main-div2">
+                <a href="./login.html"><img class="icon-2 grow" src="./images/Vector2.png" alt="" /></a>
+              </div>
+            </div>
+            <!-- Icon End  -->
+            <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                <li class="nav-item myItemDiv">
+                  <a
+                    class="nav-link myItem active"
+                    aria-current="page"
+                    href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item myItemDiv">
+                  <a class="nav-link myItem" href="./Gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item myItemDiv">
+                  <a class="nav-link myItem" href="./blog.html">Blogs</a>
+                </li>
+                <li class="nav-item myItemDiv">
+                  <a class="nav-link myItem" href="./shop.html">Shop</a>
+                </li>
+                <li class="nav-item myItemDiv">
+                  <a class="nav-link myItem" href="./quote.html">Quote</a>
+                </li>
+                <li class="nav-item myItemDiv">
+                  <a class="nav-link myItem" href="./aboutus.html">About Us</a>
+                </li>
+              </ul>
+              <div class="d-flex myCallUsBtnDiv">
+                <button type="button" class="btn-lg myCallUsBtn">
+                  Call Us
+                </button>
+              </div> -->
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <div class="hero" style="
+        background-image: url(images/abouts.jpg);
+        background-position: center;
+        background-size: cover;
+      ">
+    <div class="abouts-text">
+      <h1 style="color: white"><b>About Us</b></h1>
+    </div>
+  </div>
+
+  <div class="container pt-5">
+    <div class="row mt-4">
+      <div class="col-md-6 myVectorCol"><img class="myVector" src="images/2.png" /></div>
+      <div class="col-md-6">
+        <div class="about-text">
+          <p style="color: grey !important; font-family: lato">
+            After the outbreak of the pandemic, Mayo had to shift his working
+            style. Now, he designs 3D furniture in software, creates files in
+            CNC woodworking machines, and hires CNC businesses on an hourly
+            basis to create stunning and affordable furniture pieces.
+          </p>
+          <p style="color: grey !important; font-family: lato">
+            Today, Mayo has a big team of furniture and upholstery experts who
+            work together to create perfect masterpieces and influence the
+            community. Premium quality, swift service and originality is the
+            hallmark of his extraordinary work.
+          </p>
+          <p style="color: grey !important; font-family: lato">
+            Mayo envisions scaling his network and outspread his customer base
+            across the USA while managing the entire furniture manufacturing
+            from his garage. He wants to lead the market by providing high-end
+            furniture at the best price and unmatched quality. He pays special
+            emphasis on logistics so that customers enjoy a flawless
+            experience.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <p class="about-text mt-4" style="font-family: lato">
+        Mayo’s prowess of transforming people’s illusions into reality is
+        unparalleled. He is a pro at creating vintage and modern furniture and
+        upholstery designs. His exemplary work includes The Urban Lounge Las
+        Vegas, Culinary Drop Out, and Hellen’s Restaurant.<br />
+        Mayo’s team of brilliant designers and workers puts in the best
+        efforts to achieve 100% customer satisfaction. His every furniture
+        piece embody comfort, elegance and worth elegance and worth.<br />
+        Mayo has successfully served the restaurant industry and won great
+        recognition. Eyeing the future, he carries out detailed research to
+        create fascinating and space-age designs to match the demands of the
+        newfound era. You will love Mayo’s artisans’ work due to the awesome
+        designs, perfect measurement, intricate finishing, top-notch material,
+        compact designing and much more.<br />
+        Thanks for coming US Booths LLC and join our
+        <span class="text-primary"><a href="#"> Facebook Page.</a></span>
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="b-gray my-2">
+            <div class="only-logo">
+              <div class="content-u d-flex">
+                <img src="images/image 6.png" class="logo-img-u" width="68px" height="68px" alt="" />
+                <div class="logo-side-content">
+                  <p class="booth">
+                    US Booths<br /><span class="ago">462 followers</span>
+                  </p>
+                </div>
+              </div>
+              <div class="logo-side-btn">
+                <button class="btn btn-primary">View profile</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="b-gray my-2">
+            <div class="only-logo">
+              <div class="content-u d-flex">
+                <img src="images/image 6.png" class="logo-img-u" width="68px" height="68px" alt="" />
+                <div class="logo-side-content">
+                  <p class="booth">
+                    US Booths LLC<br /><span class="ago">about 5min ago</span>
+                  </p>
+                </div>
+              </div>
+              <div class="logo-side-btn-1" style="float: right !important ; width: 30%">
+                <img class="icon-img" src="./images/fbicon.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-md-6 my-2">
+        <div style="width: 100%">
+          <div class="row mt-2 g-0">
+            <script src="https://s.electricblaze.com/widget.js" defer></script>
+            <div class="electricblaze-id-2Uhx770"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 my-2">
+        <div style="width: 100%">
+          <div class="row mt-2 g-0">
+            <script src="https://s.electricblaze.com/widget.js" defer></script>
+            <div class="electricblaze-id-2Uhx770"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="myFooterBg  myAboutSection">
+    <div class="container myFootContainer">
+      <div class="row myFooterRow1">
+        <div class="col-md-6">
+          <div class="myfooterLogo">
+            <a href="index.html"><img class="image_width" src="./images/image 1.png" alt="" /></a>
+
+          </div>
+        </div>
+        <div class="col-md-6 mySubColumn">
+          <div class="buttonIn">
+            <form>
+              <input type="text" placeholder="Enter your E-mail" class="mySubscribeInput" />
+              <button class="mySubscribeButton">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 FooterLeft">
+          <p class="myContactText">CONTACT US</p>
+          <br>
+          <div class="d-flex myList">
+            <div class="myFooterIcon"><img class="myFooterIconStyle" src="./images/icons/loc.png" alt="" />
+            </div><span class="text-white myFooterIconText"> <a style="color:white; text-decoration: none;"
+                href="#">3432
+                W
+                Wilshire Dr Ste 6,
+                Phoenix, AZ 85009</a> </span>
+          </div>
+          <div class="d-flex myList">
+            <div class="myFooterIcon"><img class="myFooterIconStyle" src="./images/icons/call.png" alt="" />
+            </div>
+            <span class="text-white myFooterIconText"> <a href="tel:6232620699"
+                style="color:white; text-decoration: none;">(623) 262-0699</a> </span>
+          </div>
+          <div class="d-flex myList">
+            <div class="myFooterIcon"><img class="myFooterIconStyle" src="./images/icons/message.png" alt="" /></div>
+            <span class="text-white myFooterIconText"> <a href="mailto:info@usbooths.com"
+                style="color:white; text-decoration: none;">info@usbooths.com</a> </span>
+          </div>
+          <br>
+
+          <div class="social-content">
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/">
+                  <div class="myFooterIcon2"><img class="myFooterIconStyle" src="./images/icons/insta.png" alt=""></div>
+                </a>
+
+              </li>
+              <li>
+                <a href="https://www.facebook.com">
+                  <div class="myFooterIcon2"><img class="myFooterIconStyle" src="./images/icons/fb.png" alt=""></div>
+                </a>
+
+
+              </li>
+
+              <li>
+                <a href="https://www.linkedin.com">
+                  <div class="myFooterIcon2"><img class="myFooterIconStyle" src="./images/icons/lin.png" alt=""></div>
+                </a>
+
+
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 FooterRight">
+          <p class="myQuickLinksText">Quick Links</p>
+          <br>
+          <h6 class="myQuickLinks"><a href="shop.html" style="color:white; text-decoration: none;">Shop</a>
+          </h6>
+          <hr class="myHr">
+          <h6 class="myQuickLinks"><a href="Gallery.html" style="color:white; text-decoration: none;">Gallery</a></h6>
+          <hr class="myHr">
+          <h6 class="myQuickLinks"><a href="quote.html" style="color:white; text-decoration: none;">Quote</a>
+          </h6>
+          <hr class="myHr">
+          <h6 class="myQuickLinks"><a href="aboutus.html" style="color:white; text-decoration: none;">About
+              Us</a></h6>
+        </div>
+      </div>
+    </div>
+    <hr class="myHr" />
+    <div class="myfooterBottom">
+      <h6 class="myfooterBottomText">
+        © 2022 US BOOTHS LLC. ALL RIGHTS RESERVED
+      </h6>
+      <h6 class="myfooterBottomText">
+        Terms and conditions - Cookies policy - Privacy policy
+      </h6>
+    </div>
+  </section>
+  <script src="jquery.js"></script>
+  <script>
+    $(function () {
+
+      $("#icons").load("headericon.html")
+    });
+  </script>
+
+  <section id="icons">
+
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

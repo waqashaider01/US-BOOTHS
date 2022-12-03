@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="images/image 1.png">
+  <title>Signup</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="./css/signup.css">
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Poppins");
+
+    * {
+      font-family: "Poppins";
+    }
+
+    body {
+      margin: 0;
+    }
+
+    .myTogglerIcon {
+      color: #ffffff;
+    }
+
+    .navbar-toggler {
+      border: 1px solid white !important;
+    }
+
+    .myCallUsBtn {
+      background-color: white !important;
+      border-radius: 50px;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      border: none;
+      color: black;
+    }
+
+    .myCallUsBtn:hover {
+      background-color: black !important;
+    }
+
+    .myCallUsBtn:hover a {
+      color: white !important;
+    }
+
+    .myItem {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      color: #ffffff;
+    }
+
+    .myItem:hover {
+      color: #ffffff;
+    }
+
+    .active {
+      font-weight: 500;
+      color: #ffffff !important;
+    }
+
+    .myItemDiv {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    @media only screen and (max-width: 760px) {
+      .myNavbar {
+        padding-bottom: 20px;
+      }
+
+      .myCallUsBtnDiv {
+        padding: 15px;
+      }
+
+      .myItem {
+        padding: 15px;
+      }
+
+      .myfooterLogo {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .mySubscribeInput {
+        padding-right: 150px;
+      }
+
+      .myHeaderBg {
+        position: relative !important;
+        background: black !important;
+      }
+
+      .customPadding {
+        padding-top: 2rem !important;
+      }
+    }
+
+    .myfooterBottom {
+      padding: 20px;
+    }
+
+    .myfooterBottomText {
+      text-align: center;
+      color: #ffffff;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 36px;
+    }
+
+    .myFooterBg {
+      background-color: #333333;
+    }
+
+    .myFootContainer {
+      padding-top: 4rem;
+      padding-bottom: 3rem;
+    }
+
+    .myHr {
+      color: #808080;
+    }
+
+    .myHeaderBg {
+      background-color: transparent;
+      position: absolute;
+      top: 0;
+      z-index: 5;
+      width: 100%;
+    }
+
+    .buttonIn {
+      width: 100%;
+      position: relative;
+    }
+
+    .mySubscribeInput {
+      margin: 0px;
+      padding: 30px;
+      width: 100%;
+      outline: none;
+      height: 50px;
+      border-radius: 50px;
+    }
+
+    .mySubscribeButton {
+      position: absolute;
+      border-radius: 50px;
+      right: 10px;
+      top: 8px;
+      bottom: 10px;
+      z-index: 2;
+      border: none;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      height: 50px;
+      cursor: pointer;
+      color: white;
+      background-color: black;
+      transform: translateX(2px);
+    }
+
+    .mySubColumn {
+      display: flex;
+      align-items: center;
+    }
+
+    .myFooterRow1 {
+      margin-bottom: 4rem;
+    }
+
+    .myFooterIcon {
+      margin-right: 35px;
+    }
+
+    .myList {
+      margin-bottom: 1.5rem;
+    }
+
+    .myFooterIconText {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    .myContactText {
+      padding-left: 5px;
+      color: white;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 54px;
+    }
+
+    .myFooterIconStyle {
+      width: 37px;
+    }
+
+    .myFooterIcon2 {
+      margin-right: 20px;
+    }
+
+    .social-content>ul {
+      list-style-type: none;
+      padding-left: 0px;
+      display: flex;
+    }
+
+    .myQuickLinksText {
+      padding-left: 5px;
+      color: white;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 54px;
+    }
+
+    .myQuickLinks {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 33px;
+      color: #ffffff;
+    }
+
+    .FooterLeft {
+      padding: 20px;
+    }
+
+    .FooterRight {
+      padding: 20px;
+    }
+
+    .customPadding {
+      padding-top: 6.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="myHeaderBg">
+    <div class="container-fluid px-md-5 px-d-none">
+      <nav class="navbar navbar-expand-lg myNavbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img class="image_width" src="images/image 1.png" alt="" /></a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class=""><i class="fa-solid fa-bars myTogglerIcon"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                <li class="nav-item myItemDiv">
+                  <a class="nav-link myItem active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item myItemDiv">
+                  <a class="nav-link myItem" href="#">Gallery</a>
+                </li>
+                <li class="nav-item myItemDiv">
+                  <a class="nav-link myItem">Blogs</a>
+                </li>
+                <li class="nav-item myItemDiv">
+                  <a class="nav-link myItem">Shop</a>
+                </li>
+                <li class="nav-item myItemDiv">
+                  <a class="nav-link myItem">Quote</a>
+                </li>
+                <li class="nav-item myItemDiv">
+                  <a class="nav-link myItem">About Us</a>
+                </li>
+              </ul> -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item myItemDiv">
+                <a class="nav-link myItem active grow" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item myItemDiv">
+                <a class="nav-link myItem grow" href="./Gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item myItemDiv">
+                <a class="nav-link myItem grow" href="./blog.html">Blogs</a>
+              </li>
+              <li class="nav-item myItemDiv">
+                <a class="nav-link myItem grow" href="./shop.html">Shop</a>
+              </li>
+              <li class="nav-item myItemDiv">
+                <a class="nav-link myItem grow" href="./quote.html">Quote</a>
+              </li>
+              <li class="nav-item myItemDiv">
+                <a class="nav-link myItem grow" href="./aboutus.html">About Us</a>
+              </li>
+            </ul>
+            <div class="d-flex myCallUsBtnDiv">
+
+              <button type="button" class="btn btn-primary btn-lg myCallUsBtn">
+                <a href="tel:+923452964801" style="color:black; text-decoration:none;">Call Us</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Header Section End  -->
+
+  <!-- signUp Start  -->
+  <div class="hero" style="background-image: url(images/p-sign\ .png);">
+    <section class="ftco-section">
+      <div class="container-fluid">
+
+
+        <div class="row">
+
+          <div class="col-md-6 ">
+
+
+          </div>
+
+          <div class="col-md-6" id="glasswidthset">
+            <div class="bg-sign-glass">
+              <div class="sigin-bg-color" id="sign-bg-set">
+
+                <h2 class="head-text-form">Create your Account</h2>
+
+
+
+                <form class="row g-1">
+
+                  <div class="col-md-12">
+                    <label class="form-label" id="label-form">Full name</label>
+                    <div class="section space long-value-input-container">
+
+
+
+                      <input type="text" required class="long-value-input" value="" style="padding-right: 40px" />
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <label class="form-label" id="label-form">Username</label>
+                    <div class="section space long-value-input-container">
+
+
+
+                      <input type="text" class="long-value-input" value="" style="padding-right: 40px" />
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <label class="form-label" id="label-form">Email</label>
+                    <div class="section space long-value-input-container">
+
+
+
+                      <input type="text" required class="long-value-input" value="" style="padding-right: 40px" />
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <label class="form-label" id="label-form">Password</label>
+                    <div class="section space long-value-input-container">
+
+
+
+                      <input type="text" required class="long-value-input" value="" style="padding-right: 40px" />
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <label class="form-label" id="label-form">Confirm Password</label>
+                    <div class="section space long-value-input-container">
+
+
+
+                      <input type="text" required class="long-value-input" value="" style="padding-right: 40px" />
+                    </div>
+                  </div>
+
+
+                  <div class="col-md-12" style="position: relative;top: 15px;">
+                    <p class="signuptext">By creating an account, you agree to the<br />
+                      Terms of usbooths.com Privacy Notice and Use.</p>
+
+
+                    <button class="btn3  btn-enter  form-control1 shadow"> Register</button>
+
+                    <div style="text-align:center;" class="mt-4">
+                      <a href="https://www.google.com/"><img src="images/png/1.png" width="60px" alt=""></a>
+                      <a href="https://www.facebook.com/"><img src="images/png/2.png" width="60px" alt=""></a>
+                      <a href="https://www.apple.com/"><img src="images/png/3.png" width="60px" alt=""></a>
+                    </div>
+
+                    <div class="d-flex justify-content-center signupbtn">
+                      <div style="position: relative; top: 10px;">
+                        <span class="account mt-5" style="font-size: small;">Have an account already? </span>
+                        <a href="login.html" class="signup">Login</a>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+              </div>
+
+              </form>
+
+
+
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+  </div>
+  <!-- SignUp  Section End  -->
+
+  <section class="myFooterBg  myAboutSection">
+    <div class="container myFootContainer">
+      <div class="row myFooterRow1">
+        <div class="col-md-6">
+          <div class="myfooterLogo">
+            <a href="index.html"><img class="image_width" src="./images/image 1.png" alt="" /></a>
+
+          </div>
+        </div>
+        <div class="col-md-6 mySubColumn">
+          <div class="buttonIn">
+            <form>
+              <input type="text" placeholder="Enter your E-mail" class="mySubscribeInput" />
+              <button class="mySubscribeButton">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 FooterLeft">
+          <p class="myContactText">CONTACT US</p>
+          <br>
+          <div class="d-flex myList">
+            <div class="myFooterIcon"><img class="myFooterIconStyle" src="./images/icons/loc.png" alt="" />
+            </div><span class="text-white myFooterIconText"> <a style="color:white; text-decoration: none;"
+                href="#">3432
+                W
+                Wilshire Dr Ste 6,
+                Phoenix, AZ 85009</a> </span>
+          </div>
+          <div class="d-flex myList">
+            <div class="myFooterIcon"><img class="myFooterIconStyle" src="./images/icons/call.png" alt="" />
+            </div>
+            <span class="text-white myFooterIconText"> <a href="tel:6232620699"
+                style="color:white; text-decoration: none;">(623) 262-0699</a> </span>
+          </div>
+          <div class="d-flex myList">
+            <div class="myFooterIcon"><img class="myFooterIconStyle" src="./images/icons/message.png" alt="" /></div>
+            <span class="text-white myFooterIconText"> <a href="mailto:info@usbooths.com"
+                style="color:white; text-decoration: none;">info@usbooths.com</a> </span>
+          </div>
+          <br>
+
+          <div class="social-content">
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/">
+                  <div class="myFooterIcon2"><img class="myFooterIconStyle" src="./images/icons/insta.png" alt=""></div>
+                </a>
+
+              </li>
+              <li>
+                <a href="https://www.facebook.com">
+                  <div class="myFooterIcon2"><img class="myFooterIconStyle" src="./images/icons/fb.png" alt=""></div>
+                </a>
+
+
+              </li>
+
+              <li>
+                <a href="https://www.linkedin.com">
+                  <div class="myFooterIcon2"><img class="myFooterIconStyle" src="./images/icons/lin.png" alt=""></div>
+                </a>
+
+
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 FooterRight">
+          <p class="myQuickLinksText">Quick Links</p>
+          <br>
+          <h6 class="myQuickLinks"><a href="shop.html" style="color:white; text-decoration: none;">Shop</a>
+          </h6>
+          <hr class="myHr">
+          <h6 class="myQuickLinks"><a href="Gallery.html" style="color:white; text-decoration: none;">Gallery</a></h6>
+          <hr class="myHr">
+          <h6 class="myQuickLinks"><a href="quote.html" style="color:white; text-decoration: none;">Quote</a>
+          </h6>
+          <hr class="myHr">
+          <h6 class="myQuickLinks"><a href="aboutus.html" style="color:white; text-decoration: none;">About
+              Us</a></h6>
+        </div>
+      </div>
+    </div>
+    <hr class="myHr" />
+    <div class="myfooterBottom">
+      <h6 class="myfooterBottomText">
+        © 2022 US BOOTHS LLC. ALL RIGHTS RESERVED
+      </h6>
+      <h6 class="myfooterBottomText">
+        Terms and conditions - Cookies policy - Privacy policy
+      </h6>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

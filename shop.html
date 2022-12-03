@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- font awesome cdn link  -->
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style2.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- Option 1: Include in HTML -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+
+  <link rel="stylesheet" href="css/productdetails.css" />
+  <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet" href="css/style2.css" />
+  <link rel="icon" type="image/x-icon" href="images/image 1.png" />
+  <title>Shop</title>
+  <style>
+    .box {
+      transition: all 0.3s ease-in-out;
+    }
+
+    .box:hover {
+      transform: scale(1.03);
+    }
+
+    .mySearchButton {
+      position: absolute;
+      border-radius: 50px;
+      right: 10px;
+      top: 5px;
+      bottom: 10px;
+      z-index: 2;
+      border: none;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      color: white;
+      background-color: #333333;
+      transform: translateX(2px) 1s;
+      transition: all 0.5s;
+    }
+
+    .mySearchButton:hover {
+      background-color: black;
+    }
+
+    @media only screen and (min-device-width: 720px) and (max-device-width: 1100px) {
+      .myBuyBtn {
+        width: 120px !important;
+      }
+    }
+
+    .myBuyBtn {
+      background-color: #333333 !important;
+      border-radius: 50px;
+      /* padding-left: 2.5rem; */
+      /* padding-right: 2.5rem; */
+      width: 150px;
+      padding-top: 0.8rem;
+      padding-bottom: 0.8rem;
+      border: none !important;
+      color: white;
+    }
+
+    .myBuyBtn:hover {
+      background-color: black !important;
+    }
+
+    .myQuoteBtn {
+      background-color: #333333;
+      border-radius: 50px;
+      padding-left: 3.5rem;
+      padding-right: 3.5rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      border: none !important;
+      color: white;
+    }
+
+    .myQuoteBtn:hover {
+      background-color: black;
+      cursor: pointer;
+    }
+
+    .containerPadding {
+      padding: 3rem;
+    }
+
+    .containerPadding2 {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+
+    @media only screen and (max-width: 760px) {
+      .containerPadding {
+        padding: 0px;
+      }
+
+      .myfooterLogo {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .myrow {
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+
+      .myPrice {
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+
+      .myQuoteBtn {
+        margin-bottom: 30px;
+      }
+
+      .containerPadding2 {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+
+      .abc {
+        margin-top: 30px;
+      }
+    }
+
+    /* Header Icon Style  */
+    .main-div {
+      width: 45px;
+      height: 45px;
+
+      border-radius: 50%;
+
+      background-color: white;
+    }
+
+    .icon-1 {
+      margin: 5px;
+      height: 35px;
+      padding: 5px;
+    }
+
+    .icon1span span {
+      position: relative;
+      top: -60px;
+      left: 30px;
+    }
+
+    .main-div2 {
+      margin-left: 15px;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background-color: white;
+    }
+
+    .icon-2 {
+      margin: 5px;
+      height: 35px;
+      padding: 7px;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    /* Shop Icon  */
+    .shopicon {
+      background: #333333;
+      height: 50px;
+      width: 50px;
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 15px;
+    }
+
+    .shopicon:hover {
+      background-color: black;
+      cursor: pointer;
+    }
+
+    .myshadow {
+      -webkit-appearance: none;
+      -moz-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+  </style>
+</head>
+
+<body>
+  <section class="myHeaderBg">
+    <div class="container-fluid px-md-5 px-d-none">
+      <nav class="navbar navbar-expand-lg myNavbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img class="image_width" src="./images/image 1.png" alt="" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class=""><i class="fa-solid fa-bars myTogglerIcon"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item myItemDiv">
+                <a class="nav-link myItem active grow" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item myItemDiv">
+                <a class="nav-link myItem grow" href="./Gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item myItemDiv">
+                <a class="nav-link myItem grow" href="./blog.html">Blogs</a>
+              </li>
+              <li class="nav-item myItemDiv">
+                <a class="nav-link myItem grow" href="./shop.html">Shop</a>
+              </li>
+              <li class="nav-item myItemDiv">
+                <a class="nav-link myItem grow" href="./quote.html">Quote</a>
+              </li>
+              <li class="nav-item myItemDiv">
+                <a class="nav-link myItem grow" href="./aboutus.html">About Us</a>
+              </li>
+            </ul>
+
+            <!-- Icon Start  -->
+            <div class="d-flex">
+              <div class="main-div">
+                <div class="icon1span">
+                  <a href="cart.html">
+                    <img class="icon-1 grow" src="./images/Vector.png" alt="" /></a>
+                  <span class="badge rounded-pill badge-notification bg-danger">2</span>
+                </div>
+              </div>
+
+              <div class="main-div2">
+                <a href="./login.html"><img class="icon-2 grow" src="./images/Vector2.png" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <div class="HERO_SECTION" style="
+        background: linear-gradient(rgba(8, 8, 8, 0.3), rgba(8, 8, 8, 0.3)),
+          url('./images/bg-shop.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 750px;">
+  </div>
+
+  <section class="price mt-5 myPrice" id="price">
+    <h1 class="text-dark fw-bold text-center mb-5">Shop Our Products</h1>
+
+    <div class="container">
+      <div class="abc col-md-12 col-lg-3 col-xl-12 d-flex justify-content-end mb-md-5 mb-5">
+        <div class="buttonIn" style="width: 25rem">
+          <form>
+            <input type="text" placeholder="Search Products" class="mySubscribeInput shadow myshadow"
+              style="border: none" />
+            <button class="mySearchButton shadow">
+              <i class="bi bi-search" style="margin-top: -10px !important"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="col-md-4 col-sm-6 col-12 col-lg-3">
+          <div class="card sufaproducts grow">
+            <img class="sofa" src="images/shoping-1.png" />
+            <div class="carddetails">
+              <h4 class="Tufted_Heading">Tufted Sofa U-Corner</h4>
+              <div class="star">
+                <li class="text-dark" style="list-style: none">
+                  <i class="text-warning fas fa-star"></i><i class="text-warning fas fa-star"></i><i
+                    class="fas fa-star text-warning"></i><i class="text-warning fas fa-star"></i><i
+                    class="text-warning fas fa-star"></i><span class="reviews ms-2">08 Reviews</span>
+                </li>
+                <div class="d-grid gap-1 mx-auto hello  mt-3 d-flex">
+                  <button onclick="location.href='/usbooths/productdetails2.html';" class="btn custom_btn" type="button">
+                    Shop now
+                  </button>
+
+                  <a href="cart.html">
+                    <img src="images/shoppingcart.png" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12 col-lg-3">
+          <div class="card sufaproducts grow">
+            <img class="sofa" src="images/shopping-2.png" />
+            <div class="carddetails">
+              <h4 class="Tufted_Heading">Tufted Sofa U-Corner</h4>
+              <div class="star">
+                <li class="text-dark" style="list-style: none">
+                  <i class="text-warning fas fa-star"></i><i class="text-warning fas fa-star"></i><i
+                    class="fas fa-star text-warning"></i><i class="text-warning fas fa-star"></i><i
+                    class="text-warning fas fa-star"></i><span class="reviews ms-2">08 Reviews</span>
+                </li>
+                <div class="d-grid gap-1 mx-auto hello  mt-3 d-flex">
+                  <button onclick="location.href='/usbooths/productdetails2.html';" class="btn custom_btn" type="button">
+                    Shop now
+                  </button>
+
+                  <a href="cart.html">
+                    <img src="images/shoppingcart.png" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12 col-lg-3">
+          <div class="card sufaproducts grow">
+            <img class="sofa" src="images/shopping-3.png" />
+            <div class="carddetails">
+              <h4 class="Tufted_Heading">Tufted Sofa U-Corner</h4>
+              <div class="star">
+                <li class="text-dark" style="list-style: none">
+                  <i class="text-warning fas fa-star"></i><i class="text-warning fas fa-star"></i><i
+                    class="fas fa-star text-warning"></i><i class="text-warning fas fa-star"></i><i
+                    class="text-warning fas fa-star"></i><span class="reviews ms-2">08 Reviews</span>
+                </li>
+                <div class="d-grid gap-1 mx-auto hello  mt-3 d-flex">
+                  <button onclick="location.href='/usbooths/productdetails2.html';" class="btn custom_btn" type="button">
+                    Shop now
+                  </button>
+
+                  <a href="cart.html">
+                    <img src="images/shoppingcart.png" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12 col-lg-3">
+          <div class="card sufaproducts grow">
+            <img class="sofa" src="images/shopping-4.png" />
+            <div class="carddetails">
+              <h4 class="Tufted_Heading">Tufted Sofa U-Corner</h4>
+              <div class="star">
+                <li class="text-dark" style="list-style: none">
+                  <i class="text-warning fas fa-star"></i><i class="text-warning fas fa-star"></i><i
+                    class="fas fa-star text-warning"></i><i class="text-warning fas fa-star"></i><i
+                    class="text-warning fas fa-star"></i><span class="reviews ms-2">08 Reviews</span>
+                </li>
+                <div class="d-grid gap-1 mx-auto hello  mt-3 d-flex">
+                  <button onclick="location.href='/usbooths/productdetails2.html';" class="btn custom_btn" type="button">
+                    Shop now
+                  </button>
+
+                  <a href="cart.html">
+                    <img src="images/shoppingcart.png" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12 col-lg-3">
+          <div class="card sufaproducts grow">
+            <img class="sofa" src="images/shoping-1.png" />
+            <div class="carddetails">
+              <h4 class="Tufted_Heading">Tufted Sofa U-Corner</h4>
+              <div class="star">
+                <li class="text-dark" style="list-style: none">
+                  <i class="text-warning fas fa-star"></i><i class="text-warning fas fa-star"></i><i
+                    class="fas fa-star text-warning"></i><i class="text-warning fas fa-star"></i><i
+                    class="text-warning fas fa-star"></i><span class="reviews ms-2">08 Reviews</span>
+                </li>
+                <div class="d-grid gap-1 mx-auto hello  mt-3 d-flex">
+                  <button onclick="location.href='/usbooths/productDetail.html';" class="btn custom_btn" type="button">
+                    Shop now
+                  </button>
+
+                  <a href="cart.html">
+                    <img src="images/shoppingcart.png" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12 col-lg-3">
+          <div class="card sufaproducts grow">
+            <img class="sofa" src="images/shopping-2.png" />
+            <div class="carddetails">
+              <h4 class="Tufted_Heading">Tufted Sofa U-Corner</h4>
+              <div class="star">
+                <li class="text-dark" style="list-style: none">
+                  <i class="text-warning fas fa-star"></i><i class="text-warning fas fa-star"></i><i
+                    class="fas fa-star text-warning"></i><i class="text-warning fas fa-star"></i><i
+                    class="text-warning fas fa-star"></i><span class="reviews ms-2">08 Reviews</span>
+                </li>
+                <div class="d-grid gap-1 mx-auto hello  mt-3 d-flex">
+                  <button onclick="location.href='/usbooths/productDetail.html';" class="btn custom_btn" type="button">
+                    Shop now
+                  </button>
+
+                  <a href="cart.html">
+                    <img src="images/shoppingcart.png" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12 col-lg-3">
+          <div class="card sufaproducts grow">
+            <img class="sofa" src="images/shopping-3.png" />
+            <div class="carddetails">
+              <h4 class="Tufted_Heading">Tufted Sofa U-Corner</h4>
+              <div class="star">
+                <li class="text-dark" style="list-style: none">
+                  <i class="text-warning fas fa-star"></i><i class="text-warning fas fa-star"></i><i
+                    class="fas fa-star text-warning"></i><i class="text-warning fas fa-star"></i><i
+                    class="text-warning fas fa-star"></i><span class="reviews ms-2">08 Reviews</span>
+                </li>
+                <div class="d-grid gap-1 mx-auto hello  mt-3 d-flex">
+                  <button onclick="location.href='/usbooths/productDetail.html';" class="btn custom_btn" type="button">
+                    Shop now
+                  </button>
+
+                  <a href="cart.html">
+                    <img src="images/shoppingcart.png" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12 col-lg-3">
+          <div class="card sufaproducts grow">
+            <img class="sofa" src="images/shopping-4.png" />
+            <div class="carddetails">
+              <h4 class="Tufted_Heading">Tufted Sofa U-Corner</h4>
+              <div class="star">
+                <li class="text-dark" style="list-style: none">
+                  <i class="text-warning fas fa-star"></i><i class="text-warning fas fa-star"></i><i
+                    class="fas fa-star text-warning"></i><i class="text-warning fas fa-star"></i><i
+                    class="text-warning fas fa-star"></i><span class="reviews ms-2">08 Reviews</span>
+                </li>
+                <div class="d-grid gap-1 mx-auto hello  mt-3 d-flex">
+                  <button onclick="location.href='/usbooths/productDetail.html';" class="btn custom_btn" type="button">
+                    Shop now
+                  </button>
+
+                  <a href="cart.html">
+                    <img src="images/shoppingcart.png" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container" style="margin-bottom:80px;">
+      <div class="row containerPadding" style="margin-right: 0px">
+        <div class="text-center col-md-12">
+          <h1 class="fw-bold mt-5 containerPadding heading text-dark">
+            Are you looking for a Custom Order?
+          </h1>
+          <a href="quote.html" class="text-light" style="text-decoration: none">
+            <button class="myQuoteBtn shadow ">GET A QUOTE</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section class="myFooterBg myAboutSection">
+    <div class="container myFootContainer">
+      <div class="row myFooterRow1">
+        <div class="col-md-6">
+          <div class="myfooterLogo">
+            <a href="index.html"><img class="image_width" src="./images/image 1.png" alt="" /></a>
+          </div>
+        </div>
+        <div class="col-md-6 mySubColumn">
+          <div class="buttonIn">
+            <form>
+              <input type="text" placeholder="Enter your E-mail" class="mySubscribeInput" />
+              <button class="mySubscribeButton">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 FooterLeft">
+          <p class="myContactText">CONTACT US</p>
+          <br />
+          <div class="d-flex myList">
+            <div class="myFooterIcon">
+              <img class="myFooterIconStyle" src="./images/icons/loc.png" alt="" />
+            </div>
+            <span class="text-white myFooterIconText">
+              <a style="color: white; text-decoration: none" href="#">3432 W Wilshire Dr Ste 6, Phoenix, AZ 85009</a>
+            </span>
+          </div>
+          <div class="d-flex myList">
+            <div class="myFooterIcon">
+              <img class="myFooterIconStyle" src="./images/icons/call.png" alt="" />
+            </div>
+            <span class="text-white myFooterIconText">
+              <a href="tel:6232620699" style="color: white; text-decoration: none">(623) 262-0699</a>
+            </span>
+          </div>
+          <div class="d-flex myList">
+            <div class="myFooterIcon">
+              <img class="myFooterIconStyle" src="./images/icons/message.png" alt="" />
+            </div>
+            <span class="text-white myFooterIconText">
+              <a href="mailto:info@usbooths.com" style="color: white; text-decoration: none">info@usbooths.com</a>
+            </span>
+          </div>
+          <br />
+
+          <div class="social-content">
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/">
+                  <div class="myFooterIcon2">
+                    <img class="myFooterIconStyle" src="./images/icons/insta.png" alt="" />
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com">
+                  <div class="myFooterIcon2">
+                    <img class="myFooterIconStyle" src="./images/icons/fb.png" alt="" />
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.linkedin.com">
+                  <div class="myFooterIcon2">
+                    <img class="myFooterIconStyle" src="./images/icons/lin.png" alt="" />
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 FooterRight">
+          <p class="myQuickLinksText">Quick Links</p>
+          <br />
+          <h6 class="myQuickLinks">
+            <a href="shop.html" style="color: white; text-decoration: none">Shop</a>
+          </h6>
+          <hr class="myHr" />
+          <h6 class="myQuickLinks">
+            <a href="Gallery.html" style="color: white; text-decoration: none">Gallery</a>
+          </h6>
+          <hr class="myHr" />
+          <h6 class="myQuickLinks">
+            <a href="quote.html" style="color: white; text-decoration: none">Quote</a>
+          </h6>
+          <hr class="myHr" />
+          <h6 class="myQuickLinks">
+            <a href="aboutus.html" style="color: white; text-decoration: none">About Us</a>
+          </h6>
+        </div>
+      </div>
+    </div>
+    <hr class="myHr" />
+    <div class="myfooterBottom">
+      <h6 class="myfooterBottomText">
+        © 2022 US BOOTHS LLC. ALL RIGHTS RESERVED
+      </h6>
+      <h6 class="myfooterBottomText">
+        Terms and conditions - Cookies policy - Privacy policy
+      </h6>
+    </div>
+  </section>
+  <script src="jquery.js"></script>
+  <script>
+    $(function () {
+      $("#icons").load("headericon.html");
+    });
+  </script>
+
+  <section id="icons"></section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+  <!-- price section ends -->
+</body>
+
+</html>

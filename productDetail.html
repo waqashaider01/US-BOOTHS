@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/productdetails.css" />
+  <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css"
+      integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+  /> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+  <link rel="icon" type="image/x-icon" href="images/image 1.png">
+  <title>Product Detail</title>
+  <style>
+
+
+    @media only screen and (min-width: 1400px) {
+      .productdetail-cards-1 h6 {
+        position: absolute;
+        left: 52%;
+        top: 54%;
+        color: white;
+        margin: auto;
+        width: max-content;
+      }
+
+      .productdetail-cards-1 {
+        position: absolute;
+        left: 25%;
+        top: 54%;
+        color: white;
+        margin: auto;
+      }
+
+      .center-div h6 {
+        position: absolute;
+
+        left: 65%;
+        font-size: 20px;
+        top: 43% !important;
+        color: white;
+        margin: auto;
+      }
+    }
+
+    @media only screen and (max-width: 767px) {
+      .productdetail-cards {
+        font-size: 4REM !important;
+        margin-right: 16PX;
+      }
+
+      .productdetail-cards-1 {
+        position: absolute;
+        left: 25%;
+        top: 54%;
+        color: white;
+        margin: auto;
+      }
+
+      .grid {
+        margin-top: 0px !important;
+      }
+
+      .productdetail-cards-1 h6 {
+        position: absolute;
+        left: 52%;
+        top: 54%;
+        color: white;
+        margin: auto;
+        width: max-content;
+      }
+
+      .center-div {
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+        height: 78vh;
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%), url(../images/image_21.png);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header start  -->
+  <section class="myHeaderBg">
+    <div class="container-fluid px-md-5 px-d-none">
+      <nav class="navbar navbar-expand-lg myNavbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img class="image_width" src="images/image 1.png" alt="" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class=""><i class="fa-solid fa-bars myTogglerIcon"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                <li class="nav-item myItemDiv">
+                  <a class="nav-link myItem active grow" aria-current="page" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item myItemDiv">
+                  <a class="nav-link myItem grow" href="./Gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item myItemDiv">
+                  <a class="nav-link myItem grow" href="./blog.html">Blogs</a>
+                </li>
+                <li class="nav-item myItemDiv">
+                  <a class="nav-link myItem grow" href="./shop.html">Shop</a>
+                </li>
+                <li class="nav-item myItemDiv">
+                  <a class="nav-link myItem grow" href="./quote.html">Quote</a>
+                </li>
+                <li class="nav-item myItemDiv">
+                  <a class="nav-link myItem grow" href="./aboutus.html">About Us</a>
+                </li>
+              </ul>
+              <!-- Icon Start  -->
+              <div class="d-flex">
+                <div class="main-div">
+                  <div class="icon1span">
+                    <a href="cart.html"> <img class="icon-1 grow" src="./images/Vector.png" alt="" /></a>
+                    <span class="badge rounded-pill badge-notification bg-danger">2</span>
+                  </div>
+
+
+
+                </div>
+
+                <div class=" main-div2">
+                  <a href="./login.html"><img class="icon-2 grow" src="./images/Vector2.png" alt="" /></a>
+                </div>
+              </div>
+              <!-- Icon End  -->
+              <!-- <div class="d-flex myCallUsBtnDiv">
+                <button
+                  type="button"
+                  class="btn-lg myCallUsBtn"
+                >
+                  Call Us
+                </button>
+              </div> -->
+            </div>
+          </div>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Header end  -->
+
+
+
+  <div class="center-div d-flex" style="justify-content: center;">
+    <!-- <img src="image_21.png"> -->
+
+    <div class="row">
+      <div class="col-md-12">
+
+        <h1 class="productdetail-cards">Tufted Sofa U-Corner</h1>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class=" productdetail-cards-1 shadow">
+          <a href="shop.html">
+          <h6>Create Custom Order</h6>
+        </a>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="doublebanner mt-5">
+
+    <div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 left">
+            <!-- <p>(Product ID:6511745)</p> -->
+            <h4>(Product ID:6511745)</h4>
+            <img class="lg-pic" src="./images/image 8.png" />
+            <div class="container">
+              <div class="row">
+                <div class="sm-images">
+                  <img class="sm-pic1" src="./images/image 8.png" />
+                  <img class="sm-pic2" src="./images/image 26.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 right customglass-product">
+            <a href="productdetails2.html"><button class="btncustom-order shadow">Create Custom Order</button></a>
+            <div class="div-content shadow">
+              <div class="product-main-card-info">
+                <div>
+                  <h2 class="Tufted_Heading2">Tufted Sofa U-Corner</h2>
+              <div class="star">
+                <li class="text-dark" style="list-style: none">
+                  <i class="text-warning fas fa-star"></i><i class="text-warning fas fa-star"></i><i
+                    class="fas fa-star text-warning"></i><i class="text-warning fas fa-star"></i><i
+                    class="text-warning fas fa-star"></i><span class="reviews ms-2">08 Reviews</span>
+                </li>
+               
+              </div>
+                </div>
+                <div style="padding-top: 5px;">
+                  <span style="padding-left: 5px;" class="In-Stock">IN STOCK</span> &nbsp;
+                  <img src="./images/Group 13.png" style="margin-top:-5px;" />
+                </div>
+
+              </div>
+
+
+
+              <!-- <div class="product-main-card-info">
+              <p>
+                  It is formed by combining 2 corner sofas. It is more suitable
+                  for price. Width: 48 Length: 96 Height: 36 Available in
+                  various sizes.
+                </p>
+            </div> -->
+              <div class="paragraph">
+                <p>It is formed by combining 2 corner sofas. It is more suitable for price. Width: 48 Length: 96 Height:
+                  36 Available in various sizes.</p>
+              </div>
+              <div class="product-main-card-info1">
+
+                <div class="quantity">
+                  <span>Color:</span>
+                </div>
+                <div class="quentityright">
+                  <i class="lg-blue fa-1x fa-solid fa-circle"></i>
+                  <i class="pink fa-1x fa-solid fa-circle"></i>
+                  <i class="red fa-1x fa-solid fa-circle"></i>
+                  <i class="blue2 fa-1x fa-solid fa-circle"></i>
+                  <i class="black fa-1x fa-solid fa-circle"></i>
+                  <i class="dkblue fa-1x fa-solid fa-circle"></i>
+                  <i class="green fa-1x fa-solid fa-circle"></i>
+                  <!-- <i class="skyblue fa-1x fa-solid fa-circle"></i>
+                  <i class="lg-green fa-1x fa-solid fa-circle"></i>
+                  <i class="orng fa-1x fa-solid fa-circle"></i> -->
+                </div>
+              </div>
+
+
+              <div class="product-main-card-info1">
+                <div class=" quantity">
+                  <span>Quantity:</span>
+                </div>
+
+                <div class="addminus">
+                  <img class="add" src="./images/addsquare.png" />
+                  <h5>1</h5>
+                  <img class="minus" src="./images/minussquare.png" />
+                </div>
+              </div>
+              <div class="product-main-card-info1 ">
+                <div class="quantity">
+                  <span>Price:</span>
+                </div>
+
+                <div class="addminus">
+                  <h4 class="dollar">$ 2,400</h4>
+                </div>
+              </div>
+
+
+
+              <div class=" row d-flex product-main-card-info1">
+                <div class="d-grid gap-2 col-sm-6 mx-auto btnproduct-shop1">
+                 
+                  <button class="btn shadow" type="button" style="height: 61px; border-radius:50px ;">SHOP NOW</button>
+                </div>
+              <div class="d-grid gap-2 col-sm-6 mt-2 mt-sm-0 mx-auto btnproduct-addtocard1">
+                  <button class="btn shadow" type="button"
+                    style="height: 61px; border-radius: 50px;border: 2px solid black;">ADD TO CART</button>
+                </div>
+              
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- card Start  -->
+   
+      
+      <div class="container" style="margin-top: 100px;">
+        <h4 style="font-weight: 800;" class="mt-5 mb-5">Recommended Sofas</h4>
+        <div class="row">
+        <div class="col-md-4 col-sm-6 col-12 col-lg-3">
+          <div class="card sufaproducts grow">
+            <img class="sofa" src="images/shoping-1.png" />
+            <div class="carddetails">
+              <h4 class="Tufted_Heading">Tufted Sofa U-Corner</h4>
+              <div class="star">
+                <li class="text-dark" style="list-style: none">
+                  <i class="text-warning fas fa-star"></i><i class="text-warning fas fa-star"></i><i
+                    class="fas fa-star text-warning"></i><i class="text-warning fas fa-star"></i><i
+                    class="text-warning fas fa-star"></i><span class="reviews ms-2">08 Reviews</span>
+                </li>
+                <div class="d-grid gap-1 mx-auto hello  mt-3 d-flex">
+                  <button onclick="location.href='/usbooths/productdetails2.html';" class="btn custom_btn" type="button">
+                    Shop now
+                  </button>
+
+                  <a href="cart.html">
+                    <img src="images/shoppingcart.png" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12 col-lg-3">
+          <div class="card sufaproducts grow">
+            <img class="sofa" src="images/shopping-2.png" />
+            <div class="carddetails">
+              <h4 class="Tufted_Heading">Tufted Sofa U-Corner</h4>
+              <div class="star">
+                <li class="text-dark" style="list-style: none">
+                  <i class="text-warning fas fa-star"></i><i class="text-warning fas fa-star"></i><i
+                    class="fas fa-star text-warning"></i><i class="text-warning fas fa-star"></i><i
+                    class="text-warning fas fa-star"></i><span class="reviews ms-2">08 Reviews</span>
+                </li>
+                <div class="d-grid gap-1 mx-auto hello  mt-3 d-flex">
+                  <button onclick="location.href='/usbooths/productdetails2.html';" class="btn custom_btn" type="button">
+                    Shop now
+                  </button>
+
+                  <a href="cart.html">
+                    <img src="images/shoppingcart.png" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12 col-lg-3">
+          <div class="card sufaproducts grow">
+            <img class="sofa" src="images/shopping-3.png" />
+            <div class="carddetails">
+              <h4 class="Tufted_Heading">Tufted Sofa U-Corner</h4>
+              <div class="star">
+                <li class="text-dark" style="list-style: none">
+                  <i class="text-warning fas fa-star"></i><i class="text-warning fas fa-star"></i><i
+                    class="fas fa-star text-warning"></i><i class="text-warning fas fa-star"></i><i
+                    class="text-warning fas fa-star"></i><span class="reviews ms-2">08 Reviews</span>
+                </li>
+                <div class="d-grid gap-1 mx-auto hello  mt-3 d-flex">
+                  <button onclick="location.href='/usbooths/productdetails2.html';" class="btn custom_btn" type="button">
+                    Shop now
+                  </button>
+
+                  <a href="cart.html">
+                    <img src="images/shoppingcart.png" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12 col-lg-3">
+          <div class="card sufaproducts grow">
+            <img class="sofa" src="images/shopping-4.png" />
+            <div class="carddetails">
+              <h4 class="Tufted_Heading">Tufted Sofa U-Corner</h4>
+              <div class="star">
+                <li class="text-dark" style="list-style: none">
+                  <i class="text-warning fas fa-star"></i><i class="text-warning fas fa-star"></i><i
+                    class="fas fa-star text-warning"></i><i class="text-warning fas fa-star"></i><i
+                    class="text-warning fas fa-star"></i><span class="reviews ms-2">08 Reviews</span>
+                </li>
+                <div class="d-grid gap-1 mx-auto hello  mt-3 d-flex">
+                  <button onclick="location.href='/usbooths/productdetails2.html';" class="btn custom_btn" type="button">
+                    Shop now
+                  </button>
+
+                  <a href="cart.html">
+                    <img src="images/shoppingcart.png" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Card End  -->
+  </div>
+  <section class="myFooterBg  myAboutSection">
+    <div class="container myFootContainer">
+      <div class="row myFooterRow1">
+        <div class="col-md-6">
+          <div class="myfooterLogo">
+            <a href="index.html"><img class="image_width" src="./images/image 1.png" alt="" /></a>
+
+          </div>
+        </div>
+        <div class="col-md-6 mySubColumn">
+          <div class="buttonIn">
+            <form>
+              <input type="text" placeholder="Enter your E-mail" class="mySubscribeInput" />
+              <button class="mySubscribeButton">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 FooterLeft">
+          <p class="myContactText">CONTACT US</p>
+          <br>
+          <div class="d-flex myList">
+            <div class="myFooterIcon"><img class="myFooterIconStyle" src="./images/icons/loc.png" alt="" />
+            </div><span class="text-white myFooterIconText"> <a style="color:white; text-decoration: none;"
+                href="#">3432
+                W
+                Wilshire Dr Ste 6,
+                Phoenix, AZ 85009</a> </span>
+          </div>
+          <div class="d-flex myList">
+            <div class="myFooterIcon"><img class="myFooterIconStyle" src="./images/icons/call.png" alt="" />
+            </div>
+            <span class="text-white myFooterIconText"> <a href="tel:6232620699"
+                style="color:white; text-decoration: none;">(623) 262-0699</a> </span>
+          </div>
+          <div class="d-flex myList">
+            <div class="myFooterIcon"><img class="myFooterIconStyle" src="./images/icons/message.png" alt="" /></div>
+            <span class="text-white myFooterIconText"> <a href="mailto:info@usbooths.com"
+                style="color:white; text-decoration: none;">info@usbooths.com</a> </span>
+          </div>
+          <br>
+
+          <div class="social-content">
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/">
+                  <div class="myFooterIcon2"><img class="myFooterIconStyle" src="./images/icons/insta.png" alt=""></div>
+                </a>
+
+              </li>
+              <li>
+                <a href="https://www.facebook.com">
+                  <div class="myFooterIcon2"><img class="myFooterIconStyle" src="./images/icons/fb.png" alt=""></div>
+                </a>
+
+
+              </li>
+
+              <li>
+                <a href="https://www.linkedin.com">
+                  <div class="myFooterIcon2"><img class="myFooterIconStyle" src="./images/icons/lin.png" alt=""></div>
+                </a>
+
+
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 FooterRight">
+          <p class="myQuickLinksText">Quick Links</p>
+          <br>
+          <h6 class="myQuickLinks"><a href="shop.html" style="color:white; text-decoration: none;">Shop</a>
+          </h6>
+          <hr class="myHr">
+          <h6 class="myQuickLinks"><a href="Gallery.html" style="color:white; text-decoration: none;">Gallery</a></h6>
+          <hr class="myHr">
+          <h6 class="myQuickLinks"><a href="quote.html" style="color:white; text-decoration: none;">Quote</a>
+          </h6>
+          <hr class="myHr">
+          <h6 class="myQuickLinks"><a href="aboutus.html" style="color:white; text-decoration: none;">About
+              Us</a></h6>
+        </div>
+      </div>
+    </div>
+    <hr class="myHr" />
+    <div class="myfooterBottom">
+      <h6 class="myfooterBottomText">
+        © 2022 US BOOTHS LLC. ALL RIGHTS RESERVED
+      </h6>
+      <h6 class="myfooterBottomText">
+        Terms and conditions - Cookies policy - Privacy policy
+      </h6>
+    </div>
+  </section>
+  <script src="jquery.js"></script>
+  <script>
+    $(function () {
+
+      $("#icons").load("headericon.html")
+    });
+  </script>
+
+  <section id="icons">
+
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

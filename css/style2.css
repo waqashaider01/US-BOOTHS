@@ -1,0 +1,79 @@
+.image_width {
+  width: 130px;
+}
+
+
+.box{
+  transition: all .3s ease-in-out;
+  
+}
+    .box:hover {
+      transform: scale(1.03);
+    }
+
+
+/* .navbar-collapse ul li a {
+  font-size: 30;
+} */
+
+@media screen and (min-width: 1400px) {
+  .image_width {
+    width: 170px;
+  }
+  /* .homerad img {
+    height: 100vh;
+  } */
+}
+
+@media screen and (min-width: 1600px) {
+  .image_width {
+    width: 170px;
+  }
+  .homerad img {
+    height: 100vh;
+  }
+  .navbar-collapse ul li a {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .myfooterLogo {
+    text-align: center !important;
+    margin-bottom: 20px !important;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .image_width {
+    width: 200px;
+  }
+  .navbar-collapse ul li a {
+    font-size: 30px;
+  }
+  .homerad img {
+    height: 100vh;
+  }
+}
+
+.mySubscribeInput {
+  border: none !important;
+}
+
+.mySubscribeButton {
+  top: 5px !important;
+}
+.custom_btn:active{
+  color: white !important;
+}
+.grow {
+  transition: all 0.4s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.05);
+}
+
+.nav-link:focus{
+  color: white !important;
+}

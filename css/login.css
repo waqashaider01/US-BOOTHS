@@ -1,0 +1,212 @@
+.bg-sign-glass {
+  height: 795px;
+  background: linear-gradient(
+    154.07deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  width: 714;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+}
+
+.sigin-bg-color {
+  width: 446px;
+  position: absolute;
+  top: 6rem;
+  height: 587px;
+  background: #ffffff;
+  box-shadow: 1.64448px 5.48161px 16.4448px 0.548161px rgba(0, 0, 0, 0.25);
+  border-radius: 8.22px;
+  padding: 30px;
+  padding-bottom: 100px;
+}
+
+#glasswidthset {
+  padding-right: 0;
+  padding-left: 0;
+}
+.btn2 {
+  width: 100%;
+  margin-left: 0 !important;
+}
+.btn2 {
+  height: 39px !important;
+}
+.form-control1 {
+  height: 48px !important;
+}
+.head-text-form {
+  line-height: 27px !important;
+  height: 27px;
+  font-weight: 600 !important;
+  font-size: 21.2px !important;
+  color: black;
+}
+.form-label {
+  position: relative;
+}
+/* .sigin-bg-color{
+height: 400px !important;
+} */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+/* 
+.bg-img {
+background: url("https://media0.giphy.com/media/Q34Q46x7bUUKJfbn0s/giphy-downsized-large.gif");
+height: 100vh;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+} */
+
+.bg-img:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.174);
+}
+
+.content {
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  text-align: center;
+  padding: 60px 32px;
+  width: 370px;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.133);
+  border: 1px solid #fff;
+  backdrop-filter: blur(3px);
+  box-shadow: 0 0 6px 0 rgba(29, 29, 29, 0.203);
+}
+
+.content header {
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0 0 35px 0;
+}
+
+.section {
+  position: relative;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  background: #eeeeee;
+  border-radius: 20px;
+}
+
+.section span {
+  color: #222;
+  width: 40px;
+  line-height: 45px;
+  padding-left: 20px;
+  position: relative;
+  right: 15px;
+  padding-left: 30px;
+}
+
+.section input {
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  /* padding-right: 40px; */
+  color: #222;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+/* .space {
+margin-top: 16px;
+margin-bottom: 16px;
+} */
+/* 
+.show {
+position: absolute;
+right: 25px;
+font-size: 13px;
+font-weight: 700;
+color: #222;
+display: none;
+cursor: pointer;
+}
+ 
+.toggle-password:hover{
+cursor: pointer;
+
+}
+*/
+
+.signup {
+  color: black;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 820px) {
+  .sigin-bg-color {
+    width: 90%;
+    padding: 18px;
+  }
+
+  /* .sigin-bg-color {
+    top: 0 !important;
+  } */
+
+  .space {
+    padding-right: 0;
+  }
+  .signupbtn {
+    margin-top: 10px;
+  }
+  .hero {
+    height: auto;
+  }
+  .bg-sign-glass {
+    height: auto;
+  }
+}
+.long-value-input {
+  width: 200px;
+  height: 30px;
+  padding: 0 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.hero {
+  height: 900px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.btn2 {
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+}
+.btn2:hover {
+  background-color: black;
+  color: white;
+}
+.form-label {
+  position: relative;
+  top: 5px;
+}

@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- ========Bostrap Cdn========= -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/x-icon" href="images/image 1.png">
+  <link rel="stylesheet" href="css/style2.css">
+  <title>Cart</title>
+  <!-- ===========================================css========================================================== -->
+  <style>
+    /* HEARDER AND FOOTER CSS */
+
+    @import url("https://fonts.googleapis.com/css?family=Poppins");
+    @import url("https://fonts.googleapis.com/css?family=Playfair Display");
+    @import url("https://fonts.googleapis.com/css?family=Roboto");
+    @import url("https://fonts.googleapis.com/css?family=Inter");
+    @import url("https://fonts.googleapis.com/css?family=Lato");
+
+    * {
+      font-family: "Poppins";
+    }
+
+    body {
+      margin: 0;
+    }
+
+    .myTogglerIcon {
+      color: #ffffff;
+    }
+
+    .navbar-toggler {
+      border: 1px solid white !important;
+    }
+
+    .myCallUsBtn {
+      background-color: white !important;
+      border-radius: 50px;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      border: 1px solid white;
+      color: black;
+    }
+
+    .add {
+      width: 2rem;
+      height: 2rem;
+    }
+
+    .minus {
+      margin-left: 1rem;
+    }
+
+    .myCallUsBtn:hover {
+      background-color: black !important;
+      color: white;
+    }
+
+    /* .table {
+      border-collapse: separate;
+      border-spacing: 0 2em;
+      margin-top: -30px;
+    } */
+
+    .myItem {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      color: #ffffff;
+    }
+
+    .myItem:hover {
+      color: #ffffff;
+    }
+
+    .active {
+      font-weight: 500;
+      color: #ffffff !important;
+    }
+
+    .myItemDiv {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+
+    .customMargin {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+
+
+    @media only screen and (max-width: 760px) {
+      .myNavbar {
+        padding-bottom: 20px;
+      }
+
+      .customMargin {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
+      .myTable {
+        overflow-x: auto;
+      }
+
+      .myHeaderBg {
+        background-color: #37383e !important;
+      }
+
+      .myCallUsBtnDiv {
+        padding: 15px;
+      }
+
+      .myItem {
+        padding: 15px;
+      }
+
+      .myfooterLogo {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .mySubscribeInput {
+        padding-right: 150px;
+      }
+    }
+
+    .myfooterBottom {
+      padding: 20px;
+    }
+
+    .myfooterBottomText {
+      text-align: center;
+      color: #ffffff;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 36px;
+    }
+
+    .myFooterBg {
+      background-color: #333333;
+    }
+
+    .myFootContainer {
+      padding-top: 4rem;
+      padding-bottom: 3rem;
+    }
+
+    .myHr {
+      color: #808080;
+    }
+
+    .myHeaderBg {
+      background-color: #37383e;
+      width: 100%;
+      position: absolute;
+      z-index: 1000;
+    }
+
+    .buttonIn {
+      width: 100%;
+      position: relative;
+    }
+
+    .mySubscribeInput {
+      margin: 0px;
+      padding: 30px;
+      width: 100%;
+      outline: none;
+      height: 50px;
+      border-radius: 50px;
+    }
+
+    .mySubscribeButton {
+      position: absolute;
+      border-radius: 50px;
+      right: 10px;
+      top: 8px;
+      bottom: 10px;
+      z-index: 2;
+      border: none;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      height: 50px;
+      cursor: pointer;
+      color: white;
+      background-color: black;
+      transform: translateX(2px);
+    }
+
+    .mySubColumn {
+      display: flex;
+      align-items: center;
+    }
+
+    .myFooterRow1 {
+      margin-bottom: 4rem;
+    }
+
+    .myFooterIcon {
+      margin-right: 35px;
+    }
+
+    .myList {
+      margin-bottom: 1.5rem;
+    }
+
+    .myFooterIconText {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    .myContactText {
+      padding-left: 5px;
+      color: white;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 54px;
+    }
+
+    .myFooterIconStyle {
+      width: 37px;
+    }
+
+    .myFooterIcon2 {
+      margin-right: 20px;
+    }
+
+    .social-content>ul {
+      list-style-type: none;
+      padding-left: 0px;
+      display: flex;
+    }
+
+    .myQuickLinksText {
+      padding-left: 5px;
+      color: white;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 54px;
+    }
+
+    .myQuickLinks {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 33px;
+      color: #ffffff;
+    }
+
+    .FooterLeft {
+      padding: 20px;
+    }
+
+    .FooterRight {
+      padding: 20px;
+    }
+
+    /* HEADRE AND FOOTER CSS ENDED */
+
+    .table-heading {
+      color: black;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 35px;
+      line-height: 52px;
+    }
+
+    /* ==============================================First Row============================================== */
+    .first-row {
+      height: auto;
+      /* position: absolute;*/
+      width: 756px;
+      height: 73px;
+      left: 50px;
+      top: 288px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      background: #ebebeb;
+      border-radius: 10px;
+    }
+
+    .table-text {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      border: none;
+      padding-left: 15rem;
+
+      color: #000000;
+
+      line-height: 27px;
+      /* identical to box height */
+    }
+
+    .table-detail {
+      padding-left: 13.43rem !important;
+    }
+
+    .table-total {}
+
+    /* =====================================================Second Row===================================== */
+    .second-row {
+      /* position: absolute;*/
+      width: 756px;
+      height: auto;
+      left: 50px;
+      top: 388px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      background: #ffffff;
+      box-shadow: 3px 10px 30px 1px rgba(0, 0, 0, 0.25);
+      border-radius: 15px;
+    }
+
+    .second-img {
+      border-radius: 10px;
+      width: 127px;
+      height: 126px;
+    }
+
+    .table-delete {
+      width: 40px;
+      height: 40px;
+      margin-right: 1rem;
+      background-color: #000000 !important;
+      border-radius: 40px;
+      overflow-y: hidden;
+    }
+
+    .bed-detail {
+      margin-left: -86px !important;
+    }
+
+    /* ================================================Third row========================================= */
+    .third-row {
+      /* position: absolute;*/
+      width: 756px;
+      height: auto;
+      left: 50px;
+      top: 571px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      background: #ffffff;
+      box-shadow: 3px 10px 30px 1px rgba(0, 0, 0, 0.25);
+      border-radius: 15px;
+    }
+
+    .row-third-one {
+      border: none;
+    }
+
+    /* ===============================================card=================================================== */
+    .card {
+      /* position: absolute;*/
+      width: auto;
+      height: auto;
+      left: 899px;
+      top: 288px;
+      padding: 5rem;
+      background: #ebebeb;
+
+      border-radius: 15px;
+      border: solid red;
+    }
+
+    /* .card-one {
+        position: absolute;
+        width: 491px;
+        height: 429px;
+        left: 899px;
+        top: 288px;
+
+        background: #ebebeb;
+        border-radius: 15px;
+        border: solid red;
+      } */
+    .summary {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 35px;
+      line-height: 52px;
+      /* identical to box height */
+
+      color: #000000;
+    }
+
+    .one {
+      padding-top: 2px;
+      height: 20px;
+      overflow: hidden;
+    }
+
+    .dem-gray {
+      background: #ebebeb;
+      border-radius: 15px;
+      padding: 2rem;
+      margin-top: 3rem;
+      height: auto;
+    }
+
+    .icon-delete {
+      height: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+
+    .btn-card a:hover{
+color: white !important;
+    }
+
+    .btn-card {
+      /* display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000000;
+        margin: 20px 56px;
+        padding-bottom: 12px;
+        margin-bottom: 12px;
+        border-radius: 20px; */
+      width: auto;
+      height: auto;
+      text-decoration: none;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #191919;
+      box-shadow: 1px 17px 20px rgba(0, 0, 0, 0.25);
+      border-radius: 50px;
+    }
+
+    .btn-card-sub {
+      /* color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none; */
+      text-decoration: none;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+      /* identical to box height */
+
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+
+    .bg-white {
+      border-radius: 10px;
+    }
+
+    .on-bo {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: small;
+      line-height: 24px;
+      /* identical to box height */
+
+      color: #000000;
+    }
+
+    .table-text-price {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 27px;
+      border: none;
+      /* identical to box height */
+
+      color: #000000;
+    }
+
+    .anthor-bo {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: small;
+      line-height: 24px;
+      /* identical to box height */
+
+      color: #37383e;
+    }
+
+    .mycartsection {
+      padding-top: 50px;
+      padding-bottom: 150px;
+    }
+
+    @media (max-width: 400px) {
+      .anthor-bo {
+        font-size: x-small !important;
+      }
+    }
+
+
+    .headerRow {
+      background: #EBEBEB;
+    }
+
+    .mainRow {}
+
+    .headerRow>th {
+      padding: 20px;
+    }
+
+    .mainRow>td {
+      padding: 20px;
+      height: 100px;
+    }
+
+    .addminus {
+      width: 70%;
+    }
+
+
+
+    /* ==================================Media QUERY MOBILE SCREEN================================ */
+    /* @media only screen and (max-width: 480px) and (min-width: 320px) {
+        .card {
+          display: none !important;
+        }
+        .card-one {
+          display: block !important;
+        }
+      } */
+
+    /* Header Icon Style  */
+    .main-div {
+
+      width: 45px;
+      height: 45px;
+
+      border-radius: 50%;
+
+      background-color: white;
+    }
+
+    .icon-1 {
+      margin: 5px;
+      height: 35px;
+      padding: 5px;
+    }
+
+    .icon1span span {
+      position: relative;
+      top: -60px;
+      left: 30px;
+    }
+
+    .main-div2 {
+      margin-left: 15px;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background-color: white;
+    }
+
+    .icon-2 {
+      margin: 5px;
+      height: 35px;
+      padding: 7px;
+    }
+
+    @media(max-width:768px) {
+
+      .cartglassbanner {
+        position: relative;
+        top: 40px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .txtimgcart {
+        display: block !important;
+        position: relative;
+
+        left: 4px;
+        font-size: 10px;
+      }
+
+      .cartdetailtext {
+        position: relative;
+        left: 10px;
+      }
+
+      .totalpricecart {
+        font-size: 15px !important;
+        position: relative;
+        /* left: 10px; */
+      }
+
+      .txtimgcart img {
+        width: 100px;
+      }
+
+      .addminus {
+        position: relative;
+        left: 0px;
+      }
+
+      .add {
+        width: 20px;
+        height: 25px;
+      }
+
+      .minus {
+        width: 20px;
+        height: 25px;
+        margin-left: 5px !important;
+      }
+
+      .addminusnumb {
+        position: relative;
+        top: -5px;
+        margin-left: 5px !important;
+      }
+
+      .headerRow>th {
+        padding: 4px;
+        font-size: 10px;
+      }
+
+      .cartglassbanner {
+        position: relative;
+        top: 40px;
+      }
+
+      .mainRow>td {
+        padding: 0px;
+
+      }
+
+      .deletebtncart {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        left: 1px;
+
+      }
+
+      .maincontainercart {
+        padding: 1rem;
+      }
+
+    }
+
+    .topspace {
+      position: relative;
+      top: 30px;
+
+    }
+
+    .topspace1 {
+      position: relative;
+      top: 80px;
+
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Table header -->
+  <section class="myHeaderBg">
+    <div class="container-fluid px-md-5 px-d-none">
+      <nav class="navbar navbar-expand-lg myNavbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img class="image_width" src="images/image 1.png" alt="" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class=""><i class="fa-solid fa-bars myTogglerIcon"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item myItemDiv">
+                <a class="nav-link myItem active grow" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item myItemDiv">
+                <a class="nav-link myItem grow" href="./Gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item myItemDiv">
+                <a class="nav-link myItem grow" href="./blog.html">Blogs</a>
+              </li>
+              <li class="nav-item myItemDiv">
+                <a class="nav-link myItem grow" href="./shop.html">Shop</a>
+              </li>
+              <li class="nav-item myItemDiv">
+                <a class="nav-link myItem grow" href="./quote.html">Quote</a>
+              </li>
+              <li class="nav-item myItemDiv">
+                <a class="nav-link myItem grow" href="./aboutus.html">About Us</a>
+              </li>
+            </ul>
+            <!-- Icon Start  -->
+            <div class="d-flex">
+              <div class="main-div">
+                <div class="icon1span">
+                  <a href="cart.html"> <img class="icon-1 grow" src="./images/Vector.png" alt="" /></a>
+                  <span class="badge rounded-pill badge-notification bg-danger">2</span>
+                </div>
+
+
+
+              </div>
+
+              <div class=" main-div2">
+                <a href="./login.html"><img class="icon-2 grow" src="./images/Vector2.png" alt="" /></a>
+              </div>
+            </div>
+            <!-- Icon End  -->
+            <!-- <div class="d-flex myCallUsBtnDiv">
+                <button type="button" class="btn-lg myCallUsBtn">
+                  Call Us
+                </button>
+              </div> -->
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <!-- tabel Header end -->
+  <section class="mycartsection customMargin">
+    <div class="container-fluid" class="p-5 maincontainercart">
+      <!-- ==============Table Headin=================== -->
+      <h5 class="table-heading">Cart</h5>
+      <div class="row  ">
+        <div class="col-md-8 mt-5">
+          <table class="table table-borderless table-responsive">
+            <thead>
+              <tr class="headerRow ">
+                <th scope="col">Product Details</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Total</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody class="mt-6">
+              <tr class="mainRow shadow rounded-1 topspace">
+                <td valign="middle">
+                  <div class="txtimgcart" style="display:flex; align-items:center;"><img src="./images/home (4).png"
+                      style="margin-right:15px;" width="30%" alt="">
+                    <div class="cartdetailtext"><span><b>Tufted Sofa U-Corner</b></span><br> <span> <b>Color: Red</b>
+                      </span> </div>
+                  </div>
+                </td>
+                <td valign="middle">
+
+                  <div class="addminus" style="display:flex;">
+                    <img class="add" src="./images/addsquare.png" />
+                    <span class="addminusnumb" style="margin-left: 1rem; margin-top:5px;">1</span>
+                    <img class="minus" src="./images/minussquare.png" />
+                  </div>
+
+
+                </td>
+                <td valign="middle" class="totalpricecart"><b>$ 2,400</b></td>
+                <td valign="middle">
+                  <p class="deletebtncart"
+                    style="background:black; width:40px; height:40px; border-radius:50px; display: flex; justify-content: center; align-items: center; margin-top:6px;">
+                    <i class="fa-solid fa-trash-can" style="color:white;"></i>
+                  </p>
+                </td>
+              </tr>
+              <tr class="mainRow shadow rounded-1 topspace1">
+                <td valign="middle">
+                  <div class="txtimgcart" style="display:flex; align-items:center;"><img src="./images/home (4).png"
+                      style="margin-right:15px;" width="30%" alt="">
+                    <div class="cartdetailtext"><span><b>Tufted Sofa U-Corner</b></span><br> <span> <b>Color: Red</b>
+                      </span> </div>
+                  </div>
+                </td>
+                <td valign="middle">
+
+                  <div class="addminus" style="display:flex;">
+                    <img class="add" src="./images/addsquare.png" />
+                    <span class="addminusnumb" style="margin-left: 1rem; margin-top:5px;">1</span>
+                    <img class="minus" src="./images/minussquare.png" />
+                  </div>
+
+
+                </td>
+                <td valign="middle" class="totalpricecart"><b>$ 2,400</b></td>
+                <td valign="middle">
+                  <p class="deletebtncart"
+                    style="background:black; width:40px; height:40px; border-radius:50px; display: flex; justify-content: center; align-items: center; margin-top:6px;">
+                    <i class="fa-solid fa-trash-can" style="color:white;"></i>
+                  </p>
+                </td>
+              </tr>
+
+
+            </tbody>
+          </table>
+        </div>
+
+        <div class="col-md-4 mb-5 cartglassbanner">
+          <div class="dem-gray">
+            <p class="summary">Order Summary</p>
+            <div class="in-light">
+              <div class="row bg-white pt-3 my-5 px-1 mx-1">
+                <div class="col-4">
+                  <div class="on-bo">
+                    <p><b>Shipping</b></p>
+                    <p><b>Sales Tax</b></p>
+                    <p><b>Total Price</b></p>
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="anthor-bo">
+                    <p>Calculated at checkout</p>
+                    <p>Calculated at checkout</p>
+                    <b>$4,800</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-card shadow">
+              <a href="checkout.html" class="btn-card-sub py-3"> check out</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="col-md-6">
+        <div class="card-one">small screen</div>
+      </div> -->
+  </section>
+
+  <!-- FOOTER -->
+
+  <section class="myFooterBg  myAboutSection">
+    <div class="container myFootContainer">
+      <div class="row myFooterRow1">
+        <div class="col-md-6">
+          <div class="myfooterLogo">
+            <a href="index.html"><img class="image_width" src="./images/image 1.png" alt="" /></a>
+
+          </div>
+        </div>
+        <div class="col-md-6 mySubColumn">
+          <div class="buttonIn">
+            <form>
+              <input type="text" placeholder="Enter your E-mail" class="mySubscribeInput" />
+              <button class="mySubscribeButton">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 FooterLeft">
+          <p class="myContactText">CONTACT US</p>
+          <br>
+          <div class="d-flex myList">
+            <div class="myFooterIcon"><img class="myFooterIconStyle" src="./images/icons/loc.png" alt="" />
+            </div><span class="text-white myFooterIconText"> <a style="color:white; text-decoration: none;"
+                href="#">3432
+                W
+                Wilshire Dr Ste 6,
+                Phoenix, AZ 85009</a> </span>
+          </div>
+          <div class="d-flex myList">
+            <div class="myFooterIcon"><img class="myFooterIconStyle" src="./images/icons/call.png" alt="" />
+            </div>
+            <span class="text-white myFooterIconText"> <a href="tel:6232620699"
+                style="color:white; text-decoration: none;">(623) 262-0699</a> </span>
+          </div>
+          <div class="d-flex myList">
+            <div class="myFooterIcon"><img class="myFooterIconStyle" src="./images/icons/message.png" alt="" /></div>
+            <span class="text-white myFooterIconText"> <a href="mailto:info@usbooths.com"
+                style="color:white; text-decoration: none;">info@usbooths.com</a> </span>
+          </div>
+          <br>
+
+          <div class="social-content">
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/">
+                  <div class="myFooterIcon2"><img class="myFooterIconStyle" src="./images/icons/insta.png" alt=""></div>
+                </a>
+
+              </li>
+              <li>
+                <a href="https://www.facebook.com">
+                  <div class="myFooterIcon2"><img class="myFooterIconStyle" src="./images/icons/fb.png" alt=""></div>
+                </a>
+
+
+              </li>
+
+              <li>
+                <a href="https://www.linkedin.com">
+                  <div class="myFooterIcon2"><img class="myFooterIconStyle" src="./images/icons/lin.png" alt=""></div>
+                </a>
+
+
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 FooterRight">
+          <p class="myQuickLinksText">Quick Links</p>
+          <br>
+          <h6 class="myQuickLinks"><a href="shop.html" style="color:white; text-decoration: none;">Shop</a>
+          </h6>
+          <hr class="myHr">
+          <h6 class="myQuickLinks"><a href="Gallery.html" style="color:white; text-decoration: none;">Gallery</a></h6>
+          <hr class="myHr">
+          <h6 class="myQuickLinks"><a href="quote.html" style="color:white; text-decoration: none;">Quote</a>
+          </h6>
+          <hr class="myHr">
+          <h6 class="myQuickLinks"><a href="aboutus.html" style="color:white; text-decoration: none;">About
+              Us</a></h6>
+        </div>
+      </div>
+    </div>
+    <hr class="myHr" />
+    <div class="myfooterBottom">
+      <h6 class="myfooterBottomText">
+        © 2022 US BOOTHS LLC. ALL RIGHTS RESERVED
+      </h6>
+      <h6 class="myfooterBottomText">
+        Terms and conditions - Cookies policy - Privacy policy
+      </h6>
+    </div>
+  </section>
+  <script src="jquery.js"></script>
+  <script>
+    $(function () {
+
+      $("#icons").load("headericon.html")
+    });
+  </script>
+
+  <section id="icons">
+
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

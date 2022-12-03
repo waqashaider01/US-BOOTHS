@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/style2.css">
+
+  <link rel="icon" type="image/x-icon" href="images/image 1.png">
+  <title>Checkout</title>
+  <style>
+    /* HEARDER AND FOOTER CSS */
+
+    @import url("https://fonts.googleapis.com/css?family=Poppins");
+    @import url("https://fonts.googleapis.com/css?family=Playfair Display");
+    @import url("https://fonts.googleapis.com/css?family=Roboto");
+    @import url("https://fonts.googleapis.com/css?family=Inter");
+    @import url("https://fonts.googleapis.com/css?family=Lato");
+
+    * {
+      font-family: "Poppins";
+    }
+
+    body {
+      margin: 0;
+    }
+
+    .myTogglerIcon {
+      color: #ffffff;
+    }
+
+    .navbar-toggler {
+      border: 1px solid white !important;
+    }
+
+    .myCallUsBtn {
+      background-color: white !important;
+      border-radius: 50px;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      border: 1px solid white;
+      color: black;
+    }
+
+    .myCallUsBtn:hover {
+      background-color: black !important;
+      color: white;
+    }
+
+    .myItem {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      color: #ffffff;
+    }
+
+    .myItem:hover {
+      color: #ffffff;
+    }
+
+    .active {
+      font-weight: 500;
+      color: #ffffff !important;
+    }
+
+    .myItemDiv {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .myNavbar {
+        padding-bottom: 20px;
+      }
+
+      .myHeaderBg {
+        background-color: #37383e !important;
+      }
+
+      .myCallUsBtnDiv {
+        padding: 15px;
+      }
+
+      .myItem {
+        padding: 15px;
+      }
+
+      .myfooterLogo {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .mySubscribeInput {
+        padding-right: 150px;
+      }
+    }
+
+    .myfooterBottom {
+      padding: 20px;
+    }
+
+    .myfooterBottomText {
+      text-align: center;
+      color: #ffffff;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 36px;
+    }
+
+    .myFooterBg {
+      background-color: #333333;
+    }
+
+    .myFootContainer {
+      padding-top: 4rem;
+      padding-bottom: 3rem;
+    }
+
+    .myHr {
+      color: #808080;
+    }
+
+    .myHeaderBg {
+      background-color: #37383e;
+      width: 100%;
+      position: absolute;
+      z-index: 1000;
+    }
+
+    .buttonIn {
+      width: 100%;
+      position: relative;
+    }
+
+    .mySubscribeInput {
+      margin: 0px;
+      padding: 30px;
+      width: 100%;
+      outline: none;
+      height: 50px;
+      border-radius: 50px;
+    }
+
+    .mySubscribeButton {
+      position: absolute;
+      border-radius: 50px;
+      right: 10px;
+      top: 8px;
+      bottom: 10px;
+      z-index: 2;
+      border: none;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      height: 50px;
+      cursor: pointer;
+      color: white;
+      background-color: black;
+      transform: translateX(2px);
+    }
+
+    .mySubColumn {
+      display: flex;
+      align-items: center;
+    }
+
+    .myFooterRow1 {
+      margin-bottom: 4rem;
+    }
+
+    .myFooterIcon {
+      margin-right: 35px;
+    }
+
+    .myList {
+      margin-bottom: 1.5rem;
+    }
+
+    .myFooterIconText {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    .myContactText {
+      padding-left: 5px;
+      color: white;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 54px;
+    }
+
+    .myFooterIconStyle {
+      width: 37px;
+    }
+
+    .myFooterIcon2 {
+      margin-right: 20px;
+    }
+
+    .social-content>ul {
+      list-style-type: none;
+      padding-left: 0px;
+      display: flex;
+    }
+
+    .myQuickLinksText {
+      padding-left: 5px;
+      color: white;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 54px;
+    }
+
+    .myQuickLinks {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 33px;
+      color: #ffffff;
+    }
+
+    .FooterLeft {
+      padding: 20px;
+    }
+
+    .FooterRight {
+      padding: 20px;
+    }
+
+    .cardetail {
+      /* padding: 15px; */
+      /* padding-left: 17px;
+        padding-right: 17px; */
+      font-size: 1rem;
+      font-weight: 500;
+      /* padding-bottom  : 20px; */
+    }
+
+    .cardbg {
+      border-radius: 10px;
+      background-color: #ebebeb;
+      /* max-width: 100%; */
+      /* height: auto; */
+      box-shadow: 0px 10px 10px 0px;
+    }
+
+    .btn.btn-primary.mb-3 {
+      border-radius: 15px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+
+    #inputcolor {
+      background-color: #eeeeee;
+      padding: 14px;
+      border-radius: 50px;
+      border: transparent;
+      width: auto;
+    }
+    @media only screen and (max-width: 767px) {
+      #inputcolor {
+      background-color: #eeeeee;
+      padding: 14px;
+      border-radius: 50px;
+      border: transparent;
+      width: auto;
+      height: 45px;
+    }
+}
+    .checkout-bg-color {
+      /* max-width: 100%; */
+      /* height: auto; */
+      background: #ffffff;
+      /* box-shadow: 3px 10px 30px 1px rgba(0, 0, 0, 0.25); */
+      border-radius: 15px;
+      padding: 40px;
+    }
+
+    /* @media only screen and(max-widht:767){
+      .checkout-bg-color {
+        padding: 20px;
+      } */
+    .next {
+      width: 50%;
+      background-color: #333333;
+      border-radius: 50px;
+      font-size: 16px;
+      text-align: center;
+      /* padding-right: 3.5rem !important; */
+      /* padding-left: 3rem !important; */
+      padding-top: 1rem !important;
+      padding-bottom: 1rem !important;
+
+
+      /* background-color: #333333 !important;
+      border-radius: 50px;
+      padding-left: 3.5rem;
+      padding-right: 3.5rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      border: none !important;
+      color: white; */
+    }
+
+    .next:hover {
+      background-color: black;
+      color: white;
+    }
+
+    .bga {
+      background-color: #ebebeb;
+      height: 63px;
+      width: 95%;
+      border-radius: 30px;
+    }
+
+    .card-1 {
+      font-weight: 500;
+    }
+
+    .custom_cart {
+      border-radius: 10px;
+      /* background-color: #ebebeb; */
+      /* max-width: 100%; */
+      /* height: auto; */
+      /* box-shadow: 0px 10px 10px 0px; */
+    }
+
+    /* Header Icon Style  */
+    .main-div {
+
+      width: 45px;
+      height: 45px;
+
+      border-radius: 50%;
+
+      background-color: white;
+    }
+
+    .icon-1 {
+      margin: 5px;
+      height: 35px;
+      padding: 5px;
+    }
+
+    .icon1span span {
+      position: relative;
+      top: -60px;
+      left: 30px;
+    }
+
+    .main-div2 {
+      margin-left: 15px;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background-color: white;
+    }
+
+    .icon-2 {
+      margin: 5px;
+      height: 35px;
+      padding: 7px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HEARDER -->
+  <section class="myHeaderBg">
+    <div class="container-fluid px-md-5 px-d-none">
+      <nav class="navbar navbar-expand-lg myNavbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img class="image_width" src="images/image 1.png" alt="" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class=""><i class="fa-solid fa-bars myTogglerIcon"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item myItemDiv">
+                <a class="nav-link myItem active grow" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item myItemDiv">
+                <a class="nav-link myItem grow" href="./Gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item myItemDiv">
+                <a class="nav-link myItem grow" href="./blog.html">Blogs</a>
+              </li>
+              <li class="nav-item myItemDiv">
+                <a class="nav-link myItem grow" href="./shop.html">Shop</a>
+              </li>
+              <li class="nav-item myItemDiv">
+                <a class="nav-link myItem grow" href="./quote.html">Quote</a>
+              </li>
+              <li class="nav-item myItemDiv">
+                <a class="nav-link myItem grow" href="./aboutus.html">About Us</a>
+              </li>
+            </ul>
+            <!-- Icon Start  -->
+            <div class="d-flex">
+              <div class="main-div">
+                <div class="icon1span">
+                  <a href="cart.html"> <img class="icon-1 grow" src="./images/Vector.png" alt="" /></a>
+                  <span class="badge rounded-pill badge-notification bg-danger">2</span>
+                </div>
+
+
+
+              </div>
+
+              <div class=" main-div2">
+                <a href="./login.html"><img class="icon-2 grow" src="./images/Vector2.png" alt="" /></a>
+              </div>
+            </div>
+            <!-- Icon End  -->
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <section>
+    <div class="container-fluid mb-5">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="fw-bold mt-5" style="margin-left: 100px">Check Out</h1>
+        </div>
+      </div>
+
+      <div class="row fw-bold d-flex justify-content-center">
+        <div class="col-xl-4 col-xs-8 col-xxl-4 col-lg-6 pt-5 mt-2">
+          <div>
+            <div class="row mx-2 bga">
+              <div class="col-md-6 col-sm-6 col-6 mt-3 cardetail fw-bold">
+                <p class="mx-4 ">Product Detail</p>
+              </div>
+              <div class="col-md-6 col-sm-6 col-6 mt-3 text-end cardetail fw-bold px-5">
+                <p class="mx-4">total</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container custom_cart mt-5 shadow">
+            <div class="row">
+              <div class="col-12 ">
+                <div class="d-flex justify-content-evenly align-items-center">
+                  <img src="images/product (5).png" width="100px" alt="">
+                  <span style="font-size:12px ;">Tufted Sofa <br> U-Corner.<br />
+                    Color: Red</span>
+                  <span>$ 2,400</span>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-12 ">
+                <div class="d-flex justify-content-evenly align-items-center">
+                  <img src="images/image 29.png" width="100px" alt="">
+                  <span style="font-size:12px ;">Tufted Sofa <br> Corner.<br />
+                    Color: black</span>
+                  <span>$ 2,400</span>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-12 ">
+                <div class="d-flex justify-content-between align-items-center">
+                  <!-- <img src="images/product (5).png" width="100px" alt=""> -->
+                  <span class="mx-3 mb-3">Total</span>
+                  <span class="mx-3 mb-3">$ 2,400</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="cardbg billa mx-4 mt-4">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card hhh">
+                  <div class="card-body d-flex justify-content-around">
+                    <div class="col-md-4 col-sm-4 col-lg-4">
+                      <img src="images/product (5).png" width="100" />
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-lg-4">
+                      <div class="justify-content-center card-1 mt-3 mx-2">
+                        <p class="p-l-1">
+                          Tufted Sofa U-Corner.<br />
+                          Color: Red
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-lg-4">
+                      <div class="mx-1 mt-5 card-1">
+                        <p class="p-l-1 mt-4 mx-4">$ 2,400</p>
+                      </div>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="card-body d-flex justify-content-around">
+                    <div class="col-md-4 col-sm-4 col-lg-4">
+                      <img src="images/product (5).png" width="100" />
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-lg-4">
+                      <div class="justify-content-center mt-3 mx-2 card-1">
+                        <p class="p-l-1">
+                          Tufted Sofa Corner.<br />
+                          Color: Black
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-lg-4">
+                      <div class="mx-1 mt-5 card-1">
+                        <p class="p-l-1 mt-4 mx-4">$ 2,400</p>
+                      </div>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="card-body d-flex p-3 justify-content-between">
+                    <p class="px-3">Total Price</p>
+                    <p class=" "></p>
+
+                    <p class="card-p2 mx-4 ">$ 2,400</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="col-xl-7 col-sm-12 col-xs-12 col-xxl-7 col-lg-7  mt-2 pt-5">
+          <div class=" checkout-bg-color shadow">
+            <form class="row">
+              <h3 class="text-dark">Fill form to Proceed</h3>
+
+              <div class="col-md-6 p-3">
+                <label class="form-label">First Name *</label>
+                <input type="text" class="form-control" id="inputcolor" placeholder="" />
+              </div>
+              <div class="col-md-6 p-3">
+                <label class="form-label">Last Name *</label>
+                <input type="text" class="form-control" id="inputcolor" placeholder="" />
+              </div>
+
+              <div class="col-md-6 p-3">
+                <label class="form-label">Phone Number *</label>
+                <input type="text" class="form-control" id="inputcolor" placeholder="" />
+              </div>
+              <div class="col-md-6 p-3">
+                <label class="form-label">Email</label>
+                <input type="text" class="form-control" id="inputcolor" placeholder="" />
+              </div>
+
+              <div class="col-md-6 p-3">
+                <label class="form-label">Company Name (Otional) </label>
+                <input type="Name" class="form-control" id="inputcolor" placeholder="" />
+              </div>
+
+              <div class="col-md-6"></div>
+              <div class="col-md-6 p-3 mt-3">
+                <label class="form-label">Address Line 1 *</label>
+                <input type="text" class="form-control" id="inputcolor" placeholder="" />
+              </div>
+              <div class="col-md-6 p-3 mt-3">
+                <label class="form-label">Address Line 2 *</label>
+                <input type="text" class="form-control" id="inputcolor" placeholder="" />
+              </div>
+
+              <div class="col-md-6 p-3">
+                <label class="form-label">City *</label>
+                <input type="Phone" class="form-control" id="inputcolor" placeholder="" />
+              </div>
+
+              <div class="col-md-6 p-3">
+                <label class="form-label">State *</label>
+                <input type="text" class="form-control" id="inputcolor" placeholder="" />
+              </div>
+              <div class="col-md-6 p-3">
+                <label class="form-label">ZIP Code *</label>
+                <input type="text" class="form-control" id="inputcolor" placeholder="" />
+              </div>
+              <div class="col-md-6"></div>
+              <h7 class="* text-danger mt-2 mx-2">
+                Fields with “*” are required<br /></h7>
+              <div class="mt-3">
+                <input class="form-check-input" type="checkbox" id="checkboxNoLabel" style="margin-left: 10px" value=""
+                  aria-label="..." />
+
+                <span style="margin-left: 25px">
+                  I accept the processing of my data for the corresponding
+                  purchase
+                </span>
+              </div>
+
+              <div class="col-lg-6 mt-4">
+                <button type="submit" class="btn btn-dark btn-lg px-5 next shadow">
+                  Next
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <section class="myFooterBg  myAboutSection">
+    <div class="container myFootContainer">
+      <div class="row myFooterRow1">
+        <div class="col-md-6">
+          <div class="myfooterLogo">
+            <a href="index.html"><img class="image_width" src="./images/image 1.png" alt="" /></a>
+
+          </div>
+        </div>
+        <div class="col-md-6 mySubColumn">
+          <div class="buttonIn">
+            <form>
+              <input type="text" placeholder="Enter your E-mail" class="mySubscribeInput" />
+              <button class="mySubscribeButton">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 FooterLeft">
+          <p class="myContactText">CONTACT US</p>
+          <br>
+          <div class="d-flex myList">
+            <div class="myFooterIcon"><img class="myFooterIconStyle" src="./images/icons/loc.png" alt="" />
+            </div><span class="text-white myFooterIconText"> <a style="color:white; text-decoration: none;"
+                href="#">3432
+                W
+                Wilshire Dr Ste 6,
+                Phoenix, AZ 85009</a> </span>
+          </div>
+          <div class="d-flex myList">
+            <div class="myFooterIcon"><img class="myFooterIconStyle" src="./images/icons/call.png" alt="" />
+            </div>
+            <span class="text-white myFooterIconText"> <a href="tel:6232620699"
+                style="color:white; text-decoration: none;">(623) 262-0699</a> </span>
+          </div>
+          <div class="d-flex myList">
+            <div class="myFooterIcon"><img class="myFooterIconStyle" src="./images/icons/message.png" alt="" /></div>
+            <span class="text-white myFooterIconText"> <a href="mailto:info@usbooths.com"
+                style="color:white; text-decoration: none;">info@usbooths.com</a> </span>
+          </div>
+          <br>
+
+          <div class="social-content">
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/">
+                  <div class="myFooterIcon2"><img class="myFooterIconStyle" src="./images/icons/insta.png" alt=""></div>
+                </a>
+
+              </li>
+              <li>
+                <a href="https://www.facebook.com">
+                  <div class="myFooterIcon2"><img class="myFooterIconStyle" src="./images/icons/fb.png" alt=""></div>
+                </a>
+
+
+              </li>
+
+              <li>
+                <a href="https://www.linkedin.com">
+                  <div class="myFooterIcon2"><img class="myFooterIconStyle" src="./images/icons/lin.png" alt=""></div>
+                </a>
+
+
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 FooterRight">
+          <p class="myQuickLinksText">Quick Links</p>
+          <br>
+          <h6 class="myQuickLinks"><a href="shop.html" style="color:white; text-decoration: none;">Shop</a>
+          </h6>
+          <hr class="myHr">
+          <h6 class="myQuickLinks"><a href="Gallery.html" style="color:white; text-decoration: none;">Gallery</a></h6>
+          <hr class="myHr">
+          <h6 class="myQuickLinks"><a href="quote.html" style="color:white; text-decoration: none;">Quote</a>
+          </h6>
+          <hr class="myHr">
+          <h6 class="myQuickLinks"><a href="aboutus.html" style="color:white; text-decoration: none;">About
+              Us</a></h6>
+        </div>
+      </div>
+    </div>
+    <hr class="myHr" />
+    <div class="myfooterBottom">
+      <h6 class="myfooterBottomText">
+        © 2022 US BOOTHS LLC. ALL RIGHTS RESERVED
+      </h6>
+      <h6 class="myfooterBottomText">
+        Terms and conditions - Cookies policy - Privacy policy
+      </h6>
+    </div>
+  </section>
+  <script src="jquery.js"></script>
+  <script>
+    $(function () {
+
+      $("#icons").load("headericon.html")
+    });
+  </script>
+
+  <section id="icons">
+
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

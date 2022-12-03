@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    /* body {
+        background-image: url(https://s3.amazonaws.com/cdn.ibrahimjabbari.com/img/Sidebar_social_bg.jpg);
+        background-size: cover;
+        color: white;
+        font-family: montserrat;
+    } */
+
+    .social ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .social {
+        position: fixed;
+        top: 50vh;
+        z-index: 58000;
+        width: 40px;
+    }
+
+    .social ul {
+        padding: 0px;
+        transform: translate(-270px, 0);
+    }
+
+    .social ul li {
+        display: block;
+        margin: 5px;
+        background: rgba(200, 158, 172, 0.5);
+        width: 317px;
+        text-align: right;
+        padding: 10px;
+        border-radius: 0 30px 30px 0;
+        transition: all 1.5s;
+    }
+
+    .social ul li:last-child {
+        display: block;
+        margin: 5px;
+        background: rgb(22, 116, 234, 0.5);
+        width: 317px;
+        text-align: right;
+        padding: 10px;
+        border-radius: 0 30px 30px 0;
+        transition: all 1.5s;
+    }
+
+    .social ul li:hover {
+        transform: translate(110px, 0);
+        background: #c44a73;
+        transition: all 1.5s;
+    }
+
+    /* first child hover effect  */
+    .social ul li:first-child {
+        display: block;
+        margin: 5px;
+        background: rgb(2, 110, 170, 0.5);
+        width: 317px;
+        text-align: right;
+        padding: 10px;
+        border-radius: 0 30px 30px 0;
+        transition: all 1.5s;
+    }
+
+    .social ul li:first-child:hover {
+        transform: translate(110px, 0);
+        background: #026eaa;
+
+        transition: all 1.5s;
+    }
+
+    .social ul li:first-child:hover i {
+        color: #026eaa;
+        background: white;
+        transform: rotate(360deg);
+        transition: all 1.5s;
+    }
+
+    /* first Child  Hover Effect end  */
+
+    /* last child hover Effect  */
+
+    .social ul li:last-child:hover {
+        transform: translate(110px, 0);
+        background: #1674ea;
+        transition: all 1.5s;
+    }
+
+    .social ul li:last-child:hover i {
+        color: #1674ea;
+        background: white;
+        transform: rotate(360deg);
+        transition: all 1.5s;
+    }
+
+    /* last child hover Effect end  */
+
+    /* scond child hover effect  */
+
+
+    .social ul li:nth-child(2) {
+        display: block;
+        margin: 5px;
+        background: rgb(219, 43, 124, 0.5);
+        width: 317px;
+        text-align: right;
+        padding: 10px;
+        border-radius: 0 30px 30px 0;
+        transition: all 1.5s;
+    }
+
+    .social ul li:nth-child(2):hover {
+        transform: translate(110px, 0);
+        background: #db2b7c;
+        transition: all 1.5s;
+    }
+
+    .social ul li:nth-child(2):hover i {
+        color: #db2b7c;
+        background: white;
+        transform: rotate(360deg);
+        transition: all 1.5s;
+    }
+
+    /* second child hover Effect end  */
+
+
+    .social ul li:hover a {
+        color: white;
+    }
+
+    .social ul li:hover i {
+        color: #c44a73;
+        background: white;
+        transform: rotate(360deg);
+        transition: all 1.5s;
+    }
+
+
+
+    .social ul li i {
+        margin-left: 10px;
+        color: #000;
+        background: white;
+        padding: 10px;
+        border-radius: 50%;
+        width: 37px;
+        height: 37px;
+        transform: rotate(0deg);
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .youtubeBtn {
+        position: fixed;
+        left: 50%;
+        transform: translatex(-50%);
+        bottom: 20px;
+        cursor: pointer;
+        transition: all .3s;
+        vertical-align: middle;
+        text-align: center;
+        display: inline-block;
+        background: #000;
+        padding: 2px 10px;
+        border-radius: 5px;
+    }
+
+    .youtubeBtn i {
+        font-size: 20px;
+        float: left;
+    }
+
+    .youtubeBtn a {
+        color: #ff0000;
+        animation: youtubeAnim 1000ms linear infinite;
+        float: right;
+    }
+
+    .youtubeBtn a:hover {
+        color: #c9110f;
+        transition: all .3s ease-in-out;
+    }
+
+    .youtubeBtn i:active {
+        transform: scale(.9);
+        transition: all .3s ease-in-out;
+    }
+
+    .youtubeBtn span {
+        font-family: 'Lato';
+        font-weight: bold;
+        color: #fff;
+        display: block;
+        font-size: 12px;
+        float: right;
+        line-height: 20px;
+        padding-left: 5px;
+
+    }
+
+    @keyframes youtubeAnim {
+
+        0%,
+        100% {
+            color: #c9110f;
+        }
+
+        50% {
+            color: #ff0000;
+        }
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="social">
+        <ul>
+            <li><a href="https://www.linkedin.com/in/waqashayder01/">Linkedin<i class="fa fa-linkedin"
+                        aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com/ibrahim_jabbari/">Instagram <i class="fa fa-instagram"></i></a></li>
+            <!-- <li><a href="#">Google+ <i class="fa fa-google-plus"></i></a></li> -->
+            <li><a href="https://www.facebook.com/IbrahimJabbariBlog/">Facebook <i class="fa fa-facebook"></i></a></li>
+        </ul>
+    </nav>
+
+    <!-- <div class="youtubeBtn">
+        <a target="_blank" href="https://www.youtube.com/watch?v=xUAgYrY999A">
+            <span>Watch on YouTube</span>
+            <i class="fab fa-youtube"></i>
+        </a>
+    </div> -->
+</body>
+
+</html>
